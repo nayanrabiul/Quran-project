@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>৪৯. আল-হুজুরাত (বাসগৃহসমূূহ )</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="fbe86a43-976f-4941-a39a-7f64cbbe6a9b" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📕</span></div><h1 class="page-title">৪৯. আল-হুজুরাত (বাসগৃহসমূূহ )</h1><p class="page-description"></p></header><div class="page-body"><p id="cba131ad-b817-4152-ad0b-4478a0ca2d4e" class="">1 হে ঈমানদারগণ ! আল্লাহ ও তাঁর রাসূলের সমক্ষে তোমরা কোন বিষয়ে অগ্রণী হয়ো না আর তোমরা আল্লাহর তাকওয়া অবলম্বন কর ; নিশ্চয় আল্লাহ সর্বশ্রোতা, সর্বজ্ঞ।</p><p id="30c0df4d-6c5c-4cb6-b759-d3cb952fdea3" class="">2  হে ঈমানদারগণ! তোমরা নবীর কণ্ঠস্বরের উপর নিজেদের কণ্ঠস্বর উঁচু করো না এবং নিজেদের মধ্যে যেভাবে উচ্চস্বরে কথা বল তার সাথে সেরূপ উচ্চস্বরে কথা বলো না; এ আশঙ্কায় যে, তোমাদের সকল কাজ বিনষ্ট হয়ে যাবে অথচ তোমরা উপলব্ধিও করতে পারবে না।</p><p id="d2caa4bd-86f0-4e95-a77b-f9be7ce8f2ef" class="">3 নিশ্চয় যারা আল্লাহর রাসূলের সামনে নিজেদের কন্ঠস্বর নিচু করে, আল্লাহ্‌ তাদের অন্তরকে তাকওয়ার জন্য পরীক্ষা করে নিয়েছেন। তাদের জন্য রয়েছে ক্ষমা ও মহাপুরস্কার।</p><p id="a721e7fb-b379-48bf-af39-cd9a2cf4d4ea" class="">4 নিশ্চয় যারা হুজরাসমূহের পিছন থেকে আপনাকে উচ্চস্বরে ডাকে, তাদের অধিকাংশই বুঝে না।</p><p id="0350f78a-cb80-4ebe-87a2-cb58f9f1689e" class="">5 আর আপনি বের হয়ে তাদের কাছে আসা পর্যন্ত যদি তারা ধৈর্য ধারণ করত, তবে তা-ই তাদের জন্য উত্তম হত । আর আল্লাহ্‌ ক্ষমাশীল, পরম দয়ালু।</p><p id="2f581200-0b91-4f20-94d8-bb7ffcaa04fc" class="">6 হে ঈমানদারগণ ! যদি কোন ফাসিক তোমাদের কাছে কোন বার্তা নিয়ে আসে, তাহলে তোমরা তা পরীক্ষা করে দেখ, এ আশঙ্কায় যে, অজ্ঞতাবশত তোমরা কোন সম্প্রদায়কে আক্রমণ করে বসবে, ফলে তোমাদের কৃতকর্মের জন্য তোমাদেরকে অনুতপ্ত হতে হবে।</p><p id="ec5e98af-bb32-4964-b012-c867b7c46609" class="">7 আর তোমরা জেনে রাখ যে, তোমাদের মধ্যে আল্লাহর রাসূল রয়েছেন। তিনি বহু বিষয়ে তোমাদের কথা শুনালে তোমরাই কষ্ট পেতে। কিন্তু আল্লাহ তোমাদের কাছে ঈমানকে প্রিয় করেছেন এবং সেটাকে তোমাদের হৃদয়গ্রাহী করেছেন। আর কুফরী, পাপাচার ও অবাধ্যতাকে করেছেন তোমাদের কাছে অপ্রিয়। তারাই তো সত্য পথ প্রাপ্ত।</p><p id="798cdd4c-0b9f-4854-a173-804369c33e42" class="">8 আল্লাহর দান ও অনুগ্রহস্বরূপ ; আর আল্লাহ সর্বজ্ঞ, হিকমতওয়ালা।</p><p id="e4efb1ef-e893-4052-9792-947bf8d7c1c5" class="">9 আর মুমিনদের দু’দল দ্বন্দ্বে লিপ্ত হলে তোমরা তাদের মধ্যে মীমাংসা করে দাও ; অতঃপর তাদের একদল অন্য দলের বিরুদ্ধে বাড়াবাড়ি করলে, যারা বাড়াবাড়ি করে তাদের বিরুদ্ধে তোমরা যুদ্ধ কর, যতক্ষণ না তারা আল্লাহর নির্দেশের দিকে ফিরে আসে। তারপর যদি তারা ফিরে আসে, তবে তাদের মধ্যে ইনসাফের সাথে আপোষ মীমাংসা করে দাও এবং ন্যায়বিচার কর। নিশ্চয় আল্লাহ ন্যায়বিচারকদেরকে ভালবাসেন।</p><p id="eb1555f8-125f-4371-91c3-2830f1d07410" class="">10 মুমিনগণ তো পরস্পর ভাই ভাই ; কাজেই তোমরা তোমাদের ভাইদের মধ্যে আপোষ মীমাংসা করে দাও। আর আল্লাহর তাকওয়া অবলম্বন কর, যাতে তোমরা অনুগ্রহপ্রাপ্ত হও।</p><p id="ca45fe82-20aa-4813-bd8e-fa4ac536db1a" class="">11 হে ঈমানদারগণ ! কোন মুমিন সম্প্রদায় যেন অপর কোন মুমিন সম্প্রদায়কে উপহাস না করে; কেননা যাদেরকে উপহাস করা হচ্ছে তারা উপহাসকারীদের চেয়ে উত্তম হতে পারে এবং নারীরা যেন অন্য নারীদেরকে উপহাস না করে; কেননা যাদেরকে উপহাস করা হচ্ছে তারা উপহাসকারিণীদের চেয়ে উত্তম হতে পারে। আর তোমরা একে অন্যের প্রতি দোষারোপ করো না এবং তোমরা একে অন্যকে মন্দ নামে ডেকো না ; ঈমানের পর মন্দ নাম অতি নিকৃষ্ট। আর যারা তওবা করে না তারাই তো যালিম।</p><p id="0321b351-6143-43ed-9a90-bba8bea9091e" class="">12 হে ঈমানদারগণ ! তোমরা অধিকাংশ অনুমান হতে দূরে থাক ; কারণ কোন কোন অনুমান পাপ এবং তোমরা একে অন্যের গোপনীয় বিষয় সন্ধান করো না এবং একে অন্যের গীবত করো না । তোমাদের মধ্যে কি কেউ তার মৃত ভাইয়ের গোশত খেতে চাইবে? তোমরা তো একে ঘৃণ্যই করে থাক। আর তোমরা আল্লাহর তাকওয়া অবলম্বন কর; নিশ্চয় আল্লাহ্ তওবা গ্রহণকারী, পরম দয়ালু।</p><p id="1a1e9255-3afa-40e7-8da9-1bb4e29106f3" class="">13 হে মানুষ! আমরা তোমাদেরকে সৃষ্টি করেছি এক পুরুষ ও এক নারী হতে , আর তোমাদেরকে বিভক্ত করেছি বিভিন্ন জাতি ও গোত্রে, যাতে তোমারা একে অন্যের সাথে পরিচিত হতে পার । তোমাদের মধ্যে আল্লাহর কাছে সে ব্যাক্তিই বেশী মর্যাদাসম্পন্ন যে তোমাদের মধ্যে বেশী তাকওয়াসম্পন্ন। নিশ্চয় আল্লাহ্‌ সর্বজ্ঞ, সম্যক অবহিত।</p><p id="246ffddb-8e1c-4819-a788-15659470dc44" class="">14 বেদুঈনরা বলে, ‘আমারা ঈমান আনলাম ’। বলুন, ‘তোমরা ঈমান আননি, বরং তোমারা বল, ‘আমারা আত্নসমর্পণ করেছি’, কারণ ঈমান এখনো তোমাদের অন্তরে প্রবেশ করেনি। আর যদি তোমরা আল্লাহ্‌ ও তাঁর রাসূলের আনুগত্য কর তবে আমলসমূহের সওয়াব সামান্য পরিমাণও লাঘব করা হবে না। নিশ্চয় আল্লাহ্‌ ক্ষমাশীল, পরম দয়ালু।’</p><p id="826611c6-04b2-4bbd-998c-0e36563ab3df" class="">15 তারাই তো মুমিন, যারা আল্লাহ্‌ ও তঁর রাসূলের প্রতি ঈমান এনেছে, তারপর সন্দেহ পোষণ করেনি এবং তাদের জীবন ও সম্পদ দিয়ে আল্লাহর পথে জিহাদ করেছে, তারাই সত্যনিষ্ঠ।</p><p id="0a5f8845-0226-470a-90d7-57adf3e32d85" class="">16 বলুন, ‘তোমারা কি তোমাদের দ্বীন সম্পর্কে আল্লাহকে অবগত করাচ্ছ? অথচ আল্লাহ জানেন যা কিছু আছে আসমানসমূহে এবং যা কিছু আছে যমীনে। আর আল্লাহ সবকিছু সম্পর্কে সম্যক অবগত।</p><p id="70a358fe-d4f6-415a-a8bf-03f2e236bfcb" class="">17 তারা মনে করে, ইসলাম গ্রহণ করে তারা আপনাকে ধন্য করেছে । বলুন, ‘তোমরা ইসলাম গ্রহণ করে আমাকে ধন্য করেছ মনে করো না, বরং আল্লাহ্ই‌ ঈমানের দিকে পরিচালিত করে তোমাদেরকে ধন্য করেছেন, যদি তোমরা সত্যবাদী হও।’</p><p id="e4d4f9f0-2905-4c96-83ff-c5f3c392de57" class="">18 নিশ্চয় আল্লাহ আসমানসমূহ ও যমীনের গায়েব সম্পর্কে অবগত। আর তোমরা যা কর আল্লাহ তার সম্যক দ্রষ্টা।</p><p id="fccdf22d-3c7b-4b9a-a9e6-adfab82d4226" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

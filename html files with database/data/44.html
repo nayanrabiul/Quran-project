@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>৪৪. আদ-দুখান (ধোঁয়া )	</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3116c762-c016-4738-a1ad-3f8412f31989" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📕</span></div><h1 class="page-title">৪৪. আদ-দুখান (ধোঁয়া )	</h1><p class="page-description"></p></header><div class="page-body"><p id="9facedd0-1210-44a4-8e91-a8e0303b574c" class="">1 হা - মীম।</p><p id="cad5c018-6013-40d6-a32e-9a71c877a3a1" class="">2 শপথ সুস্পষ্ট কিতাবের ।</p><p id="cd52f488-aa47-4387-9079-05431de02aea" class="">3 নিশ্চয় আমরা এটা নাযিল করেছি এক বরকতময় রাতে ; নিশ্চয় আমরা সতর্ককারী।</p><p id="1b7c3c95-6ff2-46f3-b2d4-be629ea8b81b" class="">4 সে রাতে প্রত্যেক বিষয়ের চুড়ান্ত সিদ্ধান্ত স্থিরকৃত হয় ,</p><p id="6001faa0-e37c-4679-88bb-d04eaf1d520b" class="">5 আমাদের আদেশক্রমে, নিশ্চয় আমরা রাসূল প্রেরণকারী</p><p id="26dc2145-13cc-4aee-a821-f04da2ddb33c" class="">6 আপনার রবের রহমতস্বরূপ ; নিশ্চয় তিনি সর্বশ্রোতা, সর্বজ্ঞ</p><p id="fa953b54-6617-4bb2-a121-85b48b4253f7" class="">7 আসমানসমূহ, যমীন ও এ দু’য়ের মধ্যবতী সমস্ত কিছুর রব, যদি তোমরা নিশ্চিত বিশ্বাসী হও।</p><p id="9db03990-e383-475b-b14f-0d4c0c01f79c" class="">8 তিনি ছাড়া কোন সত্য ইলাহ নেই, তিনি জীবন দান করেন এবং তিনিই মৃত্যু ঘটান ; তিনি তোমাদের রব এবং তোমাদের পিতৃপুরুষদেরও রব।</p><p id="df0c500b-ea97-4c73-9877-8f3e738f8992" class="">9 বরং তারা সন্দেহের বশবর্তী হয়ে খেল-তামাসা করছে।</p><p id="64288a72-c11f-426a-9b57-5ec3caa34b21" class="">10 অতএব আপনি অপেক্ষা করুন সে দিনের যেদিন স্পষ্ট ধোঁয়ায় আচ্ছন্ন হবে আকাশ ,</p><p id="fbd5ad37-c4fb-4b9d-a73e-fc4e9a744780" class="">11 তা আবৃত করে ফেলবে লোকদেরকে। এটা যন্ত্রণাদায়ক শাস্তি।</p><p id="a7c6e66d-6eaa-4869-9306-9ef7b89c4e0a" class="">12 (আর তারা বলবে) ‘হে আমাদের রব! আমাদের থেকে শাস্তি দূর করুন, নিশ্চয় আমরা মুমিন হব।’</p><p id="50e2c1bb-3e83-4c48-9a4a-6138fcc3179b" class="">13 তারা কি করে উপদেশ গ্রহণ করবে? অথচ ইতোপূর্বে তাদের কাছে এসেছে স্পষ্ট সতর্ককারি এক রাসূল;</p><p id="6b9511bb-2654-4e82-a7c7-768a7a97e965" class="">14 তারপর তারা তার থেকে মুখ ফিরিয়ে নিয়েছিল এবং বলেছিল, ‘এ এক শিক্ষাপ্রাপ্ত পাগল !’</p><p id="2915165e-acfe-4769-89f3-4e4f1243a969" class="">15 নিশ্চয় আমারা অল্প সময়ের জন্য শাস্তি রহিত করব -- (কিন্তু) নিশ্চয় তোমরা তোমাদের আগের অবস্থায় ফিরে যাবে।</p><p id="ffb5c251-0ca9-4fe2-9b48-e43827a296d2" class="">16 যেদিন আমরা প্রবলভাবে পাকড়াও করব, সেদিন নিশ্চয় আমরা হব প্রতিশোধ গ্রহণকারী।</p><p id="f661da92-74e7-4836-bbb4-070299a387ed" class="">17 আর অবশ্যই এদের আগে আমরা ফির’আউন সম্প্রদায়কে পরীক্ষা করেছিলাম এবং তাদের কাছেও এসেছিলেন এক সম্মানিত রাসূল ,</p><p id="7a9c4cec-faf3-4765-ab6c-ddf9a35a4a2b" class="">18 ‘আল্লাহর বান্দাদেরকে আমার কাছে ফিরিয়ে দাও। নিশ্চয় আমি তোমাদের জন্য এক বিশ্বস্ত রাসূল।’</p><p id="33008c26-a685-41c0-adf0-f3939fa26471" class="">19 ‘আর তোমারা আল্লাহর বিরুদ্ধে ঔদ্ধত্য প্রকাশ করো না, নিশ্চয় আমি তোমাদের কাছে স্পষ্ট প্রমাণ নিয়ে আসব।’</p><p id="afe3e17a-f1a0-4607-afc8-099460c29493" class="">20 ‘আর নিশ্চয় আমি আমার রব ও তোমাদের রবের আশ্রয় প্রার্থনা করছি, যাতে তোমরা আমাকে পাথরের আঘাত হানতে না পার।</p><p id="384032bf-8707-4c76-b72b-ac0a7817d427" class="">21 ‘আর যদি তোমরা আমার কথায় বিশ্বাস স্থাপন না কর, তবে তোমরা আমাকে ছেড়ে যাও।’</p><p id="48ed0b50-8b36-4bb7-afe2-fbf0be176c78" class="">22 অতঃপর মূসা তার রবকে ডাকলেন, ‘নিশ্চয় এরা এক অপরাধী সম্পপ্রদায়।’</p><p id="3d7b684e-f55f-4cbd-844f-a5db82e809c7" class="">23 (আল্লাহ্ বললেন) ‘সুতরাং আপনি আমার বান্দাদেরকে নিয়ে রাতে বের হয়ে পড়ুন, নিশ্চয় তোমাদের পশ্চাদ্ধাবন করা হবে।’</p><p id="f4243f64-5fd3-4547-8f11-f8f342683b45" class="">24 আর সমুদ্রকে স্থির থাকতে দিন , নিশ্চয় তারা হবে এক ডুবন্ত বাহিনী।</p><p id="aabf3dda-931d-49d6-adc7-6ef866c4dbea" class="">25 তারা পিছনে রেখে গিয়েছিল অনেক উদ্যান ও প্রস্রবণ ;</p><p id="13b2f6d7-71bb-4725-96b4-8cb6f9fc5eba" class="">26 শস্যক্ষেত্র ও সুরম্য প্রাসাদ,</p><p id="722f8268-d129-420c-a4dd-85bbe5a9ee7a" class="">27 আর বিলাস উপকরণ, তাতে তারা আনন্দ পেত।</p><p id="f42a5435-6245-4730-90d0-5d4449ca1309" class="">28 এরূপই ঘটেছিল এবং আমরা এ সবকিছুর উত্তরাধিকারী করেছিলাম অন্য সম্প্রদায়কে।</p><p id="6196f5d0-67c8-4015-8bbe-219d2f6c8929" class="">29 আসমান এবং যমীন তাদের জন্য অশ্রুপাত করেনি এবং তারা অবকাশপ্রাপ্তও ছিল না।</p><p id="79abaee3-e0f1-421e-a293-9a3a570be2f0" class="">30 আর অবশ্যই আমারা উদ্ধার করেছিলাম বণী-ইসরাঈলকে লাঞ্ছনাদায়ক শাস্তি হতে,</p><p id="2296351b-bb47-492a-ada4-cdbabfc306f9" class="">31 ফির’আউন থেকে ; নিশ্চয় সে ছিল সীমালঙ্ঘনকারীদের মধ্যে শীর্ষস্থানীয়।</p><p id="cc047a69-57f5-4b4a-b0ea-4601b17858a0" class="">32 আর আমরা জেনে শুনেই তাদেরকে সকল সৃষ্টির উপর নির্বাচিত করেছিলাম।</p><p id="beddb813-a4e6-408a-a609-3900822a8ee5" class="">33 আর আমারা তাদেরকে এমন নিদর্শনাবলী দিয়েছিলাম যাতে ছিল সুস্পষ্ট পরীক্ষা  ;</p><p id="9ce4c997-e20e-4c1b-bcee-9f5e4043fcc6" class="">34 নিশ্চয় তারা বলে থাকে,</p><p id="acc320ca-080f-42bb-9e4a-c8042bcf205f" class="">35 ‘আমাদের প্রথম মৃত্যু ছাড়া আর কিছুই নেই এবং আমরা পুনরূত্থিত হব না।</p><p id="697079a0-187d-4132-93fa-ad6f55631d98" class="">36 ‘অতএব তোমরা যদি সত্যবাদী হও তবে আমাদের পিতৃপুরুষদেরকে নিয়ে আস।’</p><p id="058e3d0a-f3df-45fb-a0b5-1500bcc56a8e" class="">37 তারা কি শ্রেষ্ঠ না তুব্বা সম্প্রদায় ও তাদের পূর্বে যারা ছিল তারা? আমারা তাদেরকে ধ্বংস করেছিলাম। নিশ্চয় তারা ছিল অপরাধী।</p><p id="d3f63e8c-b498-4e8d-887b-c220195f545b" class="">38 আর আমারা আসমানসমূহ,যমীন ও এ দু’য়ের মধ্যকার কোন কিছুই খেলার ছলে সৃষ্টি করিনি;</p><p id="4d85a704-3c01-42ef-ace4-3de0949e6628" class="">39 আমরা এ দু&#x27;টিকে যথাযথভাবেই সৃষ্টি করেছি, কিন্তু তাদের অধিকাংশই তা জানে না।</p><p id="47f98867-b0a2-4596-ba84-33ca11849ef9" class="">40 নিশ্চয় ফয়সালার দিনটি তাদের সবার জন্য নির্ধারিত সময়।</p><p id="2c4386fc-0904-45f2-b713-9e46ef9d33e7" class="">41 সেদিন এক বন্ধু অন্য বন্ধুর কোন কাজে আসবে না এবং তারা সাহায্যও পাবে না।</p><p id="12aab13c-0250-4c6d-aa17-e9069fb3cf6e" class="">42 তবে আল্লাহ যার প্রতি দয়া করেন তার কথা স্বতন্ত্র। নিশ্চয় তিনিই মহাপরাক্রমশালী, পরম দয়ালু।</p><p id="067cb1e2-27c2-466e-aa25-aef0e591c90a" class="">43 নিশ্চয় যাক্কূম গাছ হবে -</p><p id="e4ba523b-c825-4866-b7ac-a258e6cb24cc" class="">44 পাপীর খাদ্য ;</p><p id="cd4a9b03-c877-472f-9093-9da1cd334374" class="">45 গলিত তামার মত, পেটের মধ্যে ফুটতে থাকবে</p><p id="5e3ca568-c841-4ce8-8c13-45ec7afe27aa" class="">46 ফুটন্ত পানি ফুটার মত।</p><p id="1f8349cf-1772-4b07-b21b-922693688cd6" class="">47 (বলা হবে) তাকে ধর এবং টেনে নিয়ে যাও জাহান্নামের মধ্যস্থলে,</p><p id="33d412bd-5a60-40dd-9d67-0f0652faaf23" class="">48 তারপর তার মাথার উপর ফুটন্ত পানির শাস্তি ঢেলে দাও -</p><p id="5f69a0c6-ce7a-4fd4-8109-da8a6034358a" class="">49 (বলা হবে) ‘আস্বাদন কর, নিশ্চয় তুমিই সম্মানিত, অভিজাত !</p><p id="441abe4d-3c85-4ab6-8437-6809b77a3820" class="">50 ‘নিশ্চয় এটা তা-ই, যে বিষয়ে তোমরা সন্দেহ করতে।’</p><p id="bb132b61-4a0f-450b-96c8-b56f9cab44cf" class="">51 নিশ্চয় মুত্তাকীরা থাকবে নিরাপদ স্থানে ,</p><p id="f11451d8-8620-493b-a0dd-d41840510ebd" class="">52 উদ্যান ও ঝর্ণার মাঝে,</p><p id="5b8d9d68-54be-479e-a0b1-6d17008b3814" class="">53 তারা পরবে মিহি ও পুরু রেশমী বস্ত্র এবং বসবে মুখোমুখি হয়ে।</p><p id="5b23045a-3971-4a06-b692-b7e75edbfcac" class="">54 এরূপই ঘটবে ; আর আমরা তাদেরকে বিয়ে দিয়ে দেব ডাগর নয়না হূরদের সাথে,</p><p id="890767de-5989-45dc-89d2-649658e5eb93" class="">55 সেখানে তারা প্রশান্ত চিত্তে বিবিধ ফলমূল আনতে বলবে।</p><p id="166b4fe9-0979-4bae-8c1a-7584809727fc" class="">56 প্রথম মৃত্যুর পর তারা সেখানে আর মৃত্যু আস্বাদন করবে না । আর তিনি তাদেরকে জাহান্নামের শাস্তি হতে রক্ষা করবেন-</p><p id="5969ddf6-c74b-46db-9ff0-48e9aafc9372" class="">57 আপনার রবের অনুগ্রহস্বরূপ । এটাই তো মহাসাফল্য।</p><p id="c6f3ea2d-ffc0-4ee6-ab4b-3222424622d0" class="">58 অতঃপর নিশ্চয় আমরা আপনার ভাষায় কুরআনকে সহজ করে দিয়েছি, যাতে তারা উপদেশ গ্রহণ করে। </p><p id="5d0345ac-3d16-4992-9b5d-2a6ba6786af4" class="">59 কাজেই আপনি প্রতীক্ষা করুন, নিশ্চয় তারাও প্রতীক্ষমাণ।</p><p id="6d00c8e6-e04a-4e84-aeef-aeff37c98fa6" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

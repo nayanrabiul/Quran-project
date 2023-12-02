@@ -1,0 +1,659 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>৭২. আল-জ্বিন (জ্বিন সম্প্রদায় ) .</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="f47dbe51-91d6-43a9-8113-0870ecc64059" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📕</span></div><h1 class="page-title">৭২. আল-জ্বিন (জ্বিন সম্প্রদায় ) .</h1></header><div class="page-body"><p id="8ad2f6e6-3edc-47dc-a791-bf6820727a35" class="">1	বল, আমার প্রতি অহী প্রেরিত হয়েছে যে, জ্বিনদের একটি দল মনোযোগ সহকারে  শুনেছে অতঃপর বলেছে, ‘আমরা তো এক বিস্ময়কর কুরআন শুনেছি। </p><p id="1a8fb2d7-a5f5-4340-b0a7-f5abd93539a6" class="">2	যা সত্য-সঠিক পথ প্রদর্শন করে । ফলে আমরা তাতে বিশ্বাস স্থাপন করেছি। আর আমরা কখনো আমাদের প্রতিপালকের সাথে কোন শরীক স্থাপন করব না। </p><p id="2fb5fe15-569e-4a07-b15d-346d8d8db894" class="">3	এবং নিশ্চয়ই সমুচ্চ আমাদের প্রতিপালকের মর্যাদা; তিনি গ্রহণ করেননি কোন স্ত্রী এবং না কোন সন্তান। </p><p id="3170504f-4f9b-46f0-a706-b875e05a1fe6" class="">4	এবং আমাদের মধ্যকার নির্বোধরা আল্লাহর সম্বন্ধে অতি অবাস্তব উক্তি করত। </p><p id="af41fb9a-620d-4730-8669-d829f0bb3195" class="">5	অথচ আমরা মনে করতাম যে, মানুষ এবং জ্বিন আল্লাহ সম্বন্ধে কখনো মিথ্যা আরোপ করবে না। </p><p id="a13f8a18-5113-4125-81d8-a38d69353eb9" class="">6	আর কিছু কিছু মানুষ কিছু জিনের আশ্রয় নিত, ফলে তারা জিনদের  অহংকার বাড়িয়ে দিত।</p><p id="1c0a8ae7-8733-4a6c-887e-bd41b07a41b7" class="">7      যেমন তোমরা ধারণা কর যে, আল্লাহ কখনই কাউকেও (মৃত্যুর পর) পুনরুত্থিত করবেন না, আর তারাও (মানুষরা) এ ধারণা করে; </p><p id="29adafda-cca0-4d97-b091-136ce221800a" class="">8	এবং আমরা আকাশ পর্যবেক্ষণ করে দেখেছি, কঠোর প্রহরী ও উল্কাপিন্ড দ্বারা তা পরিপূর্ণ। </p><p id="fd18a388-6381-42f8-a158-a0660f8d4c7a" class="">9	আর পূর্বে আমরা আকাশের বিভিন্ন ঘাঁটিতে (সংবাদ) শুনবার জন্য বসতাম, কিন্তু এখন কেউ শুনতে চাইলে সে তার উপর নিক্ষেপের জন্য প্রস্তুত জ্বলন্ত উল্কাপিন্ডের সম্মুখীন হয়।</p><p id="30ad9319-569e-446a-9e4d-c38b2d754b4c" class="">10	আমরা জানি না যে, এর মাধ্যমে পৃথিবীবাসীর অকল্যাণই চাওয়া হচ্ছে, না তাদের প্রতিপালকের তাদেরকে সরল সঠিক পথ দেখাতে চান।</p><p id="583c0527-4080-4c20-855a-326ce04a3e96" class="">11	এবং আমাদের কতক সৎকর্মপরায়ণ এবং কতক এর ব্যতিক্রম, আমরা ছিলাম বিভিন্ন পথের অনুসারী। </p><p id="9acc2b1a-d25e-4be1-9a87-aa90379ffea6" class="">12	(এখন) আমরা বুঝেছি যে, আমরা পৃথিবীতে আল্লাহকে পরাভূত করতে পারব না এবং পলায়ন করেও তাঁকে ব্যর্থ করতে পারব না।</p><p id="814f9dbe-139a-41c4-a342-b687e33e2bf9" class="">13	আমরা যখন পথ-নির্দেশক বাণী শুনলাম, তখন তাতে আমরা বিশ্বাস স্থাপন করলাম। আর যে ব্যক্তি তার রবের উপর বিশ্বাস স্থাপন করে, তার কোন ক্ষতি ও কোন অন্যায়ের আশংকা থাকবে না। </p><p id="2951bbe3-7d57-4b27-beb4-506bfc0ef98d" class="">14	আমাদের কতক আত্মসমর্পণকারী (মুসলিম) এবং কতক সীমালংঘনকারী; সুতরাং যারা আত্মসমর্পণ করে (মুসলমান হয়), তারা নিঃসন্দেহে সত্য পথ বেছে নেয়।</p><p id="1271e0eb-361b-45c9-afc3-e05fdb15d39e" class="">15	অপরপক্ষে সীমালংঘনকারীরা তো জাহান্নামেরই ইন্ধন।’</p><p id="f49ec43d-9976-4319-9c65-28d261f6cc1e" class="">16	আরো বল (আমার কাছে ওয়াহী করা হয়েছে এই) যে , তারা যদি সত্য পথে প্রতিষ্ঠিত থাকত, তাহলে তাদেরকে আমি অবশ্যই প্রচুর পানি পান করাতাম।
+17	যার মাধ্যমে আমি তাদেরকে পরীক্ষা করব।  আর যে ব্যক্তি তার প্রতিপালকের স্মরণ হতে বিমুখ হয়, তিনি তাকে কঠিন শাস্তিতে প্রবেশ করাবেন। </p><p id="cb7bc494-0252-4ca0-8f29-ca3ec4aa837f" class="">18	আর এই যে, মসজিদসমূহ আল্লাহরই জন্য। সুতরাং আল্লাহর সাথে তোমরা অন্য কাউকেও ডেকো না।</p><p id="16b11fb7-4e07-4a13-b604-83bf33059011" class="">19	আর এই যে, যখন আল্লাহর দাস(রসূলুল্লাহ (সা.)) তাঁকে ডাকবার জন্য দন্ডায়মান হল, তখন তারা (কাফিররা)  তার নিকট ভিড় জমাল। </p><p id="785c1d5a-637e-41e4-be02-e5e52893cabb" class="">20	বল, ‘আমি কেবল আমার প্রতিপালককেই ডাকি এবং তাঁর সাথে কাউকেও শরীক করি না।’ </p><p id="d118de19-2770-4784-b088-847d447ea45b" class="">21	বল, ‘আমি তোমাদের অপকার অথবা উপকার ,কোনটারই  মালিক নই।’ </p><p id="ab379928-173b-4be6-9a48-1bbd27e6f66d" class="">22	বল, ‘আল্লাহর শাস্তি হতে কেউই আমাকে রক্ষা করতে পারবে না এবং আল্লাহ ব্যতীত আমি কোন আশ্রয়স্থলও পাব না।</p><p id="3d53eb8e-d97b-4018-bcef-2af32ef1d867" class="">23	শুধু আল্লাহর পক্ষ হতে পৌঁছানো এবং তাঁর বাণী প্রচারই আমার কাজ। যারা আল্লাহ ও তাঁর রসূলকে অমান্য করে, তাদের জন্য রয়েছে জাহান্নামের আগুন, সেখানে তারা চিরস্থায়ী হবে।’</p><p id="ef86443f-fb9f-4488-88de-535e46549d3c" class="">24	এমনকি যখন তারা তাদের প্রতিশ্রুত শাস্তি প্রত্যক্ষ করবে, তখন তারা জানতে পারবে, কে সাহায্যকারী হিসাবে দুর্বল এবং কে সংখ্যায় অল্প। </p><p id="96e6a045-9cd7-4881-a05f-9fc2285b0a93" class="">25	বল, ‘আমি জানি না, তোমাদেরকে যে শাস্তির প্রতিশ্রুতি দেওয়া হয় তা কি আসন্ন কি না , না আমার প্রতিপালক এর জন্য কোন দীর্ঘ মেয়াদ স্থির করবেন?’ </p><p id="300bdb8a-347e-439f-b47a-9064b958dd8f" class="">26	তিনিই অদৃশ্যের জ্ঞানী , তিনি তাঁর  অদৃশ্যের জ্ঞান কারো নিকট প্রকাশ করেন না।
+27	তাঁর মনোনীত রসূল ব্যতীত। সে ক্ষেত্রে আল্লাহ তাঁর রাসূলের সামনে এবং পিছনে প্রহরী নিযুক্ত করেন</p><p id="764ac70a-cea0-42a5-bec6-ae29961bba09" class="">28	যাতে তিনি জেনে নেন, তারা তাদের প্রতিপালকের বাণী পৌঁছিয়ে দিয়েছে; আর তাদের নিকট যা আছে, তা তাঁর জ্ঞানায়ত্ত এবং তিনি প্রত্যেক জিনিসের সংখ্যা গুনে রেখেছেন। </p><p id="136d9db2-b79f-4f36-941b-c0787deb9ccb" class="">
+</p></div></article></body></html>

@@ -1,0 +1,579 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <title>Quran </title>
+      <style>
+         /* cspell:disable-file */
+         /* webkit printing magic: print all background colors */
+         html {
+         -webkit-print-color-adjust: exact;
+         }
+         * {
+         box-sizing: border-box;
+         -webkit-print-color-adjust: exact;
+         }
+         html,
+         body {
+         margin: 0;
+         padding: 0;
+         }
+         @media only screen {
+         body {
+         margin: 2em auto;
+         max-width: 900px;
+         color: rgb(55, 53, 47);
+         }
+         }
+         body {
+         line-height: 1.5;
+         white-space: pre-wrap;
+         }
+         a,
+         a.visited {
+         color: inherit;
+         text-decoration: underline;
+         }
+         .pdf-relative-link-path {
+         font-size: 80%;
+         color: #444;
+         }
+         h1,
+         h2,
+         h3 {
+         letter-spacing: -0.01em;
+         line-height: 1.2;
+         font-weight: 600;
+         margin-bottom: 0;
+         }
+         .page-title {
+         font-size: 2.5rem;
+         font-weight: 700;
+         margin-top: 0;
+         margin-bottom: 0.75em;
+         }
+         h1 {
+         font-size: 1.875rem;
+         margin-top: 1.875rem;
+         }
+         h2 {
+         font-size: 1.5rem;
+         margin-top: 1.5rem;
+         }
+         h3 {
+         font-size: 1.25rem;
+         margin-top: 1.25rem;
+         }
+         .source {
+         border: 1px solid #ddd;
+         border-radius: 3px;
+         padding: 1.5em;
+         word-break: break-all;
+         }
+         .callout {
+         border-radius: 3px;
+         padding: 1rem;
+         }
+         figure {
+         margin: 1.25em 0;
+         page-break-inside: avoid;
+         }
+         figcaption {
+         opacity: 0.5;
+         font-size: 85%;
+         margin-top: 0.5em;
+         }
+         mark {
+         background-color: transparent;
+         }
+         .indented {
+         padding-left: 1.5em;
+         }
+         hr {
+         background: transparent;
+         display: block;
+         width: 100%;
+         height: 1px;
+         visibility: visible;
+         border: none;
+         border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+         }
+         img {
+         max-width: 100%;
+         }
+         @media only print {
+         img {
+         max-height: 100vh;
+         object-fit: contain;
+         }
+         }
+         @page {
+         margin: 1in;
+         }
+         .collection-content {
+         font-size: 0.875rem;
+         }
+         .column-list {
+         display: flex;
+         justify-content: space-between;
+         }
+         .column {
+         padding: 0 1em;
+         }
+         .column:first-child {
+         padding-left: 0;
+         }
+         .column:last-child {
+         padding-right: 0;
+         }
+         .table_of_contents-item {
+         display: block;
+         font-size: 0.875rem;
+         line-height: 1.3;
+         padding: 0.125rem;
+         }
+         .table_of_contents-indent-1 {
+         margin-left: 1.5rem;
+         }
+         .table_of_contents-indent-2 {
+         margin-left: 3rem;
+         }
+         .table_of_contents-indent-3 {
+         margin-left: 4.5rem;
+         }
+         .table_of_contents-link {
+         text-decoration: none;
+         opacity: 0.7;
+         border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+         }
+         table,
+         th,
+         td {
+         border: 1px solid rgba(55, 53, 47, 0.09);
+         border-collapse: collapse;
+         }
+         table {
+         border-left: none;
+         border-right: none;
+         }
+         th,
+         td {
+         font-weight: normal;
+         padding: 0.25em 0.5em;
+         line-height: 1.5;
+         min-height: 1.5em;
+         text-align: left;
+         }
+         th {
+         color: rgba(55, 53, 47, 0.6);
+         }
+         ol,
+         ul {
+         margin: 0;
+         margin-block-start: 0.6em;
+         margin-block-end: 0.6em;
+         }
+         li > ol:first-child,
+         li > ul:first-child {
+         margin-block-start: 0.6em;
+         }
+         ul > li {
+         list-style: disc;
+         }
+         ul.to-do-list {
+         text-indent: -1.7em;
+         }
+         ul.to-do-list > li {
+         list-style: none;
+         }
+         .to-do-children-checked {
+         text-decoration: line-through;
+         opacity: 0.375;
+         }
+         ul.toggle > li {
+         list-style: none;
+         }
+         ul {
+         padding-inline-start: 1.7em;
+         }
+         ul > li {
+         padding-left: 0.1em;
+         }
+         ol {
+         padding-inline-start: 1.6em;
+         }
+         ol > li {
+         padding-left: 0.2em;
+         }
+         .mono ol {
+         padding-inline-start: 2em;
+         }
+         .mono ol > li {
+         text-indent: -0.4em;
+         }
+         .toggle {
+         padding-inline-start: 0em;
+         list-style-type: none;
+         }
+         /* Indent toggle children */
+         .toggle > li > details {
+         padding-left: 1.7em;
+         }
+         .toggle > li > details > summary {
+         margin-left: -1.1em;
+         }
+         .selected-value {
+         display: inline-block;
+         padding: 0 0.5em;
+         background: rgba(206, 205, 202, 0.5);
+         border-radius: 3px;
+         margin-right: 0.5em;
+         margin-top: 0.3em;
+         margin-bottom: 0.3em;
+         white-space: nowrap;
+         }
+         .collection-title {
+         display: inline-block;
+         margin-right: 1em;
+         }
+         .simple-table {
+         margin-top: 1em;
+         font-size: 0.875rem;
+         }
+         .simple-table-header {
+         background: rgb(247, 246, 243);
+         color: black;
+         font-weight: 500;
+         }
+         time {
+         opacity: 0.5;
+         }
+         .icon {
+         display: inline-block;
+         max-width: 1.2em;
+         max-height: 1.2em;
+         text-decoration: none;
+         vertical-align: text-bottom;
+         margin-right: 0.5em;
+         }
+         img.icon {
+         border-radius: 3px;
+         }
+         .user-icon {
+         width: 1.5em;
+         height: 1.5em;
+         border-radius: 100%;
+         margin-right: 0.5rem;
+         }
+         .user-icon-inner {
+         font-size: 0.8em;
+         }
+         .text-icon {
+         border: 1px solid #000;
+         text-align: center;
+         }
+         .page-cover-image {
+         display: block;
+         object-fit: cover;
+         width: 100%;
+         height: 30vh;
+         }
+         .page-header-icon {
+         font-size: 3rem;
+         margin-bottom: 1rem;
+         }
+         .page-header-icon-with-cover {
+         margin-top: -0.72em;
+         margin-left: 0.07em;
+         }
+         .page-header-icon img {
+         border-radius: 3px;
+         }
+         .link-to-page {
+         margin: 1em 0;
+         padding: 0;
+         border: none;
+         font-weight: 500;
+         }
+         p > .user {
+         opacity: 0.5;
+         }
+         td > .user,
+         td > time {
+         white-space: nowrap;
+         }
+         input[type="checkbox"] {
+         transform: scale(1.5);
+         margin-right: 0.6em;
+         vertical-align: middle;
+         }
+         p {
+         margin-top: 0.5em;
+         margin-bottom: 0.5em;
+         }
+         .image {
+         border: none;
+         margin: 1.5em 0;
+         padding: 0;
+         border-radius: 0;
+         text-align: center;
+         }
+         .code,
+         code {
+         background: rgba(135, 131, 120, 0.15);
+         border-radius: 3px;
+         padding: 0.2em 0.4em;
+         border-radius: 3px;
+         font-size: 85%;
+         tab-size: 2;
+         }
+         code {
+         color: #eb5757;
+         }
+         .code {
+         padding: 1.5em 1em;
+         }
+         .code-wrap {
+         white-space: pre-wrap;
+         word-break: break-all;
+         }
+         .code > code {
+         background: none;
+         padding: 0;
+         font-size: 100%;
+         color: inherit;
+         }
+         blockquote {
+         font-size: 1.25em;
+         margin: 1em 0;
+         padding-left: 1em;
+         border-left: 3px solid rgb(55, 53, 47);
+         }
+         .bookmark {
+         text-decoration: none;
+         max-height: 8em;
+         padding: 0;
+         display: flex;
+         width: 100%;
+         align-items: stretch;
+         }
+         .bookmark-title {
+         font-size: 0.85em;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         height: 1.75em;
+         white-space: nowrap;
+         }
+         .bookmark-text {
+         display: flex;
+         flex-direction: column;
+         }
+         .bookmark-info {
+         flex: 4 1 180px;
+         padding: 12px 14px 14px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         }
+         .bookmark-image {
+         width: 33%;
+         flex: 1 1 180px;
+         display: block;
+         position: relative;
+         object-fit: cover;
+         border-radius: 1px;
+         }
+         .bookmark-description {
+         color: rgba(55, 53, 47, 0.6);
+         font-size: 0.75em;
+         overflow: hidden;
+         max-height: 4.5em;
+         word-break: break-word;
+         }
+         .bookmark-href {
+         font-size: 0.75em;
+         margin-top: 0.25em;
+         }
+         .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+         .code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+         .serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+         .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+         .pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+         .pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+         .pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+         .pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+         .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+         .pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+         .pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+         .pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+         .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+         .pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+         .pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+         .pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+         .pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+         .pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+         .pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+         .pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+         .highlight-default {
+         color: rgba(55, 53, 47, 1);
+         }
+         .highlight-gray {
+         color: rgba(120, 119, 116, 1);
+         fill: rgba(145, 145, 142, 1);
+         }
+         .highlight-brown {
+         color: rgba(159, 107, 83, 1);
+         fill: rgba(187, 132, 108, 1);
+         }
+         .highlight-orange {
+         color: rgba(217, 115, 13, 1);
+         fill: rgba(215, 129, 58, 1);
+         }
+         .highlight-yellow {
+         color: rgba(203, 145, 47, 1);
+         fill: rgba(203, 148, 51, 1);
+         }
+         .highlight-teal {
+         color: rgba(68, 131, 97, 1);
+         fill: rgba(108, 155, 125, 1);
+         }
+         .highlight-blue {
+         color: rgba(51, 126, 169, 1);
+         fill: rgba(91, 151, 189, 1);
+         }
+         .highlight-purple {
+         color: rgba(144, 101, 176, 1);
+         fill: rgba(167, 130, 195, 1);
+         }
+         .highlight-pink {
+         color: rgba(193, 76, 138, 1);
+         fill: rgba(205, 116, 159, 1);
+         }
+         .highlight-red {
+         color: rgba(212, 76, 71, 1);
+         fill: rgba(225, 111, 100, 1);
+         }
+         .highlight-gray_background {
+         background: rgba(241, 241, 239, 1);
+         }
+         .highlight-brown_background {
+         background: rgba(244, 238, 238, 1);
+         }
+         .highlight-orange_background {
+         background: rgba(251, 236, 221, 1);
+         }
+         .highlight-yellow_background {
+         background: rgba(251, 243, 219, 1);
+         }
+         .highlight-teal_background {
+         background: rgba(237, 243, 236, 1);
+         }
+         .highlight-blue_background {
+         background: rgba(231, 243, 248, 1);
+         }
+         .highlight-purple_background {
+         background: rgba(244, 240, 247, 0.8);
+         }
+         .highlight-pink_background {
+         background: rgba(249, 238, 243, 0.8);
+         }
+         .highlight-red_background {
+         background: rgba(253, 235, 236, 1);
+         }
+         .block-color-default {
+         color: inherit;
+         fill: inherit;
+         }
+         .block-color-gray {
+         color: rgba(120, 119, 116, 1);
+         fill: rgba(145, 145, 142, 1);
+         }
+         .block-color-brown {
+         color: rgba(159, 107, 83, 1);
+         fill: rgba(187, 132, 108, 1);
+         }
+         .block-color-orange {
+         color: rgba(217, 115, 13, 1);
+         fill: rgba(215, 129, 58, 1);
+         }
+         .block-color-yellow {
+         color: rgba(203, 145, 47, 1);
+         fill: rgba(203, 148, 51, 1);
+         }
+         .block-color-teal {
+         color: rgba(68, 131, 97, 1);
+         fill: rgba(108, 155, 125, 1);
+         }
+         .block-color-blue {
+         color: rgba(51, 126, 169, 1);
+         fill: rgba(91, 151, 189, 1);
+         }
+         .block-color-purple {
+         color: rgba(144, 101, 176, 1);
+         fill: rgba(167, 130, 195, 1);
+         }
+         .block-color-pink {
+         color: rgba(193, 76, 138, 1);
+         fill: rgba(205, 116, 159, 1);
+         }
+         .block-color-red {
+         color: rgba(212, 76, 71, 1);
+         fill: rgba(225, 111, 100, 1);
+         }
+         .block-color-gray_background {
+         background: rgba(241, 241, 239, 1);
+         }
+         .block-color-brown_background {
+         background: rgba(244, 238, 238, 1);
+         }
+         .block-color-orange_background {
+         background: rgba(251, 236, 221, 1);
+         }
+         .block-color-yellow_background {
+         background: rgba(251, 243, 219, 1);
+         }
+         .block-color-teal_background {
+         background: rgba(237, 243, 236, 1);
+         }
+         .block-color-blue_background {
+         background: rgba(231, 243, 248, 1);
+         }
+         .block-color-purple_background {
+         background: rgba(244, 240, 247, 0.8);
+         }
+         .block-color-pink_background {
+         background: rgba(249, 238, 243, 0.8);
+         }
+         .block-color-red_background {
+         background: rgba(253, 235, 236, 1);
+         }
+         .select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+         .select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+         .select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+         .select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+         .select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+         .select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+         .select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+         .select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+         .select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+         .checkbox {
+         display: inline-flex;
+         vertical-align: text-bottom;
+         width: 16;
+         height: 16;
+         background-size: 16px;
+         margin-left: 2px;
+         margin-right: 5px;
+         }
+         .checkbox-on {
+         background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+         }
+         .checkbox-off {
+         background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+         }
+      </style>
+   </head>
+   <body><article id="9313774a-52d5-4f78-9fc4-3c5e7a56d779" class="page sans"><div class="page-body"><figure id="a7b97a31-1979-4c4e-82c2-f4d2d7e9c5f5" class="link-to-page"><a href="data/bongsho.html"><span class="icon">📕</span>নবীর বংশ	</a></figure><figure id="a7b97a31-1979-4c4e-82c2-f4d2d7e9c5f5" class="link-to-page"><a href="data/1.html"><span class="icon">📕</span>১. আল-ফাতিহা (সূচনা )	</a></figure><figure id="8eaaa18c-e6a5-4341-9d62-8101f16c0fe9" class="link-to-page"><a href="data/2.html"><span class="icon">📕</span>২. আল-বাকারা (বকনা-বাছুর ).</a></figure><figure id="046fd25c-84c0-4bbd-9a60-463bc02f64b3" class="link-to-page"><a href="data/3.html"><span class="icon">📕</span>৩. আলে-ইমরান (ইমরানের পরিবার )</a></figure><figure id="134c3aa1-4a41-4c1f-bfde-f250f3661642" class="link-to-page"><a href="data/4.html"><span class="icon">📕</span>৪. আন-নিসা (মহিলা )</a></figure><figure id="e3d71c59-3f47-4264-9e94-8d1b233f2cb1" class="link-to-page"><a href="data/5.html"><span class="icon">📕</span>৫. আল-মায়েদা(খাদ্য পরিবেশিত টেবিল )</a></figure><figure id="93ea12fc-4006-4b07-b591-88a79ea95104" class="link-to-page"><a href="data/6.html"><span class="icon">📕</span>৬. আল-আন&#x27;আম (গৃৃহপালিত পশু )</a></figure><figure id="51337b4d-5f46-4759-9ac6-f5f3b138ab4a" class="link-to-page"><a href="data/7.html"><span class="icon">📕</span>৭. আল-আ&#x27;রাফ (উচু স্থানসমূহ ) .</a></figure><figure id="905ef486-2eac-481d-8ca5-9af6fae98fce" class="link-to-page"><a href="data/8.html"><span class="icon">📕</span>৮. আল-আনফাল (যুদ্ধে-লব্ধ ধনসম্পদ )</a></figure><figure id="b65f5cc5-a64f-432e-8d25-79eb08fa9a8a" class="link-to-page"><a href="data/9.html"><span class="icon">📕</span>৯. আত তাওবা ( আনুশুচনা)</a></figure><figure id="a01b5466-9802-4549-bd24-a92e7e904657" class="link-to-page"><a href="data/10.html"><span class="icon">📕</span>১০. ইউনুস (নবী ইউনুস (আ.) ).</a></figure><figure id="350216bb-138c-4cbc-a4f1-b02620c958c7" class="link-to-page"><a href="data/11.html"><span class="icon">📕</span>১১. হূদ (নবী হুদ ). </a></figure><figure id="3d81f92c-5c69-4435-af12-b50ed0ed60a5" class="link-to-page"><a href="data/12.html"><span class="icon">📕</span>১২. ইউসুফ (নবী ইউসুফ (আ.) ). </a></figure><figure id="081c473a-37f7-449c-8abf-f9143ae896d4" class="link-to-page"><a href="data/13.html"><span class="icon">📕</span>১৩. আর-রাদ (বজ্রনাদ ) .</a></figure><figure id="20414496-d415-4a38-b210-297817592d70" class="link-to-page"><a href="data/14.html"><span class="icon">📕</span>১৪. ইবরাহীম (নবী ইব্রাহিম (আ.) ). </a></figure><figure id="1352c596-28a4-41df-a324-b7ca268a8a00" class="link-to-page"><a href="data/15.html"><span class="icon">📕</span>১৫. আল-হিজর (পাথুরে পাহাড় )</a></figure><figure id="315325d1-78d6-4713-a53d-d4bd74748b44" class="link-to-page"><a href="data/16.html"><span class="icon">📕</span>১৬ আন-নাহল ( মৌমাছি )</a></figure><figure id="d45e7cd6-59cc-4953-bc7d-0ef88c3a8180" class="link-to-page"><a href="data/17.html"><span class="icon">📕</span>১৭. আল-ইসরা (বনী-ইসরাঈল) (রাতের সফর (ইসরায়েলের সন্তানগণ [ইহুদী জাতি]) .</a></figure><figure id="8547a0fe-25fc-46f6-8e31-e664d479d440" class="link-to-page"><a href="data/18.html"><span class="icon">📕</span>১৮. আল-কাহফ (গুহ) .</a></figure><figure id="5e932f00-33d3-4997-8732-2ec760cc99e7" class="link-to-page"><a href="data/19.html"><span class="icon">📕</span>১৯. মারইয়াম (মারিয়াম [নবী ঈসা (আ.) এর মা] )</a></figure><figure id="97cf1776-5b9e-479d-b65d-913b984dae8f" class="link-to-page"><a href="data/20.html"><span class="icon">📕</span>২০. ত্ব-হা (ত্বোয়া-হা )</a></figure><figure id="5212685a-8348-4c79-b8fa-294f1b0a4f7e" class="link-to-page"><a href="data/21.html"><span class="icon">📕</span>২১. আল-আম্বিয়া (নবীগণ )  . </a></figure><figure id="d9f57a8c-7f36-48aa-a4e4-dd26a7def55d" class="link-to-page"><a href="data/22.html"><span class="icon">📕</span>২২. আল-হজ্জ ( হজ্জ (হজ) )</a></figure><figure id="2cdefbf9-c0ab-48cb-bb5a-edbe3555996c" class="link-to-page"><a href="data/23.html"><span class="icon">📕</span>২৩. আল-মুমিনুন (বিশ্বাসীগণ )	 .</a></figure><figure id="e311b123-12d5-42af-b5f5-46829732d9ba" class="link-to-page"><a href="data/24.html"><span class="icon">📕</span>২৪. আন-নূর (আলো,জ্যোতি )</a></figure><figure id="0ddba4cb-c9ea-49ef-938e-bb29a071aabf" class="link-to-page"><a href="data/25.html"><span class="icon">📕</span>২৫. আল-ফুরকান (সত্য মিথ্যার পার্থক্য নির্ধারণকারী গ্রন্থ ) .</a></figure><figure id="fb7c92c1-132f-44a1-9d21-f91b2ae63757" class="link-to-page"><a href="data/26.html"><span class="icon">📕</span>২৬. আশ-শুআ&#x27;রা (কবিগণ )</a></figure><figure id="04c48063-a62b-4a31-b76c-74afc98894f2" class="link-to-page"><a href="data/27.html"><span class="icon">📕</span>২৭. আন-নামাল (পিপীলিকা (পিঁপড়া) ) .</a></figure><figure id="309bc4e1-ed43-4152-a3d0-110a794d1c52" class="link-to-page"><a href="data/28.html"><span class="icon">📕</span>২৮. আল-কাসাস (ঘটনা,কাহিনী ). </a></figure><figure id="efb7d7a0-92d8-4435-b976-41873a6debf9" class="link-to-page"><a href="data/29.html"><span class="icon">📕</span>২৯. আল-আনকাবূত (মাকড়সা ). </a></figure><figure id="d011c2a1-96d6-484c-a4b0-236d6cb56031" class="link-to-page"><a href="data/30.html"><span class="icon">📕</span>৩০. আর-রুম (রোমান জাতি ). </a></figure><figure id="9cc2434f-bbf1-4877-a264-c725a7f30f3c" class="link-to-page"><a href="data/31.html"><span class="icon">📕</span>৩১. লুকমান (একজন জ্ঞানী ব্যক্তি ).</a></figure><figure id="1dbcf73a-4218-42f3-ae0b-8b7c07999c64" class="link-to-page"><a href="data/32.html"><span class="icon">📕</span>৩২. আস-সাজদাহ (সিজদাহ ) .</a></figure><figure id="4e272d51-140c-4e63-95b4-84b471f2f45f" class="link-to-page"><a href="data/33.html"><span class="icon">📕</span>৩৩. আল-আহযাব (জোট )</a></figure><figure id="a542d62c-64fa-4002-8eb9-dd0741518883" class="link-to-page"><a href="data/34.html"><span class="icon">📕</span>৩৪. সাবা (রানী সাবা ).</a></figure><figure id="9f01ded3-d1db-40ce-900b-323d88d3df57" class="link-to-page"><a href="data/35.html"><span class="icon">📕</span>৩৫. ফাতির (আদি স্রষ্টা )	.</a></figure><figure id="3d601a8b-dff9-433b-a8c6-032f3a897cef" class="link-to-page"><a href="data/36.html"><span class="icon">📕</span>৩৬. ইয়াসীন (ইয়াসীন )</a></figure><figure id="e22ca54a-f0fb-44fc-b918-8f05ea0d7acb" class="link-to-page"><a href="data/37.html"><span class="icon">📕</span>৩৭. আস-সাফফাত (সারিবদ্ধভাবে দাড়ানো )</a></figure><figure id="27734cfb-57ae-43fc-bb15-8590371093bf" class="link-to-page"><a href="data/38.html"><span class="icon">📕</span>৩৮. সোয়াদ (আরবি বর্ণ )</a></figure><figure id="376a86da-4f15-47c7-91db-493447ea8f78" class="link-to-page"><a href="data/39.html"><span class="icon">📕</span>৩৯. আয-যুমার (দল-বদ্ধ জনতা ).  </a></figure><figure id="1febcd9d-07af-4d15-be1d-6ef6a3722307" class="link-to-page"><a href="data/40.html"><span class="icon">📕</span>৪০. গাফির (পরম ক্ষমাশীল (বিশ্বাসী) ). </a></figure><figure id="5bf8dd39-08a7-4145-ad03-003eedc6c3ca" class="link-to-page"><a href="data/41.html"><span class="icon">📕</span>৪১. হা-মীম আস-সাজদা (ফুসসিলাত) (সুস্পষ্ট বিবরণ ) .</a></figure><figure id="1cdcfa0c-9e3c-4980-9b6c-ea0b9c2f8af1" class="link-to-page"><a href="data/42.html"><span class="icon">📕</span>৪২. আশ-শূরা (পরামর্শ ).</a></figure><figure id="4642b6ff-2583-44d8-93ac-c0e700ca2397" class="link-to-page"><a href="data/43.html"><span class="icon">📕</span>৪৩. আয-যুখরুফ (সোনাদানা ) .</a></figure><figure id="7848fb8e-2468-4abc-9987-08ff0a2373ec" class="link-to-page"><a href="data/44.html"><span class="icon">📕</span>৪৪. আদ-দুখান (ধোঁয়া )	</a></figure><figure id="73457be3-c7f0-4b7c-8d16-b427e51a60df" class="link-to-page"><a href="data/45.html"><span class="icon">📕</span>৪৫. আল-জাসিয়া (নতজানু ). </a></figure><figure id="b17e1186-061d-4a41-a815-a5c70b1a3830" class="link-to-page"><a href="data/46.html"><span class="icon">📕</span>৪৬. আল-আহকাফ (বালুর পাহাড় )</a></figure><figure id="84ce7853-ea77-413a-bd1e-aab23204fb76" class="link-to-page"><a href="data/47.html"><span class="icon">📕</span>৪৭. মুহাম্মাদ (মুহাম্মদ (সা.) ) .	</a></figure><figure id="142fada2-c01d-4bbd-b134-7cef17b68ef5" class="link-to-page"><a href="data/48.html"><span class="icon">📕</span>৪৮. আল-ফাতহ (বিজয় (মক্কা বিজয়) )</a></figure><figure id="6a9d178a-395f-4600-8d0e-cb6e60398752" class="link-to-page"><a href="data/49.html"><span class="icon">📕</span>৪৯. আল-হুজুরাত (বাসগৃহসমূূহ )</a></figure><figure id="99d85218-6397-459b-838a-d9e405f79964" class="link-to-page"><a href="data/50.html"><span class="icon">📕</span>৫০. কাফ (আরবি বর্ণ ক্বাফ )</a></figure><figure id="7910368c-9e73-4681-887d-b72b62328fb7" class="link-to-page"><a href="data/51.html"><span class="icon">📕</span>৫১. আয-যারিয়াত ( বিক্ষেপকারী বাতাস )</a></figure><figure id="df00a5c1-7960-48df-854e-a3c11dab4c54" class="link-to-page"><a href="data/52.html"><span class="icon">📕</span>৫২. আত-তূর (তূর পাহাড় )</a></figure><figure id="bd4058b4-e0f0-48b5-8998-86946f5be2e2" class="link-to-page"><a href="data/53.html"><span class="icon">📕</span>৫৩. আন-নাজম (তারা )</a></figure><figure id="d18eb1cf-a877-4f0f-ab5d-8162bcec86ad" class="link-to-page"><a href="data/54.html"><span class="icon">📕</span>৫৪. আল-কামার (চন্দ্র )</a></figure><figure id="12558ef6-db23-40f4-9921-0a8c83b068f8" class="link-to-page"><a href="data/55.html"><span class="icon">📕</span>৫৫. আর-রাহমান (অনন্ত করুণাময় )</a></figure><figure id="dd0a14a7-44b3-4b75-92e5-400b0380c011" class="link-to-page"><a href="data/56.html"><span class="icon">📕</span>৫৬. আল-ওয়াকিয়া (নিশ্চিত ঘটনা )</a></figure><figure id="b7582a66-ed78-47de-a4f0-e655112cbb07" class="link-to-page"><a href="data/57.html"><span class="icon">📕</span>৫৭. আল-হাদীদ (লোহা )</a></figure><figure id="47d99b58-7500-4bbe-a7e4-29006221f9ff" class="link-to-page"><a href="data/58.html"><span class="icon">📕</span>৫৮. আল-মুজাদালা (অনুযোগকারিণী )</a></figure><figure id="437d378d-9100-48ee-92f5-d73932ca76a3" class="link-to-page"><a href="data/59.html"><span class="icon">📕</span>৫৯. আল-হাশর (সমাবেশ )</a></figure><figure id="d3ef4749-447c-437c-a2da-c15292ad3ae9" class="link-to-page"><a href="data/60.html"><span class="icon">📕</span>৬০. আল-মুমতাহিনা (নারী, যাকে পরীক্ষা করা হবে )</a></figure><figure id="9b43e81f-b71f-4cf3-a62f-cfd288bf8420" class="link-to-page"><a href="data/61.html"><span class="icon">📕</span>৬১. আস-সফ (সারবন্দী সৈন্যদল )</a></figure><figure id="704417e7-1916-4b50-b9ca-a8a574dd6b04" class="link-to-page"><a href="data/62.html"><span class="icon">📕</span>৬২. আল-জুমু&#x27;আ (সম্মেলন/শুক্রবার )</a></figure><figure id="57863b88-0953-49b4-9e98-b19f626b0193" class="link-to-page"><a href="data/63.html"><span class="icon">📕</span>৬৩. আল-মুনাফিকূন (কপট বিশ্বাসীগণ )</a></figure><figure id="32cb90ca-4d18-4222-a629-e7dc1c2f6c2a" class="link-to-page"><a href="data/64.html"><span class="icon">📕</span>৬৪. আত-তাগাবুন (মোহ অপসারণ )</a></figure><figure id="32cb90ca-4d18-4222-a629-e7dc1c2f6c2a" class="link-to-page"><a href="data/65.html"><span class="icon">📕</span>৬৫. আত-ত্বলাক্ব (তালাক,বন্ধনমুক্তি )</a></figure><figure id="48bf1372-9a3f-4ac6-bd17-1c1587fda651" class="link-to-page"><a href="data/66.html"><span class="icon">📕</span>৬৬. আত-তাহরীম (নিষিদ্ধকরণ )</a></figure><figure id="41a31b94-5159-47db-baad-d41c47bba0e1" class="link-to-page"><a href="data/67.html"><span class="icon">📕</span>৬৭. আল-মুলক (সার্বভৌম কর্তৃত্ব ) .</a></figure><figure id="0ef52709-7fef-4027-83e5-9a08366612cf" class="link-to-page"><a href="data/68.html"><span class="icon">📕</span>৬৮. আল-কলম (কলম )</a></figure><figure id="9ad2ee26-6aed-43d6-9ef9-6ceadb01d46a" class="link-to-page"><a href="data/69.html"><span class="icon">📕</span>৬৯. আল-হাক্কাহ(নিশ্চিত সত্য )</a></figure><figure id="9eb6ad1a-4e81-4569-85b7-8610b9e4114e" class="link-to-page"><a href="data/70.html"><span class="icon">📕</span>৭০. আল-মা&#x27;আরিজ (উন্নয়নের সোপান )	</a></figure><figure id="d880ef03-b9bd-4af4-853e-e4dfb2cefac5" class="link-to-page"><a href="data/71.html"><span class="icon">📕</span>৭১. নূহ (নূহ (আ.) )</a></figure><figure id="f47dbe51-91d6-43a9-8113-0870ecc64059" class="link-to-page"><a href="data/72.html"><span class="icon">📕</span>৭২. আল-জ্বিন (জ্বিন সম্প্রদায় ) .</a></figure><figure id="23edb494-730c-466a-b481-46239d0d58e3" class="link-to-page"><a href="data/73.html"><span class="icon">📕</span>৭৩. আল-মুযযাম্মিল (বস্ত্র আচ্ছাদনকারী )</a></figure><figure id="489c0da2-5b19-42ab-8e64-b10d8bd39c4e" class="link-to-page"><a href="data/74.html"><span class="icon">📕</span>৭৪. আল-মুদ্দাসসির ( )</a></figure><figure id="0807d271-2ad4-4225-b94c-7e887ada1ddf" class="link-to-page"><a href="data/75.html"><span class="icon">📕</span>৭৫. আল-ক্বিয়ামাহ (পুনরুত্থান )</a></figure><figure id="662c379d-3302-4b7e-9753-a0001ba6bbb8" class="link-to-page"><a href="data/76.html"><span class="icon">📕</span>৭৬. আল-ইনসান (আদ-দাহর) (মানুষ )</a></figure><figure id="ef25afc0-0c17-4b0f-8f1f-30c57f868c8c" class="link-to-page"><a href="data/77.html"><span class="icon">📕</span>৭৭. আল-মুরসালাত (প্রেরিত পুরুষবৃন্দ )</a></figure><figure id="1659bea8-e5f0-4622-ad92-553beedc6b8a" class="link-to-page"><a href="data/78.html"><span class="icon">📕</span>৭৮. আন-নাবা (মহাসংবাদ 	)</a></figure><figure id="08910d5b-55fb-4351-a9fd-d9402afb09e6" class="link-to-page"><a href="data/79.html"><span class="icon">📕</span>৭৯. আন-নাযি&#x27;আত (প্রচেষ্টাকারী )</a></figure><figure id="35e10932-6844-4bc9-a733-ca88513540db" class="link-to-page"><a href="data/80.html"><span class="icon">📕</span>৮০. আবাসা (তিনি ভ্রুকুটি করলেন )</a></figure><figure id="b345d5d0-3cf9-447b-9b23-cc0063e8ebe0" class="link-to-page"><a href="data/81.html"><span class="icon">📕</span>৮১. আত-তাকভীর (অন্ধকারাচ্ছন্ন )</a></figure><figure id="b28094ba-d348-4998-8d90-681379c2cd47" class="link-to-page"><a href="data/82.html"><span class="icon">📕</span>৮২. আল-ইনফিতার (বিদীর্ণ করা )</a></figure><figure id="ed69604a-5825-44c2-a58e-49d19b1cfb8f" class="link-to-page"><a href="data/83.html"><span class="icon">📕</span>৮৩. আল-মুতাফফিফীন (প্রতারকগণ )</a></figure><figure id="a9570d4f-1966-4722-bae5-f2916287ced1" class="link-to-page"><a href="data/84.html"><span class="icon">📕</span>৮৪. আল-ইনশিকাক (খন্ড-বিখন্ড করণ )</a></figure><figure id="d03bbc67-0c73-46e4-9c7b-16ffa08014c0" class="link-to-page"><a href="data/85.html"><span class="icon">📕</span>৮৫. আল-বুরুজ (নক্ষত্রপুঞ্জ )	</a></figure><figure id="cb551d40-6f89-49c8-ab6a-47fe6ba5e4e6" class="link-to-page"><a href="data/86.html"><span class="icon">📕</span>৮৬. আত-তারিক (রাতের আগন্তুক )</a></figure><figure id="3d87056d-be6d-48f2-8800-a184260dcdac" class="link-to-page"><a href="data/87.html"><span class="icon">📕</span>৮৭. আল-আ&#x27;লা  ( সর্বোর্ধ্ব )</a></figure><figure id="64039d28-e86d-4034-96c8-0b2a72993d09" class="link-to-page"><a href="data/88.html"><span class="icon">📕</span>৮৮. আল-গাশিয়া (বিহ্বলকর ঘটনা )</a></figure><figure id="153e73d9-958f-4a87-ad35-5d68b3599215" class="link-to-page"><a href="data/89.html"><span class="icon">📕</span>৮৯. আল-ফাজর(ভোরবেলা )</a></figure><figure id="6faa1a01-782f-4f4a-8583-1bdf714fe9eb" class="link-to-page"><a href="data/90.html"><span class="icon">📕</span>৯০. আল-বালাদ (নগর/শহর )</a></figure><figure id="27d25a3f-c9e5-4244-8a84-7b5eb88155eb" class="link-to-page"><a href="data/91.html"><span class="icon">📕</span>৯১. আশ-শামস(সূর্য্য )	</a></figure><figure id="c09d5963-1bc7-4318-9aa4-666b214578cc" class="link-to-page"><a href="data/92.html"><span class="icon">📕</span>৯২. আল-লাইল (রাত্রি )</a></figure><figure id="26f0aa4a-9516-4365-8ae9-3198c20e6e9f" class="link-to-page"><a href="data/93.html"><span class="icon">📕</span>৯৩. আদ-দুহা (পূর্বাহ্নের সূর্যকিরণ )</a></figure><figure id="5249a1fd-f1f3-4e0a-b9b3-a76e6f450170" class="link-to-page"><a href="data/94.html"><span class="icon">📕</span>৯৪. আল-ইনশিরাহ (বক্ষ প্রশস্তকরণ)</a></figure><figure id="dec69af1-75bc-4594-90ca-63416b5f9f49" class="link-to-page"><a href="data/95.html"><span class="icon">📕</span>৯৫. আত-ত্বীন (ত্বীন ফল )</a></figure><figure id="f7e5c1cf-07b6-4f12-aa61-2ac6bf9fc908" class="link-to-page"><a href="data/96.html"><span class="icon">📕</span>৯৬. আল-আলাক (রক্তপিন্ড )</a></figure><figure id="48cf1da6-5e73-4b64-bcb6-e978d3bc5ce2" class="link-to-page"><a href="data/97.html"><span class="icon">📕</span>৯৭. আল-কাদর (পরিমাণ )</a></figure><figure id="4473f678-27f3-4db3-9e66-f83386bf4143" class="link-to-page"><a href="data/98.html"><span class="icon">📕</span>৯৮. আল-বায়্যিনাহ (সুস্পষ্ট প্রমাণ )</a></figure><figure id="8c0dcc89-f0e3-4289-8149-9db9c2ff3b38" class="link-to-page"><a href="data/99.html"><span class="icon">📕</span>৯৯. আয-যিলযাল (ভূমিকম্প )	</a></figure><figure id="52a51b0f-1844-417a-9cb3-4b3a3009c31b" class="link-to-page"><a href="data/100.html"><span class="icon">📕</span>১০০. আল-আদিয়াত ((অভিযানকারী )</a></figure><figure id="44a829cb-eb20-4eac-b516-3d0e336ef039" class="link-to-page"><a href="data/101.html"><span class="icon">📕</span>১০১. আল-কারি&#x27;আ (মহাসংকট )</a></figure><figure id="45110013-51fb-48be-9e96-b830d9e74981" class="link-to-page"><a href="data/102.html"><span class="icon">📕</span>১০২. আত-তাকাসুর (প্রাচুর্য্যের প্রতিযোগিতা )</a></figure><figure id="a67ee919-d6e5-4900-b7d1-b351fdf97de0" class="link-to-page"><a href="data/103.html"><span class="icon">📕</span>১০৩. আল-আসর (অপরাহ্ন )</a></figure><figure id="78e45971-9764-4ada-8232-3ffb03727f0b" class="link-to-page"><a href="data/104.html"><span class="icon">📕</span>১০৪. আল-হুমাযা(পরনিন্দাকারী )</a></figure><figure id="1989d46c-e107-461f-a436-f4f68ea236ec" class="link-to-page"><a href="data/105.html"><span class="icon">📕</span>১০৫. আল-ফীল (হাতি )</a></figure><figure id="ec810c27-5d1a-4a84-9f44-5bfdaf34b516" class="link-to-page"><a href="data/106.html"><span class="icon">📕</span>১০৬. আল-কুরাইশ (কুরাইশ গোত্র )</a></figure><figure id="16ce7fca-78fb-4fb4-9426-f00f28cd1bf9" class="link-to-page"><a href="data/107.html"><span class="icon">📕</span>১০৭. আল-মাঊন (সাহায্য-সহায়তা )</a></figure><figure id="8830c25a-f554-450e-a1b5-be2eb8a81e25" class="link-to-page"><a href="data/108.html"><span class="icon">📕</span>১০৮. আল-কাউসার (প্রাচুর্য )</a></figure><figure id="32743d04-e2dc-479f-9f17-fa7f9a29da9b" class="link-to-page"><a href="data/109.html"><span class="icon">📕</span>১০৯. কাফিরুন (অস্বীকারকারীগণ )</a></figure><figure id="bb8e6dff-5874-4411-a596-0b99f4c68e36" class="link-to-page"><a href="data/110.html"><span class="icon">📕</span>১১০. আন-নাসর (বিজয়,সাহায্য )</a></figure><figure id="5093df8f-636a-47c2-9861-e7e051170142" class="link-to-page"><a href="data/111.html"><span class="icon">📕</span>১১১. আল-মাসাদ (জ্বলন্ত অঙ্গার )</a></figure><figure id="2276a1c3-6e6e-4a73-9a70-7bc99a9c7c1d" class="link-to-page"><a href="data/112.html"><span class="icon">📕</span>১১২. আল-ইখলাস (একনিষ্ঠতা )</a></figure><figure id="d9895bec-7ee7-40a5-a09e-69ac45cad44b" class="link-to-page"><a href="data/113.html"><span class="icon">📕</span>১১৩. আল-ফালাক (নিশিভোর )</a></figure><figure id="43f56048-d98e-4ea0-b203-a1fddd4d76d3" class="link-to-page"><a href="data/114.html"><span class="icon">📕</span>১১৪. আন-নাস (মানবজাতি )</a></figure><p id="3589e8e1-2e14-436e-bec0-0105a9af4f57" class=""></p>
+         </div>
+      </article>
+   </body>
+</html>

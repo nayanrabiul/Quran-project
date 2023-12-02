@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>৫৭. আল-হাদীদ (লোহা )</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ef2b00e0-07a7-42d1-a35e-f51a01d89428" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📕</span></div><h1 class="page-title">৫৭. আল-হাদীদ (লোহা )</h1><p class="page-description"></p></header><div class="page-body"><p id="e290d754-edf5-4c99-b0a2-573bcf49f874" class="">1 আসমানসমূহ ও যমীনে যা কিছু আছে সবই আল্লাহর পবিত্রতা ও মহিমা ঘোষণা করে। আর তিনি পরাক্রমশালী, প্রজ্ঞাময় ।</p><p id="3d3c89ef-840c-47b9-86c1-6c061eff54bd" class="">2 আসমানসমূহ ও যমীনের সর্বময় কর্তৃত্ব তাঁরই ; তিনি জীবন দান করেন এবং মৃত্যু ঘটান; আর তিনিই সবকিছুর উপর ক্ষমতাবান।</p><p id="9c7be947-deef-4cce-ac37-c3f13a48bddd" class="">3 তিনিই প্রথম ও শেষ ; তিনিই প্রকাশ্য ও তিনিই গোপন আর তিনি সবকিছু সম্পর্কে সম্যক অবগত ।</p><p id="593cddc6-1daa-40eb-be92-29c263f7a41a" class="">4 তিনি ছয় দিনে আসমানসমূহ ও যমীন সৃষ্টি করেছেন; তারপর তিনি ‘আরশের উপর উঠেছেন। তিনি জানেন যা কিছু যমীনে প্রবেশ করে এবং যা কিছু তা থেকে বের হয়, আর আসমান থেকে যা কিছু অবতীর্ণ হয় এবং তাতে যা কিছু উত্থিত হয় । আর তোমরা যেখানেই থাক না কেন--তিনি তোমাদের সঙ্গে আছেন, আর তোমরা যা কিছুই কর না কেন,আল্লাহ তার সম্যক দ্রষ্টা ।</p><p id="7c51199c-8737-4d6c-8e5f-8b03c6742ecb" class="">5 আসমানসমূহ ও যমীনের সর্বময় কর্তৃত্ব তাঁরই এবং আল্লাহ্‌রই দিকে সব বিষয় প্রত্যাবর্তিত হবে।</p><p id="7ca93918-e9bd-4534-bcd3-2d5cfd09f0b1" class="">6 তিনিই রাতকে প্রবেশ করান দিনে আর দিনকে প্ৰবেশ করান রাতে এবং তিনি অন্তরের বিষয়াদি সম্পর্কে সম্যক অবগত।</p><p id="9013862d-f497-4f99-ab7b-d2f28da92e21" class="">7 তোমরা আল্লাহ ও তাঁর রাসূলের প্রতি ঈমান আন এবং আল্লাহ তোমাদেরকে যা কিছুর উত্তরাধিকারী করেছেন তা হতে ব্যয় কর। অতঃপর তোমাদের মধ্যে যারা ঈমান আনে ও ব্যয় করে, তাদের জন্য রয়েছে মহাপুরস্কার।</p><p id="7c14582e-1fcb-4fbd-8aca-7e42af79d4f8" class="">8 আর তোমাদের কি হল যে, তোমরা আল্লাহর উপর ঈমান আন না? অথচ রাসূল তোমাদেরকে তোমাদের রবের প্রতি ঈমান আনার জন্য ডাকছেন, অথচ আল্লাহ তোমাদের কাছ থেকে অঙ্গীকার গ্রহণ করেছেন , যদি তোমারা ঈমানদার হও ।</p><p id="8cd1ed2f-2bf4-472b-a810-ef7fd2aebf91" class="">9 তিনিই তাঁর বান্দার প্রতি সুস্পষ্ট আয়াত নাযিল করেন, তোমাদেরকে অন্ধকার হতে আলোতে আনার জন্য। আর নিশ্চয় আল্লাহ্‌ তোমাদের প্রতি করুণাময়, পরম দয়ালু।</p><p id="136ca54e-ca69-4151-8ca5-3a325d967f44" class="">10 আর তোমাদের কি হলো যে, তোমরা আল্লাহর পথে ব্যয় করছ না? অথচ আসমানসমূহ ও যমীনের মীরাস তো আল্লাহ্‌রই। তোমাদের মধ্যে যারা বিজয়ের আগে ব্যয় করেছে ও যুদ্ধ করছে,তারা (এবং পরবর্তীরা) সমান নয় । তারা মর্যাদায় শ্রেষ্ঠ তাদের চেয়ে যারা পরবর্তী কালে ব্যয় করেছে ও যুদ্ধ করেছে। তবে আল্লাহ্‌ উভয়ের জন্যই কল্যাণের প্রতিশ্রুতি দিয়েছেন। আর তোমারা যা কর আল্লাহ্‌ সে সম্পর্কে সবিশেষ অবহিত।</p><p id="efe8085a-e566-4484-b508-523ae859ddb1" class="">11 এমন কে আছে যে আল্লাহকে দেবে উত্তম ঋণ? তাহলে তিনি বহু গুণ এটাকে বৃদ্ধি করবেন। আর তার জন্য রয়েছে সম্মানজনক পুরুস্কার ।</p><p id="257462b6-9647-4681-b37e-d95139019361" class="">12 সেদিন আপনি দেখবেন মুমিন নর-নারীদেরকে তাদের সামনে ও ডানে তাদের নূর ছুটতে থাকবে । বলা হবে, ‘আজ তোমাদের জন্য সুসংবাদ জান্নাতের, যার পাদদেশে নদী প্রবাহিত, সেখানে তোমরা স্থায়ী হবে, এটাই তো মহাসাফল্য।’</p><p id="73975995-75b4-43da-8a7b-f0f90cc21f37" class="">13 সেদিন মুনাফিক পুরুষ ও মুনাফিক নারীরা ঈমানদারদেরকে বলবে, ‘তোমরা আমাদের জন্য একটু থাম, যাতে আমরা তোমাদের নূরের কিছু গ্ৰহণ করতে পারি।’ বলা হবে, ‘তোমরা তোমাদের পিছনে ফিরে যাও ও নূরের সন্ধান কর।’ তারপর উভয়ের মাঝামাঝি স্থাপিত হবে একটি প্রাচীর যাতে একটি দরজা থাকবে, যার ভিতরে থাকবে রহমত এবং বাইরে থাকবে শাস্তি ।</p><p id="b50df4d7-892e-47ce-9a15-5c79ea6fdf1b" class="">14 মুনাফিকরা মুমিনদেরকে ডেকে জিজ্ঞেস করবে,  ‘আমারা কি তোমাদের সঙ্গে ছিলাম না?’ তারা বলবে, ‘হ্যাঁ, কিন্তু তোমারা নিজেরাই নিজেদেরকে বিপদগ্ৰস্ত করেছ। আর তোমরা প্ৰতীক্ষা করেছিলে, সন্দেহ পোষণ করেছিলে এবং অলীক আকাংখা তোমাদেরকে মোহাচ্ছন্ন করে রেখেছিল, অবশেষে আল্লাহর হুকুম আসল। আর মহাপ্ৰতারক তোমাদেরকে প্রতারিত করেছিল আল্লাহ সম্পর্কে।’</p><p id="5b2c7946-1e33-4b85-be9e-15e94e6d79ff" class="">15 ‘সুতরাং আজ তোমাদের কাছ থেকে কোন মুক্তিপণ গ্রহণ করা হবে না এবং যারা কুফরী করেছিল তাদের কাছ থেকেও নয়। জাহান্নামই তোমাদের আবাসস্থল, এটাই তোমাদের যোগ্য ; আর কত নিকৃষ্ট এ প্রত্যাবর্তনস্থল !’</p><p id="36cac28a-6a96-4cac-affd-675d7afc717e" class="">16 যারা ঈমান এনেছে তাদের হৃদয় কি আল্লাহর স্মরণে এবং যে সত্য নাযিল হয়েছে তার জন্য বিগলিত হওয়ার সময় আসেনি? আর তারা যেন তাদের মত না হয় যাদেরকে আগে কিতাব দেয়া হয়েছিল --- অরঃপর বহু কাল অতিক্রান্ত হল এবং তাদের অন্তরসমূহ কঠিন হয়ে পড়ল। আর তাদের অধিকাংশই ফাসিক।</p><p id="c6f61fea-22f1-4b2e-a99c-a800a0699782" class="">17 জেনে রাখ যে, আল্লাহ্‌ই জমিনকে তার মৃত্যুর পর পুনর্জীবিত করেন। আমরা নিদর্শনগুলো তোমাদের জন্য সুস্পষ্টভাবে বর্ণনা করেছি যাতে তোমারা বুঝতে পার ।</p><p id="95799cf2-8492-4f60-90a9-2a4bbce5bfcb" class="">18 নিশ্চয় দানশীল পুরুষগণ ও দানশীল নারীগণ এবং যারা আল্লাহকে উত্তম ঋণ দান করে তাদেরকে দেয়া হবে বহুগুণ বেশী এবং তাদের জন্য রয়েছে সম্মানজনক পুরস্কার।</p><p id="1fdfca7a-bb79-4835-950c-e6c9b9341fe7" class="">19 আর যারা আল্লাহ্‌ ও তাঁর রাসূলের প্রতি ঈমান আনে, তারাই সিদ্দীক । আর শহীদ্গণ; তাদের জন্য রয়েছে তাদের রবের কাছে তাদের প্রাপ্য পুরস্কার ও নূর । আর যারা কুফরী করেছে এবং আমাদের নিদর্শনসমূহে মিথ্যারোপ করেছে, তারাই জাহান্নামের অধিবাসী।</p><p id="ed4ebeac-cc7e-4a36-a4ec-96f751535ee6" class="">20 তোমারা জেনে রাখ, নিশ্চয় দুনিয়ার জীবন ক্রীড়া-কৌতুক, শোভা-সৌন্দর্য, পারস্পরিক গর্ব-অহংকার, ধন-সম্পদ ও সন্তান-সন্ততিতে প্রাচুর্য লাভের প্রতিযোগিতা ছাড়া আর কিছু নয় । এর উপমা হলো বৃষ্টি, যার উৎপন্ন শস্য–সম্ভার কৃষকদেরকে চমৎকার করে, তারপর সেগুলো শুকিয়ে যায়, ফলে আপনি ওগুলো পীতবর্ণ দেখতে পান, অবশেষে সেগুলো খড়–কুটোয় পরিণত হয়। আর আখেরাতে রয়েছে কঠিন শাস্তি এবং আল্লাহর ক্ষমা ও সন্তুষ্টি। আর দুনিয়ার জীবন প্রতারণার সামগ্রী ছাড়া কিছু নয় ।</p><p id="6f9b134f-a64a-4801-85ca-9286c48c5a77" class="">21 তোমরা অগ্রণী হও তোমাদের রবের ক্ষমা ও সে জান্নাত লাভের প্রয়াসে, যা প্রশস্ততায় আসমান ও যমীনের প্রশস্ততার মত , যা প্ৰস্তুত করা হয়েছে তাদের জন্য যারা আল্লাহ্‌ ও তাঁর রাসূলগণের প্রতি ঈমান আনে। এটা আল্লাহর অনুগ্রহ, যাকে ইচ্ছে তিনি এটা দান করেন  ; আর আল্লাহ মহাঅনুগ্রহশীল।</p><p id="27153728-ea39-426a-85d6-f1fa85078506" class="">22 যমীনে বা ব্যক্তিগতভাবে তোমাদের উপর যে বিপর্যয়ই আসে তা সংঘটিত হওয়ার পূর্বেই আমরা তা কিতাবে লিপিবদ্ধ রেখেছি । নিশ্চয় আল্লাহর পক্ষে এটা খুব সহজ।</p><p id="69764f1f-9a31-453d-a85e-d8c339d4c3df" class="">23 এটা এ জন্যে যে, তোমরা যা হারিয়েছ তাতে যেন তোমরা বিমর্ষ না হও এবং যা তিনি তোমাদেরকে দিয়েছেন তার জন্য আনন্দিত না হও। নিশ্চয় আল্লাহ পছন্দ করেন না কোন উদ্ধত অহংকারীকে -</p><p id="7d74adf8-5cbf-48ff-98f8-634319ae1141" class="">24 যারা কার্পণ্য করে ও মানুষকে কার্পণ্যের নির্দেশ দেয় এবং যে মুখ ফিরিয়ে নেয় সে জেনে রাখুক নিশ্চয় আল্লাহ অভাবমুক্ত, চির প্রশংসিত।</p><p id="aa11add7-8f2e-489e-bd2f-90b70457b09a" class="">25 অবশ্যই আমরা আমাদের রাসূলগণকে পাঠিয়েছি স্পষ্ট প্রমাণসহ এবং তাদের সঙ্গে দিয়েছি কিতাব ও ন্যায়ের পাল্লা, যাতে মানুষ সুবিচার প্রতিষ্টা করে। আমরা আরও নাযিল করেছি লোহা যাতে রয়েছে প্ৰচণ্ড শক্তি এবং রয়েছে মানুষের জন্য বহুবিধ কল্যাণ । এটা এ জন্যে যে, আল্লাহ প্রকাশ করে দেন কে গায়েব অবস্থায়ও তাঁকে ও তাঁর রাসূলগণকে সাহায্য করে। নিশ্চয় আল্লাহ্‌ মহা শক্তিমান, পরাক্রমশালী।</p><p id="a3e07417-b7ec-4584-954b-101f6c433811" class="">26 আর অবশ্যই আমরা নূহ এবং ইবরাহীমকে রাসূল রূপে পাঠিয়েছিলাম এবং আমরা তাদের বংশধরগণের জন্য স্থির করেছিলাম নবুওয়াত ও কিতাব , কিন্তু তাদের অল্পই সৎপথ অবলম্বন করেছিল। আর তাদের অধিকাংশই ফাসিক।</p><p id="a6b74905-0491-41ec-b5c0-41ab73440820" class="">27 তারপর আমরা তাদের পিছনে অনুগামী করেছিলাম আমাদের রাসূলগণকে এবং অনুগামী করেছিলাম মারইয়াম-তনয় ঈসাকে, আর তাকে আমারা দিয়েছিলাম ইঞ্জীল এবং তার অনুসারীদের অন্তরে দিয়েছিলাম করুণা ও দয়া। আর সন্ন্যাসবাদ --- এটা তো তারা নিজেরাই আল্লাহর সন্তুষ্টি লাভের জন্য প্রবর্তন করেছিল। আমরা তাদেরকে এটার বিধান দেইনি ; অথছ এটাও ওরা যথাযথভাবে পালন করেনি। অতঃপর তাদের মধ্যে যারা ঈমান এনেছিল, তাদেরকে  আমারা দিয়েছিলাম তাদের পুরস্কার। আর তাদের অধিকাংশই ছিল ফাসিক।</p><p id="3b0415e9-ec55-476b-b562-cbf490e3b668" class="">28 হে মুমিনগন ! আল্লাহর তাকওয়া অবলম্বল কর এবং তাঁর রাসূলের উপর ঈমান আন। তিনি তাঁর অনুগ্রহে তোমাদেরকে দেবেন দ্বিগুন পুরুষ্কার এবং তিনি তোমাদেরকে দেবেন নূর, যার সাহায্যে তোমারা চলবে এবং তিনি তোমাদেরকে ক্ষমা করবেন। আর আল্লাহ্‌ ক্ষমাশীল, পরম দয়ালু।</p><p id="5fcb65c2-c2a1-4800-a292-4f65d154dd52" class="">29 এটা এজন্যে যে, কিতাবীগণ যেন জানতে পারে, আল্লাহর সামান্যতম অনুগ্রহের উপরও ওদের কোন অধিকার নেই। আর নিশ্চয় অনুগ্রহ আল্লাহর ইখতিয়ারে, যাকে ইচ্ছে তাকে তিনি তা দান করেন। আর আল্লাহ মহা অনুগ্রহশীল।</p><p id="e73c057a-9613-4f04-a323-54bb8da765be" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

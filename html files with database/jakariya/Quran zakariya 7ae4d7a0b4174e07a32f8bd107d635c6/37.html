@@ -1,0 +1,678 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>৩৭. আস-সাফফাত (সারিবদ্ধভাবে দাড়ানো )</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a722db90-0764-4115-b80e-411563855d05" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📕</span></div><h1 class="page-title">৩৭. আস-সাফফাত (সারিবদ্ধভাবে দাড়ানো )</h1><p class="page-description"></p></header><div class="page-body"><p id="079189ee-a9b5-4faa-a096-5f44e9368923" class="">1 শপথ তাদের যারা সারিবদ্ধভাবে দণ্ডায়মান ।</p><p id="61b56836-6fb7-4b12-8ef6-ac7dc87220b5" class="">2 অতঃপর যারা কঠোর পরিচালক ।</p><p id="3299913f-9a15-413d-8c27-bddf72fd1c17" class="">3 আর যারা &#x27;যিকর&#x27; আবৃত্তিতে রত-</p><p id="44797a91-bb3f-4910-acd2-1182f442fd2a" class="">4 নিশ্চয় তোমাদের ইলাহ্ এক,</p><p id="4d759cde-6931-4209-9bb0-d0ab601c6221" class="">5 যিনি আসমানসমূহ, যমীন ও তাদের অন্তর্বর্তী সবকিছুর রব এবং রব সকল উদয়স্থলের ।</p><p id="85e3fb98-d292-45b6-9a22-f05d1a3d7cb2" class="">6 নিশ্চয় আমরা কাছের আসমানকে তারকারাজির অলংকরণে সুশোভিত করেছি</p><p id="d112e5e0-a6a5-4803-8143-6d6e966d062b" class="">7 এবং রক্ষা করেছি প্রত্যেক বিদ্রোহী  শয়তান থেকে ।</p><p id="f357ff2d-3ee7-4feb-87ef-af3adcfbd3ea" class="">8 ফলে ওরা ঊর্ধ্ব  জগতের কিছু শুনতে পারে না । আর তাদের প্রতি নিক্ষিপ্ত হয় সব দিক থেকে---</p><p id="9da61c0b-ce59-4dd9-957d-009f4d3f2b79" class="">9 তাড়ানোর জন্য এবং তাদের জন্য আছে বিরামহীন শাস্তি।</p><p id="1728e9b0-c1aa-4df7-8d8f-7d2bbc7829ac" class="">10 তবে কেউ হঠাৎ কিছু শুনে ফেললে জ্বলন্ত উল্কাপিণ্ড তার পশ্চাদ্ধাবন করে।</p><p id="403a59ad-d138-4e79-b80d-ca5a1f1e516a" class="">11 সুতরাং তাদেরকে জিজ্ঞেস করুন, ‘সৃষ্টি হিসেবে তারা বেশি শক্তিশালী, না আমরা অন্য যা কিছু সৃষ্টি করেছি তা?’ তাদেরকে তো আমরা সৃষ্টি করেছি আঠাল মাটি হতে।</p><p id="831e5059-a955-46d8-95b4-bfab4e8c1d66" class="">12 আপনি তো বিস্ময় বোধ করছেন, আর তারা করছে বিদ্রূপ ।</p><p id="44a148fc-9592-44fa-917b-77896a0f98cd" class="">13 এবং যখন তাদেরকে উপদেশ দেয়া হয়, তখন তারা তা গ্রহণ করে না।</p><p id="ff58799b-c0cc-4a31-bfb4-1f971f61d690" class="">14 আর যখন তারা কোন নিদর্শন দেখে, তখন তারা উপহাস করে</p><p id="175bf648-0a2f-410c-9f5d-4b6cf81ef749" class="">15 এবং বলে, &#x27;এটা তো এক সুস্পষ্ট জাদু ছাড়া আর কিছুই নয়।</p><p id="666790e8-0921-4cbe-bf91-ed6608caf002" class="">16 &#x27;আমরা যখন মরে যাব এবং মাটি ও অস্থিতে পরিণত হব, তখনও কি আমরা পুনরুত্থিত হব?</p><p id="186cbfde-e98f-48ef-b5b6-48174e9bc809" class="">17 &#x27;এবং আমাদের পিতৃপুরুষরাও?’</p><p id="883df5b6-7cef-48cd-9454-e0b536041748" class="">18 বলুন, ‘হ্যাঁ, এবং তোমরা হবে লাঞ্ছিত।&#x27;</p><p id="c75b28e7-4952-403f-ad51-97a7e4314c59" class="">19 অতঃপর তা তো একটিমাত্তত্র প্রচণ্ড ধমক--আর তখনই তারা দেখবে ।</p><p id="274535ad-b1ec-4bc7-b464-e94a44130b8e" class="">20 এবং তারা বলবে, &#x27;হায়, দুর্ভোগ আমাদের! এটাই তো প্রতিদান দিবস।&#x27;</p><p id="dd50c78a-65e9-4c38-9ce3-03b863875a7f" class="">21 এটাই ফয়সালার দিন, যার প্রতি তোমরা মিথ্যা আরোপ করতে।</p><p id="50ffdd51-dd99-4984-86d5-553fbcec66be" class="">22 (ফেরেশতাদেরকে বলা হবে,) &#x27;একত্র কর যালিম ও তাদের সহচরদেরকে এবং তাদেরকে, যাদের ইবাদত করত তারা--</p><p id="2246bbcd-4bcf-4ae8-b6e9-94a4a266abd7" class="">23 আল্লাহর পরিবর্তে। আর তাদেরকে চালিত কর জাহান্নামের পথে ,</p><p id="442e2e87-6486-404d-947d-c5ef4990dcb3" class="">24 ‘আর তাদেরকে থামাও, কারণ তাদেরকে তো প্রশ্ন করা হবে।</p><p id="6a3c8d09-ff07-4d13-8754-8f6bf3f46718" class="">25 &#x27;তোমাদের কী হল যে, তোমরা একে অন্যের সাহায্য করছ না?&#x27;</p><p id="57a3e755-f3a5-4e7a-b3ae-36601333e988" class="">26 বস্তুত তারা হবে আজ আত্মসমর্পণকারী ।</p><p id="dc2742c6-b5b9-4e26-92bb-50296328c0b8" class="">27 আর তারা একে অন্যের সামনাসামনি হয়ে জিজ্ঞাসাবাদ করবে--</p><p id="4db922ef-f2db-40ef-862f-446f9ffb89ab" class="">28 তারা বলবে, &#x27;তোমরা তো তোমাদের শপথ নিয়ে আমাদের কাছে আসতে ।&#x27;</p><p id="25cecc8d-e5cd-42de-9238-7e363b13d41f" class="">29 তারা (নেতৃস্থানীয় কাফেররা) বলবে, &#x27;বরং তোমরা তো মুমিন ছিলে না,</p><p id="1e8b7bba-e487-4acd-87f5-94c6694ae9b5" class="">30 ‘এবং তোমাদের উপর আমাদের কোন কর্তৃত্ব ছিল না; বস্তুত তোমরাই ছিলে সীমালংঘনকারী সম্প্রদায়।</p><p id="f3d37244-cc44-430a-be6f-766287a48254" class="">31 &#x27;তাই আমাদের বিরুদ্ধে আমাদের রবের কথা সত্য হয়েছে, নিশ্চয় আমরা শাস্তি আস্বাদন করব।</p><p id="fd415a25-272c-43eb-9da9-fc1f43930c3d" class="">32 &#x27;সুতরাং আমরা তোমাদেরকে বিভ্রান্ত করেছিলাম, কারণ আমরা নিজেরাও ছিলাম বিভ্রান্ত।&#x27;</p><p id="f1cea0f0-8abb-4eab-9e23-d1c908a063b6" class="">33 অতঃপর তারা সবাই সেদিন শাস্তির শরীক হবে।</p><p id="eaf828e4-72f3-4a12-88bf-360748cd85f4" class="">34 নিশ্চয় আমরা অপরাধীদের সাথে এরূপ করে থাকি।</p><p id="e0b48c1a-39a5-4406-bc1d-538c8c57ec27" class="">35 তাদেরকে &#x27;আল্লাহ ছাড়া কোন সত্য  ইলাহ নেই’ বলা হলে তারা অহংকার করত ।</p><p id="c2ce5cdb-9426-405c-b3bb-bbf641c64049" class="">36 এবং বলত, &#x27;আমরা কি এক উন্মাদ কবির কথায় আমাদের ইলাহদেরকে বর্জন করব?&#x27;</p><p id="fdac2528-adb4-4cb6-bc6d-586d831d03ca" class="">37 বরং তিনি তো সত্য নিয়ে এসেছেন এবং তিনি রাসূলদেরকে সত্য বলে স্বীকার করেছেন।</p><p id="a52374da-d135-4eb7-b7c9-2a03a07345b7" class="">38 তোমরা অবশ্যই যন্ত্রণাদায়ক শাস্তি আস্বাদনকারী হবে,</p><p id="b06949c9-654b-473c-8cc2-9124410f25c2" class="">39 এবং তোমরা যা করতে তারই প্রতিফল পাবে--</p><p id="69197ca4-41b9-4269-b4da-6c5aaea84f0c" class="">40 তবে তারা নয়, যারা আল্লাহর একনিষ্ঠ বান্দা।</p><p id="a5d96c73-c458-46b9-bb3a-deaf2c1ddb0e" class="">41 তাদের জন্য আছে নির্ধারিত রিযিক--</p><p id="6bb7c3bb-ec1a-4495-9b2d-9c17ddf0f4e8" class="">42 ফলমূল; আর তারা হবে সম্মানিত,</p><p id="f129e1a0-13da-4c10-9f8f-7b3bb659393b" class="">43 নেয়ামত-পূর্ণ জান্নাতে</p><p id="6468114e-a6f3-4b23-81cf-5846578fdf48" class="">44 মুখোমুখি হয়ে আসনে আসীন হবে।</p><p id="5a64536c-7760-4f12-aac4-8e61055072a6" class="">45 তাদেরকে ঘুরে ঘুরে পরিবেশন করা হবে বিশুদ্ধ সুরাপূর্ণ পাত্র ।</p><p id="2e5c87cf-6271-4d54-a65f-0632517b7ab0" class="">46 শুভ্র উজ্জ্বল, যা হবে পানকারীদের জন্য সুস্বাদু।</p><p id="c37b3f9b-cda6-44b8-a7ab-841bbed0862a" class="">47 তাতে ক্ষতিকর কিছু থাকবে না এবং তাতে তারা মাতালও হবে না,</p><p id="37430fc8-abad-4200-bd83-c41774ad4db0" class="">48 তাদের সঙ্গে থাকবে আনতনয়না , ডাগরচোখা।</p><p id="d2d86e91-21ee-4e1e-b347-2626d86b331c" class="">49 তারা যেন সুরক্ষিত ডিম্ব ।</p><p id="46e5b04a-57e2-4e12-9159-1982b7d89a62" class="">50 অতঃপর তারা একে অন্যের সামনাসামনি হয়ে জিজ্ঞাসাবাদ করবে</p><p id="bd18a4b9-4646-47e6-9f20-c9d4f3eec7ea" class="">51 তাদের কেউ বলবে, &#x27;আমার ছিল এক সঙ্গী;</p><p id="5c30e4ee-818b-43d5-b404-b8c548eac90a" class="">52 ‘সে বলত, &#x27;তুমি কি তাদের অন্তর্ভুক যারা বিশ্বাস করে যে,</p><p id="abf0bdbb-a1ed-406a-815d-1e96165dc289" class="">53 ‘আমরা যখন মরে যাব এবং আমরা মাটি ও অস্থিতে পরিণত হব তখনও কি আমাদেরকে প্রতিফল দেয়া হবে?’</p><p id="c08d8370-4a65-461c-bd50-01a60464b196" class="">54 আল্লাহ্‌ বলবেন, &#x27;তোমরা কি তাকে দেখতে চাও?’</p><p id="65c733c1-837d-4e6c-b40a-9af058e4ef53" class="">55 অতঃপর সে ঝুঁকে দেখবে এবং তাকে দেখতে পাবে জাহান্নামের মধ্যস্থলে;</p><p id="39283124-2e3d-49de-af6b-9f3eb43a6ea4" class="">56 বলবে, ‘আল্লাহর কসম! তুমি তো আমাকে প্রায় ধ্বংসই করেছিলে</p><p id="e4963060-8651-4740-9af8-598d36e881b2" class="">57 &#x27;আমার রবের অনুগ্রহ না থাকলে আমিও তো হাযিরকৃত ব্যক্তিদের মধ্যে শামিল হতাম।</p><p id="103af41a-c64b-44e1-a7be-6833f5e3c55e" class="">58 &#x27;আমাদের তো আর মৃত্যু হবে না</p><p id="aaa585a1-a581-4947-9595-d6e001f55604" class="">59 প্রথম মৃত্যুর পর এবং আমাদেরকে শাস্তিও দেয়া হবে না !&#x27;</p><p id="1cee512f-9f1e-4a83-bf8c-5fa45b69e496" class="">60 এটা তো অবশ্যই মহাসাফল্য।</p><p id="c64f8ece-0457-4c6c-ac15-26dfd7ae6d1b" class="">61 এরূপ সাফল্যের জন্য আমলকারীদের আমল করা উচিত ,</p><p id="854f0c81-5c8c-4790-adfb-23baa7b4cf01" class="">62 আপ্যায়নের জন্য কি এটাই শ্রেয়, না যাক্কুম গাছ?</p><p id="7c64066a-8115-47bf-9074-77befebf9de1" class="">63 যালিমদের জন্য আমরা এটা সৃষ্টি করেছি পরীক্ষাস্বরূপ,</p><p id="6191ab0c-4435-41cd-8b6e-154ca38c8186" class="">64 এ গাছ উদ্‌গত হয় জাহান্নামের তলদেশ থেকে,</p><p id="aa4580fc-3ffc-4a39-a16c-6440fb152d91" class="">65 এর মোচা যেন শয়তানের মাথা,</p><p id="617b8422-7e24-4501-a96e-23d7ec799ec3" class="">66 তারা তো এটা থেকে খাবে এবং উদর পূর্ণ করবে এটা দিয়ে ।</p><p id="811f605c-85ad-45b8-b6c6-eab4fb8d56f8" class="">67 তদুপরি তাদের জন্য থাকবে ফুটন্ত পানির মিশ্রণ।</p><p id="8830112b-a8d3-4cb2-b7bf-84dccf4c468e" class="">68 তারপর তাদের প্রত্যাবর্তন হবে প্রজ্বলিত আগুনেরই দিকে।</p><p id="737b57da-2eb0-4f3d-b1d7-f8925fe3fca7" class="">69 তারা তো তাদের পিতৃপুরুষদেরকে পেয়েছিল বিপথগামী,</p><p id="ff6016cb-214f-4984-92cd-51bdb72b3763" class="">70 অতঃপর তাদের পদাঙ্ক অনুসরণে ধাবিত হয়েছিল ।</p><p id="074320e1-f75b-49d1-a03a-fa27bec4253f" class="">71 আর অবশ্যই তাদের আগে পূর্ববতীদের বেশীর ভাগ বিপথগামী হয়েছিল,</p><p id="b35f0934-d76c-4067-81e3-dafeb941810d" class="">72 আর অবশ্যই আমরা তাদের মধ্যে সতর্ককারী পাঠিয়েছিলাম।</p><p id="fd02c5aa-1e0d-4a93-be5c-bfb24300be9e" class="">73 কাজেই লক্ষ্য করুন যাদেরকে সতর্ক করা হয়েছিল, তাদের পরিণাম কী হয়েছিল!</p><p id="05a09a4a-8c5f-47f3-a519-b38867fae563" class="">74 তবে আল্লাহর একনিষ্ঠ বান্দাদের কথা স্বতন্ত্র ।</p><p id="59dc9f73-487a-4ea2-b7b6-70626a3d53f8" class="">75 আর অবশ্যই নূহ আমাদেরকে ডেকেছিলেন, অতঃপর (দেখুন) আমরা কত উত্তম সাড়াদানকারী।</p><p id="1b52a675-690a-45ad-8528-ba827af7fad8" class="">76 আর তাকে এবং তার পরিবারবর্গকে আমরা উদ্ধার করেছিলাম মহাসংকট থেকে।</p><p id="c3ad7c91-e80d-4325-b8e3-3176485a520d" class="">77 আর তার বংশধরদেরকেই আমরা বিদ্যমান রেখেছি ,</p><p id="2a6dc5f3-e3bf-49c5-a634-2c398e44fb5f" class="">78 আর আমরা পরবর্তীদের মধ্যে তার জন্য সুখ্যাতি রেখেছি।</p><p id="1727ec6a-000c-41d3-b0dd-04f9f958bed9" class="">79 সমগ্র সৃষ্টির মধ্যে নূহের প্রতি শান্তি বর্ষিত হোক।</p><p id="eef52516-4d9d-4184-9a1a-3e2004d7e530" class="">80 নিশ্চয় আমরা এভাবে মুহসিনদেরকে পুরস্কৃত করে থাকি,</p><p id="642db4e8-5f57-4a00-8f4b-eea6af2dbd82" class="">81 নিশ্চয় তিনি ছিলেন আমাদের মুমিন বান্দাদের অন্যতম।</p><p id="2c93e413-7539-4dc7-8ddc-25754139974e" class="">82 তারপর অন্য সকলকে আমরা নিমজ্জিত করেছিলাম।</p><p id="29d4d64e-6701-4183-a026-a675a3ca4437" class="">83 আর ইবরাহীম তো তার অনুগামীদের অন্তর্ভুক্ত ।</p><p id="4450c360-78fe-45f7-af13-61c721b5ef6d" class="">84 স্মরণ করুন, যখন তিনি তার রবের কাছে উপস্থিত হয়েছিলেন বিশুদ্ধচিত্তে  ;</p><p id="fbe8bba1-c9d9-4e5a-908e-7d7e1e31c44f" class="">85 যখন তিনি তার পিতা ও তার সম্পপ্রদায়কে জিজ্ঞেস করেছিলেন, ‘তোমরা কিসের ইবাদাত করছ?</p><p id="d395d559-02cf-49f8-8f88-6b74bbc05395" class="">86 &#x27;তোমার কি আল্লাহর পরিবর্তে মিথ্যা ইলাহ্‌গুলোকে চাও?</p><p id="9212e11e-9823-4674-993a-17f66ccdade2" class="">87 ‘তাহলে সকল সৃষ্টিসমূহের রব সম্বন্ধে তোমাদের ধারণা কী ?’</p><p id="3211d63b-f1de-443a-99bf-aeb3a7d8de61" class="">88 অতঃপর তিনি তারকারাজির দিকে একবার তাকালেন,</p><p id="a5984295-44da-4c7f-8829-64c7a28f24bc" class="">89 এবং বললেন, &#x27;নিশ্চয় আমি অসুস্থ ।&#x27;</p><p id="7a0056c9-3dda-4de1-b740-b50c11306f3e" class="">90 অতঃপর তারা তাকে পিছনে রেখে চলে গেল।</p><p id="0969ea35-1cd7-45e0-aaca-847a193e373d" class="">91 পরে তিনি চুপিচুপি তাদের দেবতাগুলোর কাছে গেলেন এবং বললেন, &#x27;তোমরা খাদ্য গ্রহণ করছ না কেন?&#x27;</p><p id="d0c810f5-4540-4bf6-849f-aaeae9219fc3" class="">92 &#x27;তোমাদের কী হয়েছে যে তোমরা কথা বল না?&#x27;</p><p id="c0aec64f-c4c3-4e16-8d60-09cb926932f7" class="">93 অতঃপর তিনি তাদের উপর সবলে আঘাত হানলেন।</p><p id="63b2ecb0-be88-43f6-a53f-6d1cc9213e7c" class="">94 তখন ঐ লোকগুলো তার দিকে ছুটে  আসল।</p><p id="9364753a-edaf-46b3-adce-1592cf25dd46" class="">95 তিনি বললেন, &#x27;তোমরা নিজেরা যাদেরকে খোদাই করে নির্মাণ কর তোমরা কি তাদেরই ইবাদাত কর?</p><p id="0f7e7170-6785-4e3a-b6bd-fcd719add3a9" class="">96 অথচ আল্লাহ্ই সৃষ্টি করেছেন। তোমাদেরকে এবং তোমরা যা তৈরী কর তাও।&#x27;</p><p id="1f58f8d2-2c5a-4ef9-9dc5-ab4f03a7d416" class="">97 তারা বলল, &#x27;এর জন্য এক ইমারত নির্মাণ কর, তারপর একে জ্বলন্ত আগুনে নিক্ষেপ কর।&#x27;</p><p id="9c7033e7-c077-4e4f-a9a4-d8db04cf55cc" class="">98 এভাবে তারা তার বিরুদ্ধে চক্রান্তের সংকল্প করেছিল; কিন্তু আমরা তাদেরকে খুবই হেয় করে দিলাম ।</p><p id="912c706d-79ef-4820-ab10-26a3a30dd1f4" class="">99 তিনি বললেন, &#x27;আমি আমার রবের দিকে চললাম , তিনি আমাকে অবশ্যই হেদায়াত করবেন,</p><p id="d217f808-4232-4a76-b9e9-1460e023ff7e" class="">100 &#x27;হে আমার রব! আমাকে এক সৎকর্মপরায়ণ সন্তান দান করুন।&#x27;</p><p id="56e62ca4-2444-4c43-a8c4-372c129abc03" class="">101 অতঃপর আমরা তাকে এক ধৈর্যশীল পুত্রের সুসংবাদ দিলাম ।</p><p id="5c48d856-7de1-44c7-9b94-b5aa158d81ba" class="">102 অতঃপর তিনি যখন তার পিতার সাথে কাজ করার মত বয়সে উপনীত হলেন, তখন ইবরাহীম বললেন, &#x27;হে প্রিয় বৎস! আমি স্বপ্নে দেখি যে, তোমাকে আমি যবেহ করছি , এখন তোমার অভিমত কি বল?&#x27;  তিনি বললেন, &#x27;হে আমার পিতা! আপনি যা আদেশপ্রাপ্ত হয়েছেন তা-ই করুন। আল্লাহর ইচ্ছায় আপনি আমাকে ধৈর্যশীল পাবেন।&#x27;</p><p id="4d58ced8-a793-4431-9eac-a7252e214312" class="">103 অতঃপর যখন তারা উভয়ে আনুগত্য প্রকাশ করলেন এবং ইবরাহীম তার পুত্রকে উপুড় করে শুয়িয়ে দিলেন,</p><p id="f1d65330-c419-4940-9c90-98fca11bdf4f" class="">104 তখন আমরা তাকে ডেকে বললাম, ‘হে ইবরাহীম!</p><p id="d36170fe-ddac-4a9b-b16c-0e1e6788f122" class="">105 আপনি তো স্বপ্নের আদেশ সত্যই পালন করলেন!’--এভাবেই আমরা মুহসিনদেরকে পুরস্কৃত করে থাকি।</p><p id="b4c76402-813f-4037-94bd-638e97013f2f" class="">106 নিশ্চয়ই এটা ছিল এক স্পষ্ট পরীক্ষা।</p><p id="293e64e5-098b-436e-bb10-67390caa3e14" class="">107 আর আমরা তাকে এক বড় যবেহ এর বিনিময়ে মুক্ত করলাম ।</p><p id="641b733c-41f1-455b-b492-afeaff27e394" class="">108 আর আমরা তার জন্য পরবর্তীদের মধ্যে সুনাম-সুখ্যাতি রেখে দিয়েছি।</p><p id="136239d4-d26a-414d-8aac-2770d5c3f798" class="">109 ইবরাহীমের উপর শান্তি বর্ষিত হোক।</p><p id="02579429-0394-4031-84d6-f29fdf4c12c9" class="">110 এভাবেই আমরা মুহসিনদেরকে পুরস্কৃত করে থাকি।</p><p id="93b3b9da-39a2-4b09-94ee-901c7e8e7044" class="">111 নিশ্চয় তিনি ছিলেন আমাদের মুমিন বান্দাদের অন্যতম;</p><p id="575501dd-4afe-4369-9b6a-96b3ab4f819a" class="">112 আর আমরা তাকে সুসংবাদ দিয়েছিলাম ইসহাকের, তিনি ছিলেন এক নবী, সৎকর্মপরায়ণদের অন্যতম।</p><p id="4859d290-ebfc-43dd-9279-7def19a4dcdd" class="">113 আর আমরা ইবরাহীমের ওপর বরকত দান করেছিলাম এবং ইসহাকের উপরও; তাদের উভয়ের বংশধরদের মধ্যে কিছু সংখ্যক মুহসিন এবং কিছু সংখ্যক নিজেদের প্রতি স্পষ্ট অত্যাচারী।</p><p id="d46e8b99-47e0-462e-9135-f8c3f75d417c" class="">114 আর অবশ্যই আমরা অনুগ্রহ করেছিলাম মূসা ও হারূনের প্রতি,</p><p id="ed5a65c8-56ad-4831-8e0b-ece7f2e04dba" class="">115 এবং তাদেরকে এবং তাদের সম্প্রদায়কে আমরা উদ্ধার করেছিলাম মহাসংকট থেকে ।</p><p id="5992866d-ed14-41a5-a245-3d7aea7e61fb" class="">116 আর আমরা সাহায্য করেছিলাম তাদেরকে, ফলে তারাই হয়েছিল বিজয়ী।</p><p id="d7c61238-e4a8-4d6b-8f87-104a3034f651" class="">117 আর আমরা উভয়কে দিয়েছিলাম বিশদ কিতাব ।</p><p id="798014ee-f316-4d1a-a985-7fd3462364e3" class="">118 আর উভয়কে আমরা পরিচালিত করেছিলাম সরল পথে।</p><p id="51d6df3b-ee02-42da-b51f-dee408da6e70" class="">119 আর আমরা তাদের উভয়ের জন্য পরবর্তীদের মধ্যে সুনাম-সুখ্যাতি রেখে দিয়েছি।</p><p id="2ab79e5c-e145-49a7-bdfd-bdaf216fc4a9" class="">120 মূসা ও হারূনের প্রতি সালাম ।</p><p id="61e4249e-48aa-4aee-8b0e-19cc77de755d" class="">121 এভাবেই আমরা মুহসিনদেরকে পুরস্কৃত করে থাকি।</p><p id="74608827-f58e-485d-8137-6ff332305b84" class="">122 নিশ্চয় তারা উভয়ে ছিলেন আমাদের মুমিন বান্দাদের অন্তর্ভুক্ত।</p><p id="e185e470-6364-4690-9efa-3fa3383f4dc0" class="">123 আর নিশ্চয় ইলইয়াস ছিলেন রাসূলদের একজন ।</p><p id="febb13a4-0729-4b05-93bf-1a421e244a3e" class="">124 যখন তিনি তার সম্পপ্রদায়কে বলেছিলেন, &#x27;তোমরা কি তাকওয়া অবলম্বন করবে না?</p><p id="aba77289-518a-4205-aed1-8c8ae8831462" class="">125 &#x27;তোমরা কি বা&#x27;আলকে ডাকবে এবং পরিত্যাগ করবে শ্রেষ্ঠ স্রষ্টা--</p><p id="530fc56e-6647-4bbd-b8d5-b43121e16b52" class="">126 &#x27;আল্লাহকে, যিনি তোমাদের রব এবং তোমাদের প্রাক্তন পিতৃপুরুষদেরও রব।&#x27;</p><p id="cafccebe-a01e-4423-be8a-d73bf9122f3a" class="">127 কিন্তু তারা তার প্রতি মিথ্যারোপ করেছিল, কাজেই তাদেরকে অবশ্যই শাস্তির জন্য উপস্থিত করা হবে।</p><p id="506aa5a3-0a44-4796-9778-68241150e3ef" class="">128 তবে আল্লাহর একনিষ্ঠ বান্দাদের কথা স্বতন্ত্র।</p><p id="200e894b-571b-4e9e-8a29-8f24e06bc1e1" class="">129 আর আমরা তার জন্য পরবর্তীদের মধ্যে সুনাম-সুখ্যাতি রেখে দিয়েছি।</p><p id="6b44cb56-36b9-4c21-8bf7-7be482ff128c" class="">130 ইল্‌য়াসীনের  উপর শান্তি বৰ্ষিত হোক।</p><p id="15a811c9-9290-4708-9899-3098fcacfd8f" class="">131 এভাবেই তো আমরা মুহসিনদেরকে পুরস্কৃত করে থাকি।</p><p id="33b770b3-31d5-438a-a62e-b832816b2c92" class="">132 তিনি তো ছিলেন আমাদের মুমিন বান্দাদের অন্যতম।</p><p id="f72b4d4e-40da-42fc-9754-097864c80cb8" class="">133 আর নিশ্চয় লুত ছিলেন রাসূলদের একজন।</p><p id="b56c9d8c-1947-4ced-9504-aba4a57b811d" class="">134 স্মরণ করুন, যখন আমরা তাকে ও তার পরিবারের সকলকে উদ্ধার করেছিলাম--</p><p id="3663f399-32d5-4632-a2e5-0d8be82a9cd3" class="">135 পিছনে অবস্থানকারীদের অন্তর্ভুক্ত এক বৃদ্ধা ছাড়া।</p><p id="68dbba96-7f70-4c77-8c61-8b1d0d5e0a29" class="">136 অতঃপর অবশিষ্টদেরকে আমরা সম্পূর্ণভাবে ধ্বংস করেছিলাম।</p><p id="536941a9-5cc5-49a4-aee3-9d98ba52f9ef" class="">137 আর তোমরা তো তাদের  ধ্বংসাবশেষগুলো অতিক্রম করে থাক সকালে।</p><p id="2fc3a43a-52e0-4dc9-937f-0accdb28dfcc" class="">138 ও সন্ধ্যায় । তবুও কি তোমরা বোঝা না?</p><p id="30e8a468-c235-4002-9237-aa90307c9e0c" class="">139 আর নিশ্চয় ইউনুস ছিলেন রাসূলদের একজন।</p><p id="03e6121d-1772-432f-b3d3-03a45c5913d8" class="">140 স্মরণ করুন, যখন তিনি বোঝাই নৌযানের দিকে পালিয়ে গেলেন,</p><p id="87466955-8e23-4195-9002-47ff65e68f38" class="">141 অতঃপর তিনি লটারীতে যোগদান করে হেরে গেলেন ।</p><p id="e3e06156-260c-4167-9634-60672ca9dbf2" class="">142 অতঃপর এক বড় আকারের মাছ তাকে গিলে ফেলল, তখন সে নিজেকে ধিক্কার দিতে লাগল।</p><p id="f9890c73-e486-4bfc-92ad-6b40f4584801" class="">143 অতঃপর তিনি যদি আল্লাহর পবিত্রতা ও মহিমা ঘোষণাকারীদের অন্তর্ভুক্ত না হতেন ,</p><p id="a0910d23-a878-453a-b0d8-d83ca3caa5eb" class="">144 তাহলে তাকে উত্থানের দিন পর্যন্ত থাকতে হত তার পেটে।</p><p id="21daae89-7105-4ea4-a881-4c8f1b3e9daa" class="">145 অতঃপর ইউনুসকে আমরা নিক্ষেপ করলাম এক তৃণহীন প্রান্তরে এবং তিনি ছিলেন অসুস্থ।</p><p id="d15509b6-31c3-4831-a347-517a875af691" class="">146 আর আমরা তার উপর এক লাউ প্রজাতির গাছ উদ্‌গত করলাম,</p><p id="6084a9b3-3236-4e44-854f-215d2d9480fb" class="">147 আর তাকে আমরা একলক্ষ বা তার চেয়ে বেশী লোকের প্রতি পাঠিয়েছিলাম।</p><p id="4678c925-daed-4cbf-83df-0ae838c0b198" class="">148 অতঃপর তারা ঈমান এনেছিল; ফলে আমরা তাদেরকে কিছু কালের জন্য জীবনোপভোগ করতে দিলাম।</p><p id="4adc6cbc-8fbd-4146-a5c4-e67d740034d3" class="">
+</p><p id="64c807fc-b272-485a-8a3d-ac9fb29e6b5a" class="">149 এখন তাদেরকে জিজ্ঞেস করুন, &#x27;আপনার রবের জন্যই কি রয়েছে কন্যা সন্তান এবং তাদের জন্য পুত্র সন্তান?&#x27;</p><p id="d2efbc7b-3e04-49ed-ba7e-0890b736bb5b" class="">150 অথবা আমরা কি ফেরেশতাদেরকে নারীরূপে সৃষ্টি করেছিলাম আর তারা দেখেছিল ?</p><p id="1cbd4dba-e681-44a0-9217-9cce1b05fb41" class="">151 সাবধান! তারা তো মনগড়া কথা বলে যে,</p><p id="dae016ca-5d68-4aa0-83cd-7df966714416" class="">152 ‘আল্লাহ সন্তান জন্ম দিয়েছেন।&#x27; আর তারা নিশ্চয় মিথ্যাবাদী।</p><p id="9127117f-04c7-426f-9e4e-e2ab0a07a766" class="">153 তিনি কি পুত্র সন্তানের পরিবর্তে কন্যা সন্তান পছন্দ করেছেন?</p><p id="14a70d03-d0a0-4260-892f-30ca6c1c652e" class="">154 তোমাদের কী হয়েছে, তোমরা এ কিরূপ বিচার কর?</p><p id="80be232a-ff2a-4a78-8346-b8865f877b96" class="">155 তবে কি তোমরা উপদেশ গ্রহণ করবে না?</p><p id="93da46e5-aaee-45f3-807e-73462f661fc1" class="">156 নাকি তোমাদের কোন সুস্পষ্ট দলীল-প্রমাণ আছে?</p><p id="d8e621d0-56f7-4354-80d5-349493afacb8" class="">157 তোমরা সত্যবাদী হলে তোমাদের কিতাব উপস্থিত কর।</p><p id="b5a1ed5f-e9b4-4f76-bc7d-78e7c1024bcd" class="">158 তারা আল্লাহ্ ও জিন জাতির মধ্যে আত্মীয়তার সম্পর্ক স্থির করেছে , অথচ জিনেরা জানে, নিশ্চয় তাদেরকে উপস্থিত করা হবে।</p><p id="11cb2370-5420-48ce-98d0-4c4120a63d92" class="">159 তারা যা আরোপ করে  তা থেকে আল্লাহ্ পবিত্র, মহান---</p><p id="021bb7a8-c970-419f-bc67-7c5287787ee3" class="">160 তবে আল্লাহর একনিষ্ঠ বান্দাগণ ছাড়া,</p><p id="c4d9065c-e08b-434a-8eaf-b3c8d68e7e7a" class="">161 অতঃপর নিশ্চয় তোমরা এবং তোমরা যাদের ইবাদাত কর তারা---</p><p id="9658f990-44ce-4c19-b783-ae5f5123ee7e" class="">162 তোমরা (একনিষ্ঠ বান্দাদের) কাউকেও আল্লাহ সম্বন্ধে বিভ্রান্ত করতে পারবে না---</p><p id="6acdb3b7-8bd7-480a-bf7d-6ef5005afc22" class="">163 শুধু প্ৰজ্জলিত আগুনে যে দগ্ধ হবে সে ছাড়া ।</p><p id="c1623c6a-1bda-492c-8e6c-dd1e939e3e84" class="">164 ‘আর (জিবরীল বললেন) আমাদের প্রত্যেকের জন্য নির্ধারিত স্থান রয়েছে,</p><p id="bd69b7b0-e850-445d-8102-2a2b3ee95d66" class="">165 ‘আর আমরা তো সারিবদ্ধভাবে দণ্ডায়মান,</p><p id="5585b315-e6fc-4cd8-8d02-84aab1fe7599" class="">166 &#x27;এবং আমরা অবশ্যই তাঁর পবিত্রতা ও মহিমা ঘোষনাকারী ।’</p><p id="8776b8a7-a648-4892-9813-1af13db8f430" class="">167 আর তারা (মক্কাবাসীরা) অবশ্যই বলে আসছিল,</p><p id="ca888c9a-f0a5-4778-b7df-58872f4840ca" class="">168 ‘পূর্ববর্তীদের কিতাবের মত যদি আমাদের কোন কিতাব থাকত,</p><p id="2b615ab1-51b8-46ea-aedf-5c265873cc58" class="">169 ‘আমরা অবশ্যই আল্লাহর একনিষ্ঠ বান্দা হতাম।’</p><p id="93e0acea-5e33-4303-b521-108dcb3a666a" class="">170 কিন্তু তারা কুরআনের সাথে কুফরী করল সুতরাং শীঘ্রই তারা জানতে পারবে ;</p><p id="3d54836b-651c-42f2-9d75-ecc9c3edbf9f" class="">171 আর অবশ্যই আমাদের প্রেরিত বান্দাদের সম্পর্কে আমাদের এ বাক্য আগেই স্থির হয়েছে যে,</p><p id="77a73543-7a28-4030-932d-c733dff9fc34" class="">172 নিশ্চয় তারা সাহায্যপ্রাপ্ত হবে,</p><p id="065f79a8-c2ab-4a6b-b300-ba9aa7a0e252" class="">173 এবং আমাদের বাহিনীই হবে বিজয়ী।</p><p id="b39b0069-daac-41fc-b92c-927c99d4e876" class="">174 অতএব কিছু কালের জন্য আপনি তাদের থেকে মুখ ফিরিয়ে থাকুন।</p><p id="a67e63d9-a5d9-4b3f-a64a-048adb2d4414" class="">175 আর আপনি তাদেরকে পর্যবেক্ষণ করুন, শীঘ্রই তারা দেখতে পাবে।</p><p id="59bec410-e964-467a-9f78-b4338784cbae" class="">176 তারা কি তবে আমাদের শাস্তি ত্বরান্বিত করতে চায়?</p><p id="cb696d8d-6923-472a-987d-5b322426beed" class="">177 অতঃপর তাদের আঙিনায় যখন শাস্তি নেমে আসবে তখন সতর্কীকৃতদের সকাল বেলাটা কত মন্দ হবে !</p><p id="7328d290-a599-45ba-82fd-9874ca392fde" class="">178 আর কিছু কালের জন্য আপনি তাদের থেকে মুখ ফিরিয়ে থাকুন।</p><p id="aee4706f-83fa-46c0-9d4f-66cc63d4495b" class="">179 আর আপনি তাদেরকে পর্যবেক্ষণ করুন, শীঘ্রই তারা দেখতে পাবে।</p><p id="d5ef0306-ac1a-42a5-8541-e3a64ba36208" class="">180 তারা যা আরোপ করে, তা থেকে পবিত্র ও মহান আপনার রব, সকল ক্ষমতার অধিকারী।</p><p id="6bab0e18-3ac1-45fb-bae0-20d8241e5c93" class="">181 আর শান্তি বর্ষিত হোক রাসূলদের প্ৰতি!</p><p id="599b3fc0-37f1-47c9-be86-27a512f3955d" class="">182 আর সকল প্রশংসা সৃষ্টিকুলের রব আল্লাহরই জন্য ।</p><p id="140bab23-e3ee-4c9c-876f-f3954dcb78ef" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

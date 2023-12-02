@@ -1,0 +1,1935 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Quran zakariya</title>
+        <style>
+            /* cspell:disable-file */
+            /* webkit printing magic: print all background colors */
+            html {
+                -webkit-print-color-adjust: exact;
+            }
+            * {
+                box-sizing: border-box;
+                -webkit-print-color-adjust: exact;
+            }
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            @media only screen {
+                body {
+                    margin: 2em auto;
+                    max-width: 900px;
+                    color: rgb(55, 53, 47);
+                }
+            }
+
+            body {
+                line-height: 1.5;
+                white-space: pre-wrap;
+            }
+
+            a,
+            a.visited {
+                color: inherit;
+                text-decoration: underline;
+            }
+
+            .pdf-relative-link-path {
+                font-size: 80%;
+                color: #444;
+            }
+
+            h1,
+            h2,
+            h3 {
+                letter-spacing: -0.01em;
+                line-height: 1.2;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+
+            .page-title {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-top: 0;
+                margin-bottom: 0.75em;
+            }
+
+            h1 {
+                font-size: 1.875rem;
+                margin-top: 1.875rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+                margin-top: 1.25rem;
+            }
+
+            .source {
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                padding: 1.5em;
+                word-break: break-all;
+            }
+
+            .callout {
+                border-radius: 3px;
+                padding: 1rem;
+            }
+
+            figure {
+                margin: 1.25em 0;
+                page-break-inside: avoid;
+            }
+
+            figcaption {
+                opacity: 0.5;
+                font-size: 85%;
+                margin-top: 0.5em;
+            }
+
+            mark {
+                background-color: transparent;
+            }
+
+            .indented {
+                padding-left: 1.5em;
+            }
+
+            hr {
+                background: transparent;
+                display: block;
+                width: 100%;
+                height: 1px;
+                visibility: visible;
+                border: none;
+                border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            @media only print {
+                img {
+                    max-height: 100vh;
+                    object-fit: contain;
+                }
+            }
+
+            @page {
+                margin: 1in;
+            }
+
+            .collection-content {
+                font-size: 0.875rem;
+            }
+
+            .column-list {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .column {
+                padding: 0 1em;
+            }
+
+            .column:first-child {
+                padding-left: 0;
+            }
+
+            .column:last-child {
+                padding-right: 0;
+            }
+
+            .table_of_contents-item {
+                display: block;
+                font-size: 0.875rem;
+                line-height: 1.3;
+                padding: 0.125rem;
+            }
+
+            .table_of_contents-indent-1 {
+                margin-left: 1.5rem;
+            }
+
+            .table_of_contents-indent-2 {
+                margin-left: 3rem;
+            }
+
+            .table_of_contents-indent-3 {
+                margin-left: 4.5rem;
+            }
+
+            .table_of_contents-link {
+                text-decoration: none;
+                opacity: 0.7;
+                border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid rgba(55, 53, 47, 0.09);
+                border-collapse: collapse;
+            }
+
+            table {
+                border-left: none;
+                border-right: none;
+            }
+
+            th,
+            td {
+                font-weight: normal;
+                padding: 0.25em 0.5em;
+                line-height: 1.5;
+                min-height: 1.5em;
+                text-align: left;
+            }
+
+            th {
+                color: rgba(55, 53, 47, 0.6);
+            }
+
+            ol,
+            ul {
+                margin: 0;
+                margin-block-start: 0.6em;
+                margin-block-end: 0.6em;
+            }
+
+            li > ol:first-child,
+            li > ul:first-child {
+                margin-block-start: 0.6em;
+            }
+
+            ul > li {
+                list-style: disc;
+            }
+
+            ul.to-do-list {
+                padding-inline-start: 0;
+            }
+
+            ul.to-do-list > li {
+                list-style: none;
+            }
+
+            .to-do-children-checked {
+                text-decoration: line-through;
+                opacity: 0.375;
+            }
+
+            ul.toggle > li {
+                list-style: none;
+            }
+
+            ul {
+                padding-inline-start: 1.7em;
+            }
+
+            ul > li {
+                padding-left: 0.1em;
+            }
+
+            ol {
+                padding-inline-start: 1.6em;
+            }
+
+            ol > li {
+                padding-left: 0.2em;
+            }
+
+            .mono ol {
+                padding-inline-start: 2em;
+            }
+
+            .mono ol > li {
+                text-indent: -0.4em;
+            }
+
+            .toggle {
+                padding-inline-start: 0em;
+                list-style-type: none;
+            }
+
+            /* Indent toggle children */
+            .toggle > li > details {
+                padding-left: 1.7em;
+            }
+
+            .toggle > li > details > summary {
+                margin-left: -1.1em;
+            }
+
+            .selected-value {
+                display: inline-block;
+                padding: 0 0.5em;
+                background: rgba(206, 205, 202, 0.5);
+                border-radius: 3px;
+                margin-right: 0.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.3em;
+                white-space: nowrap;
+            }
+
+            .collection-title {
+                display: inline-block;
+                margin-right: 1em;
+            }
+
+            .page-description {
+                margin-bottom: 2em;
+            }
+
+            .simple-table {
+                margin-top: 1em;
+                font-size: 0.875rem;
+                empty-cells: show;
+            }
+            .simple-table td {
+                height: 29px;
+                min-width: 120px;
+            }
+
+            .simple-table th {
+                height: 29px;
+                min-width: 120px;
+            }
+
+            .simple-table-header-color {
+                background: rgb(247, 246, 243);
+                color: black;
+            }
+            .simple-table-header {
+                font-weight: 500;
+            }
+
+            time {
+                opacity: 0.5;
+            }
+
+            .icon {
+                display: inline-block;
+                max-width: 1.2em;
+                max-height: 1.2em;
+                text-decoration: none;
+                vertical-align: text-bottom;
+                margin-right: 0.5em;
+            }
+
+            img.icon {
+                border-radius: 3px;
+            }
+
+            .user-icon {
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 100%;
+                margin-right: 0.5rem;
+            }
+
+            .user-icon-inner {
+                font-size: 0.8em;
+            }
+
+            .text-icon {
+                border: 1px solid #000;
+                text-align: center;
+            }
+
+            .page-cover-image {
+                display: block;
+                object-fit: cover;
+                width: 100%;
+                max-height: 30vh;
+            }
+
+            .page-header-icon {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .page-header-icon-with-cover {
+                margin-top: -0.72em;
+                margin-left: 0.07em;
+            }
+
+            .page-header-icon img {
+                border-radius: 3px;
+            }
+
+            .link-to-page {
+                margin: 1em 0;
+                padding: 0;
+                border: none;
+                font-weight: 500;
+            }
+
+            p > .user {
+                opacity: 0.5;
+            }
+
+            td > .user,
+            td > time {
+                white-space: nowrap;
+            }
+
+            input[type="checkbox"] {
+                transform: scale(1.5);
+                margin-right: 0.6em;
+                vertical-align: middle;
+            }
+
+            p {
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+            }
+
+            .image {
+                border: none;
+                margin: 1.5em 0;
+                padding: 0;
+                border-radius: 0;
+                text-align: center;
+            }
+
+            .code,
+            code {
+                background: rgba(135, 131, 120, 0.15);
+                border-radius: 3px;
+                padding: 0.2em 0.4em;
+                border-radius: 3px;
+                font-size: 85%;
+                tab-size: 2;
+            }
+
+            code {
+                color: #eb5757;
+            }
+
+            .code {
+                padding: 1.5em 1em;
+            }
+
+            .code-wrap {
+                white-space: pre-wrap;
+                word-break: break-all;
+            }
+
+            .code > code {
+                background: none;
+                padding: 0;
+                font-size: 100%;
+                color: inherit;
+            }
+
+            blockquote {
+                font-size: 1.25em;
+                margin: 1em 0;
+                padding-left: 1em;
+                border-left: 3px solid rgb(55, 53, 47);
+            }
+
+            .bookmark {
+                text-decoration: none;
+                max-height: 8em;
+                padding: 0;
+                display: flex;
+                width: 100%;
+                align-items: stretch;
+            }
+
+            .bookmark-title {
+                font-size: 0.85em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                height: 1.75em;
+                white-space: nowrap;
+            }
+
+            .bookmark-text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .bookmark-info {
+                flex: 4 1 180px;
+                padding: 12px 14px 14px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .bookmark-image {
+                width: 33%;
+                flex: 1 1 180px;
+                display: block;
+                position: relative;
+                object-fit: cover;
+                border-radius: 1px;
+            }
+
+            .bookmark-description {
+                color: rgba(55, 53, 47, 0.6);
+                font-size: 0.75em;
+                overflow: hidden;
+                max-height: 4.5em;
+                word-break: break-word;
+            }
+
+            .bookmark-href {
+                font-size: 0.75em;
+                margin-top: 0.25em;
+            }
+
+            .sans {
+                font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont,
+                    "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
+                    sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            }
+            .code {
+                font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono",
+                    "Liberation Mono", Courier, monospace;
+            }
+            .serif {
+                font-family: Lyon-Text, Georgia, ui-serif, serif;
+            }
+            .mono {
+                font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+            }
+            .pdf .sans {
+                font-family: Inter, ui-sans-serif, -apple-system,
+                    BlinkMacSystemFont, "Segoe UI", Helvetica,
+                    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+                    "Segoe UI Symbol", "Twemoji", "Noto Color Emoji",
+                    "Noto Sans CJK JP";
+            }
+            .pdf:lang(zh-CN) .sans {
+                font-family: Inter, ui-sans-serif, -apple-system,
+                    BlinkMacSystemFont, "Segoe UI", Helvetica,
+                    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+                    "Segoe UI Symbol", "Twemoji", "Noto Color Emoji",
+                    "Noto Sans CJK SC";
+            }
+            .pdf:lang(zh-TW) .sans {
+                font-family: Inter, ui-sans-serif, -apple-system,
+                    BlinkMacSystemFont, "Segoe UI", Helvetica,
+                    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+                    "Segoe UI Symbol", "Twemoji", "Noto Color Emoji",
+                    "Noto Sans CJK TC";
+            }
+            .pdf:lang(ko-KR) .sans {
+                font-family: Inter, ui-sans-serif, -apple-system,
+                    BlinkMacSystemFont, "Segoe UI", Helvetica,
+                    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+                    "Segoe UI Symbol", "Twemoji", "Noto Color Emoji",
+                    "Noto Sans CJK KR";
+            }
+            .pdf .code {
+                font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+                    "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+                    "Noto Color Emoji", "Noto Sans Mono CJK JP";
+            }
+            .pdf:lang(zh-CN) .code {
+                font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+                    "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+                    "Noto Color Emoji", "Noto Sans Mono CJK SC";
+            }
+            .pdf:lang(zh-TW) .code {
+                font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+                    "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+                    "Noto Color Emoji", "Noto Sans Mono CJK TC";
+            }
+            .pdf:lang(ko-KR) .code {
+                font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+                    "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+                    "Noto Color Emoji", "Noto Sans Mono CJK KR";
+            }
+            .pdf .serif {
+                font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif,
+                    "Twemoji", "Noto Color Emoji", "Noto Serif CJK JP";
+            }
+            .pdf:lang(zh-CN) .serif {
+                font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif,
+                    "Twemoji", "Noto Color Emoji", "Noto Serif CJK SC";
+            }
+            .pdf:lang(zh-TW) .serif {
+                font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif,
+                    "Twemoji", "Noto Color Emoji", "Noto Serif CJK TC";
+            }
+            .pdf:lang(ko-KR) .serif {
+                font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif,
+                    "Twemoji", "Noto Color Emoji", "Noto Serif CJK KR";
+            }
+            .pdf .mono {
+                font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier,
+                    monospace, "Twemoji", "Noto Color Emoji",
+                    "Noto Sans Mono CJK JP";
+            }
+            .pdf:lang(zh-CN) .mono {
+                font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier,
+                    monospace, "Twemoji", "Noto Color Emoji",
+                    "Noto Sans Mono CJK SC";
+            }
+            .pdf:lang(zh-TW) .mono {
+                font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier,
+                    monospace, "Twemoji", "Noto Color Emoji",
+                    "Noto Sans Mono CJK TC";
+            }
+            .pdf:lang(ko-KR) .mono {
+                font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier,
+                    monospace, "Twemoji", "Noto Color Emoji",
+                    "Noto Sans Mono CJK KR";
+            }
+            .highlight-default {
+                color: rgba(55, 53, 47, 1);
+            }
+            .highlight-gray {
+                color: rgba(120, 119, 116, 1);
+                fill: rgba(120, 119, 116, 1);
+            }
+            .highlight-brown {
+                color: rgba(159, 107, 83, 1);
+                fill: rgba(159, 107, 83, 1);
+            }
+            .highlight-orange {
+                color: rgba(217, 115, 13, 1);
+                fill: rgba(217, 115, 13, 1);
+            }
+            .highlight-yellow {
+                color: rgba(203, 145, 47, 1);
+                fill: rgba(203, 145, 47, 1);
+            }
+            .highlight-teal {
+                color: rgba(68, 131, 97, 1);
+                fill: rgba(68, 131, 97, 1);
+            }
+            .highlight-blue {
+                color: rgba(51, 126, 169, 1);
+                fill: rgba(51, 126, 169, 1);
+            }
+            .highlight-purple {
+                color: rgba(144, 101, 176, 1);
+                fill: rgba(144, 101, 176, 1);
+            }
+            .highlight-pink {
+                color: rgba(193, 76, 138, 1);
+                fill: rgba(193, 76, 138, 1);
+            }
+            .highlight-red {
+                color: rgba(212, 76, 71, 1);
+                fill: rgba(212, 76, 71, 1);
+            }
+            .highlight-gray_background {
+                background: rgba(241, 241, 239, 1);
+            }
+            .highlight-brown_background {
+                background: rgba(244, 238, 238, 1);
+            }
+            .highlight-orange_background {
+                background: rgba(251, 236, 221, 1);
+            }
+            .highlight-yellow_background {
+                background: rgba(251, 243, 219, 1);
+            }
+            .highlight-teal_background {
+                background: rgba(237, 243, 236, 1);
+            }
+            .highlight-blue_background {
+                background: rgba(231, 243, 248, 1);
+            }
+            .highlight-purple_background {
+                background: rgba(244, 240, 247, 0.8);
+            }
+            .highlight-pink_background {
+                background: rgba(249, 238, 243, 0.8);
+            }
+            .highlight-red_background {
+                background: rgba(253, 235, 236, 1);
+            }
+            .block-color-default {
+                color: inherit;
+                fill: inherit;
+            }
+            .block-color-gray {
+                color: rgba(120, 119, 116, 1);
+                fill: rgba(120, 119, 116, 1);
+            }
+            .block-color-brown {
+                color: rgba(159, 107, 83, 1);
+                fill: rgba(159, 107, 83, 1);
+            }
+            .block-color-orange {
+                color: rgba(217, 115, 13, 1);
+                fill: rgba(217, 115, 13, 1);
+            }
+            .block-color-yellow {
+                color: rgba(203, 145, 47, 1);
+                fill: rgba(203, 145, 47, 1);
+            }
+            .block-color-teal {
+                color: rgba(68, 131, 97, 1);
+                fill: rgba(68, 131, 97, 1);
+            }
+            .block-color-blue {
+                color: rgba(51, 126, 169, 1);
+                fill: rgba(51, 126, 169, 1);
+            }
+            .block-color-purple {
+                color: rgba(144, 101, 176, 1);
+                fill: rgba(144, 101, 176, 1);
+            }
+            .block-color-pink {
+                color: rgba(193, 76, 138, 1);
+                fill: rgba(193, 76, 138, 1);
+            }
+            .block-color-red {
+                color: rgba(212, 76, 71, 1);
+                fill: rgba(212, 76, 71, 1);
+            }
+            .block-color-gray_background {
+                background: rgba(241, 241, 239, 1);
+            }
+            .block-color-brown_background {
+                background: rgba(244, 238, 238, 1);
+            }
+            .block-color-orange_background {
+                background: rgba(251, 236, 221, 1);
+            }
+            .block-color-yellow_background {
+                background: rgba(251, 243, 219, 1);
+            }
+            .block-color-teal_background {
+                background: rgba(237, 243, 236, 1);
+            }
+            .block-color-blue_background {
+                background: rgba(231, 243, 248, 1);
+            }
+            .block-color-purple_background {
+                background: rgba(244, 240, 247, 0.8);
+            }
+            .block-color-pink_background {
+                background: rgba(249, 238, 243, 0.8);
+            }
+            .block-color-red_background {
+                background: rgba(253, 235, 236, 1);
+            }
+            .select-value-color-uiBlue {
+                background-color: rgba(35, 131, 226, 0.07);
+            }
+            .select-value-color-pink {
+                background-color: rgba(245, 224, 233, 1);
+            }
+            .select-value-color-purple {
+                background-color: rgba(232, 222, 238, 1);
+            }
+            .select-value-color-green {
+                background-color: rgba(219, 237, 219, 1);
+            }
+            .select-value-color-gray {
+                background-color: rgba(227, 226, 224, 1);
+            }
+            .select-value-color-translucentGray {
+                background-color: rgba(255, 255, 255, 0.0375);
+            }
+            .select-value-color-orange {
+                background-color: rgba(250, 222, 201, 1);
+            }
+            .select-value-color-brown {
+                background-color: rgba(238, 224, 218, 1);
+            }
+            .select-value-color-red {
+                background-color: rgba(255, 226, 221, 1);
+            }
+            .select-value-color-yellow {
+                background-color: rgba(253, 236, 200, 1);
+            }
+            .select-value-color-blue {
+                background-color: rgba(211, 229, 239, 1);
+            }
+            .select-value-color-pageGlass {
+                background-color: undefined;
+            }
+            .select-value-color-washGlass {
+                background-color: undefined;
+            }
+
+            .checkbox {
+                display: inline-flex;
+                vertical-align: text-bottom;
+                width: 16;
+                height: 16;
+                background-size: 16px;
+                margin-left: 2px;
+                margin-right: 5px;
+            }
+
+            .checkbox-on {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+            }
+
+            .checkbox-off {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+            }
+        </style>
+    </head>
+    <body>
+        <article id="7ae4d7a0-b417-4e07-a32f-8bd107d635c6" class="page sans">
+            <header>
+                <div class="page-header-icon undefined">
+                    <span class="icon">📕</span>
+                </div>
+                <h1 class="page-title">Quran zakariya</h1>
+                <p class="page-description"></p>
+            </header>
+            <div class="page-body">
+                <ul id="b4b39163-f6d4-48b4-ae24-0516d1295ead" class="toggle">
+                    <li>
+                        <details>
+                            <summary>info</summary>
+                            <p
+                                id="836c9509-6608-451b-a8e0-297c900dcb37"
+                                class=""
+                            >
+                                green : adesh
+                            </p>
+                            <p
+                                id="bccd75df-b3fe-411b-8df6-5b449e9091d9"
+                                class=""
+                            >
+                                red : nised
+                            </p>
+                            <p
+                                id="9e214cdc-7be3-450a-9dac-bc1745e8d7bf"
+                                class=""
+                            >
+                                nil : sristi
+                            </p>
+                            <p
+                                id="56aec441-b045-4bb6-8f35-1254666bf29f"
+                                class=""
+                            >
+                                brown : manush niye allah ja bolchhe
+                            </p>
+                            <p
+                                id="5adf7b16-7945-4d92-bc98-f5b7c4db91fe"
+                                class=""
+                            >
+                                notun jara quran porbe tara eta diye suru korte
+                                pare: 70,96,74,73
+                            </p>
+                        </details>
+                    </li>
+                </ul>
+                <figure
+                    id="39208d5a-bc98-434a-8855-e1417968ff4d"
+                    class="link-to-page"
+                >
+                    <a href="1.html"><span class="icon">🚜</span>নবীর বংশ </a>
+                </figure>
+                <figure
+                    id="498deb38-638a-4b05-8669-98c9efa926e5"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%20%E0%A6%86%E0%A6%B2-%E0%A6%AB%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%B9%E0%A6%BE%20(%E0%A6%B8%E0%A7%82%E0%A6%9A%E0%A6%A8%E0%A6%BE%20)%20498deb38638a4b05866998c9efa926e5.html"
+                        ><span class="icon">📕</span>১. আল-ফাতিহা (সূচনা )
+                    </a>
+                </figure>
+                <figure
+                    id="200be45f-f1f9-4923-9ea0-880d055507fd"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%20%E0%A6%86%E0%A6%B2-%E0%A6%AC%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BE%20(%E0%A6%AC%E0%A6%95%E0%A6%A8%E0%A6%BE-%E0%A6%AC%E0%A6%BE%E0%A6%9B%E0%A7%81%E0%A6%B0%20)%20200be45ff1f949239ea0880d055507fd.html"
+                        ><span class="icon">📕</span>২. আল-বাকারা (বকনা-বাছুর
+                        ).</a
+                    >
+                </figure>
+                <figure
+                    id="f01bf9b4-e4ca-4eca-b3ca-2e13007e2ce0"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%20%E0%A6%86%E0%A6%B2%E0%A7%87-%E0%A6%87%E0%A6%AE%E0%A6%B0%E0%A6%BE%E0%A6%A8%20(%E0%A6%87%E0%A6%AE%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A6%B0%20)%20f01bf9b4e4ca4ecab3ca2e13007e2ce0.html"
+                        ><span class="icon">📕</span>৩. আলে-ইমরান (ইমরানের
+                        পরিবার )</a
+                    >
+                </figure>
+                <figure
+                    id="f33bc1f4-b924-4767-822b-5947cf763ca5"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%20%E0%A6%86%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A6%BE%20(%E0%A6%AE%E0%A6%B9%E0%A6%BF%E0%A6%B2%E0%A6%BE%20)%20f33bc1f4b9244767822b5947cf763ca5.html"
+                        ><span class="icon">📕</span>৪. আন-নিসা (মহিলা )</a
+                    >
+                </figure>
+                <figure
+                    id="42e9bb15-8f40-4817-bf07-c1f4de7ba2af"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%A6%E0%A6%BE(%E0%A6%96%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%AF%20%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A4%20%E0%A6%9F%E0%A7%87%E0%A6%AC%2042e9bb158f404817bf07c1f4de7ba2af.html"
+                        ><span class="icon">📕</span>৫. আল-মায়েদা(খাদ্য পরিবেশিত
+                        টেব</a
+                    >
+                </figure>
+                <figure
+                    id="d5cb460e-da22-4729-9f46-3a03a41ec8f1"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%20%E0%A6%86%E0%A6%B2-%E0%A6%86%E0%A6%A8&#x27;%E0%A6%86%E0%A6%AE%20(%E0%A6%97%E0%A7%83%E0%A7%83%E0%A6%B9%E0%A6%AA%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%A4%20%E0%A6%AA%E0%A6%B6%E0%A7%81%20)%20d5cb460eda2247299f463a03a41ec8f1.html"
+                        ><span class="icon">📕</span>৬. আল-আন&#x27;আম (গৃৃহপালিত
+                        পশু )</a
+                    >
+                </figure>
+                <figure
+                    id="825273a8-a99c-42cb-874d-001953235e21"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%20%E0%A6%86%E0%A6%B2-%E0%A6%86&#x27;%E0%A6%B0%E0%A6%BE%E0%A6%AB%20(%E0%A6%89%E0%A6%9A%E0%A7%81%20%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%B8%E0%A6%AE%E0%A7%82%E0%A6%B9%20)%20825273a8a99c42cb874d001953235e21.html"
+                        ><span class="icon">📕</span>৭. আল-আ&#x27;রাফ (উচু
+                        স্থানসমূহ ) .</a
+                    >
+                </figure>
+                <figure
+                    id="324820f7-a8fa-41a2-884b-ec5461555d04"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%20%E0%A6%86%E0%A6%B2-%E0%A6%86%E0%A6%A8%E0%A6%AB%E0%A6%BE%E0%A6%B2%20(%E0%A6%AF%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A7%87-%E0%A6%B2%E0%A6%AC%E0%A7%8D%E0%A6%A7%20%E0%A6%A7%E0%A6%A8%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%A6%20)%20324820f7a8fa41a2884bec5461555d04.html"
+                        ><span class="icon">📕</span>৮. আল-আনফাল (যুদ্ধে-লব্ধ
+                        ধনসম্পদ )</a
+                    >
+                </figure>
+                <figure
+                    id="5232477d-8376-4438-be4e-40485ae838dc"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%20%E0%A6%86%E0%A6%A4%20%E0%A6%A4%E0%A6%BE%E0%A6%93%E0%A6%AC%E0%A6%BE%20(%20%E0%A6%86%E0%A6%A8%E0%A7%81%E0%A6%B6%E0%A7%81%E0%A6%9A%E0%A6%A8%E0%A6%BE)%205232477d83764438be4e40485ae838dc.html"
+                        ><span class="icon">📕</span>৯. আত তাওবা ( আনুশুচনা)</a
+                    >
+                </figure>
+                <figure
+                    id="80956177-7cf0-43d9-933d-af8c9e4b1650"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%20%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A7%81%E0%A6%B8%20(%E0%A6%A8%E0%A6%AC%E0%A7%80%20%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A7%81%E0%A6%B8%20(%E0%A6%86%20)%20)%20809561777cf043d9933daf8c9e4b1650.html"
+                        ><span class="icon">📕</span>১০. ইউনুস (নবী ইউনুস (আ.)
+                        ).</a
+                    >
+                </figure>
+                <figure
+                    id="5aa8eddc-e606-4ba5-a60c-0aeebd315998"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A7%20%E0%A6%B9%E0%A7%82%E0%A6%A6%20(%E0%A6%A8%E0%A6%AC%E0%A7%80%20%E0%A6%B9%E0%A7%81%E0%A6%A6%20)%205aa8eddce6064ba5a60c0aeebd315998.html"
+                        ><span class="icon">📕</span>১১. হূদ (নবী হুদ ).
+                    </a>
+                </figure>
+                <figure
+                    id="b1a8d9be-dc26-4587-a004-88b5abb1f936"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A8%20%E0%A6%87%E0%A6%89%E0%A6%B8%E0%A7%81%E0%A6%AB%20(%E0%A6%A8%E0%A6%AC%E0%A7%80%20%E0%A6%87%E0%A6%89%E0%A6%B8%E0%A7%81%E0%A6%AB%20(%E0%A6%86%20)%20)%20b1a8d9bedc264587a00488b5abb1f936.html"
+                        ><span class="icon">📕</span>১২. ইউসুফ (নবী ইউসুফ (আ.)
+                        ).
+                    </a>
+                </figure>
+                <figure
+                    id="d0eb2ed4-fad3-4297-8d25-d151582f7021"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A9%20%E0%A6%86%E0%A6%B0-%E0%A6%B0%E0%A6%BE%E0%A6%A6%20(%E0%A6%AC%E0%A6%9C%E0%A7%8D%E0%A6%B0%E0%A6%A8%E0%A6%BE%E0%A6%A6%20)%20d0eb2ed4fad342978d25d151582f7021.html"
+                        ><span class="icon">📕</span>১৩. আর-রাদ (বজ্রনাদ ) .</a
+                    >
+                </figure>
+                <figure
+                    id="c49df594-33fc-42c5-b9c1-0a35942d3de2"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%AA%20%E0%A6%87%E0%A6%AC%E0%A6%B0%E0%A6%BE%E0%A6%B9%E0%A7%80%E0%A6%AE%20(%E0%A6%A8%E0%A6%AC%E0%A7%80%20%E0%A6%87%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%AE%20(%E0%A6%86%20)%20)%20c49df59433fc42c5b9c10a35942d3de2.html"
+                        ><span class="icon">📕</span>১৪. ইবরাহীম (নবী ইব্রাহিম
+                        (আ.) ).
+                    </a>
+                </figure>
+                <figure
+                    id="992a20cd-7f0e-471a-bdda-92e19e9a3a9e"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%AB%20%E0%A6%86%E0%A6%B2-%E0%A6%B9%E0%A6%BF%E0%A6%9C%E0%A6%B0%20(%E0%A6%AA%E0%A6%BE%E0%A6%A5%E0%A7%81%E0%A6%B0%E0%A7%87%20%E0%A6%AA%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%A1%E0%A6%BC%20)%20992a20cd7f0e471abdda92e19e9a3a9e.html"
+                        ><span class="icon">📕</span>১৫. আল-হিজর (পাথুরে পাহাড়
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="a8940b7e-5ee8-4004-943c-63121b5d349a"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%AC%20%E0%A6%86%E0%A6%A8-%E0%A6%A8%E0%A6%BE%E0%A6%B9%E0%A6%B2%20(%20%E0%A6%AE%E0%A7%87%E0%A7%97%E0%A6%AE%E0%A6%BE%E0%A6%9B%E0%A6%BF%20)%20a8940b7e5ee84004943c63121b5d349a.html"
+                        ><span class="icon">📕</span>১৬. আন-নাহল ( মৌমাছি )</a
+                    >
+                </figure>
+                <figure
+                    id="3697741f-7706-4bce-bb64-0f4b9a27c995"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%AD%20%E0%A6%86%E0%A6%B2-%E0%A6%87%E0%A6%B8%E0%A6%B0%E0%A6%BE%20(%E0%A6%AC%E0%A6%A8%E0%A7%80-%E0%A6%87%E0%A6%B8%E0%A6%B0%E0%A6%BE%E0%A6%88%E0%A6%B2)%20(%E0%A6%B0%E0%A6%BE%E0%A6%A4%E0%A7%87%E0%A6%B0%20%E0%A6%B8%E0%A6%AB%E0%A6%B0%20(%E0%A6%87%E0%A6%B8%E0%A6%B0%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%B0%20%E0%A6%B8%E0%A6%A8%E0%A7%8D%203697741f77064bcebb640f4b9a27c995.html"
+                        ><span class="icon">📕</span>১৭. আল-ইসরা (বনী-ইসরাঈল)
+                        (রাতের সফর (ইসরায়েলের সন্তানগণ [ইহুদী জাতি]) .</a
+                    >
+                </figure>
+                <figure
+                    id="c388b61a-6fe9-4d57-897c-d90733c3fd07"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%AE%20%E0%A6%86%E0%A6%B2-%E0%A6%95%E0%A6%BE%E0%A6%B9%E0%A6%AB%20(%E0%A6%97%E0%A7%81%E0%A6%B9)%20c388b61a6fe94d57897cd90733c3fd07.html"
+                        ><span class="icon">📕</span>১৮. আল-কাহফ (গুহ) .</a
+                    >
+                </figure>
+                <figure
+                    id="18fb80bc-11ed-430c-bd0d-48458c806239"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%AF%20%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%87%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%20(%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%20%5B%E0%A6%A8%E0%A6%AC%E0%A7%80%20%E0%A6%88%E0%A6%B8%E0%A6%BE%20(%E0%A6%86%20)%20%E0%A6%8F%E0%A6%B0%20%E0%A6%AE%E0%A6%BE%5D%20)%2018fb80bc11ed430cbd0d48458c806239.html"
+                        ><span class="icon">📕</span>১৯. মারইয়াম (মারিয়াম [নবী
+                        ঈসা (আ.) এর মা] )</a
+                    >
+                </figure>
+                <figure
+                    id="2fd7f351-721b-4480-a4bc-8bb749d71f48"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%E0%A7%A6%20%E0%A6%A4%E0%A7%8D%E0%A6%AC-%E0%A6%B9%E0%A6%BE%20(%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A7%87%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A6%BE-%E0%A6%B9%E0%A6%BE%20)%202fd7f351721b4480a4bc8bb749d71f48.html"
+                        ><span class="icon">📕</span>২০. ত্ব-হা (ত্বোয়া-হা )</a
+                    >
+                </figure>
+                <figure
+                    id="61fabec8-1c9e-4dfc-9bf9-ee65ae683c57"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%E0%A7%A7%20%E0%A6%86%E0%A6%B2-%E0%A6%86%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%20(%E0%A6%A8%E0%A6%AC%E0%A7%80%E0%A6%97%E0%A6%A3%20)%2061fabec81c9e4dfc9bf9ee65ae683c57.html"
+                        ><span class="icon">📕</span>২১. আল-আম্বিয়া (নবীগণ ) .
+                    </a>
+                </figure>
+                <figure
+                    id="b1be9e4d-cada-4b08-bf4c-14874f58c1ea"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%E0%A7%A8%20%E0%A6%86%E0%A6%B2-%E0%A6%B9%E0%A6%9C%E0%A7%8D%E0%A6%9C%20(%20%E0%A6%B9%E0%A6%9C%E0%A7%8D%E0%A6%9C%20(%E0%A6%B9%E0%A6%9C)%20)%20b1be9e4dcada4b08bf4c14874f58c1ea.html"
+                        ><span class="icon">📕</span>২২. আল-হজ্জ ( হজ্জ (হজ)
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="78c1b60a-4441-4485-a005-fd888f8fb995"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%E0%A7%A9%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A7%81%E0%A6%AE%E0%A6%BF%E0%A6%A8%E0%A7%81%E0%A6%A8%20(%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%80%E0%A6%97%E0%A6%A3%20)%2078c1b60a44414485a005fd888f8fb995.html"
+                        ><span class="icon">📕</span>২৩. আল-মুমিনুন (বিশ্বাসীগণ
+                        )
+                    </a>
+                </figure>
+                <figure
+                    id="af1cc07c-62f2-4564-930b-95665eaa8d95"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%E0%A7%AA%20%E0%A6%86%E0%A6%A8-%E0%A6%A8%E0%A7%82%E0%A6%B0%20(%E0%A6%86%E0%A6%B2%E0%A7%87%E0%A6%BE,%E0%A6%9C%E0%A7%8D%E0%A6%AF%E0%A7%87%E0%A6%BE%E0%A6%A4%E0%A6%BF%20)%20af1cc07c62f24564930b95665eaa8d95.html"
+                        ><span class="icon">📕</span>২৪. আন-নূর (আলো,জ্যোতি )</a
+                    >
+                </figure>
+                <figure
+                    id="77a191fc-ccd8-47d5-82e8-2cb232d3125c"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%E0%A7%AB%20%E0%A6%86%E0%A6%B2-%E0%A6%AB%E0%A7%81%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%A8%20(%E0%A6%B8%E0%A6%A4%E0%A7%8D%E0%A6%AF%20%E0%A6%AE%E0%A6%BF%E0%A6%A5%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%20%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A6%95%E0%A7%8D%E0%A6%AF%20%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A7%E0%A6%BE%E0%A6%B0%E0%A6%A3%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%80%20%E0%A6%97%2077a191fcccd847d582e82cb232d3125c.html"
+                        ><span class="icon">📕</span>২৫. আল-ফুরকান (সত্য মিথ্যার
+                        পার্থক্য নির্ধারণকারী গ্রন্থ ) .</a
+                    >
+                </figure>
+                <figure
+                    id="24cbf9b1-a2ea-40c9-be78-81ef7cc73da0"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%E0%A7%AC%20%E0%A6%86%E0%A6%B6-%E0%A6%B6%E0%A7%81%E0%A6%86&#x27;%E0%A6%B0%E0%A6%BE%20(%E0%A6%95%E0%A6%AC%E0%A6%BF%E0%A6%97%E0%A6%A3%20)%2024cbf9b1a2ea40c9be7881ef7cc73da0.html"
+                        ><span class="icon">📕</span>২৬. আশ-শুআ&#x27;রা (কবিগণ
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="e8acfa3b-56f7-4d95-92c6-a289ad8f2684"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%E0%A7%AD%20%E0%A6%86%E0%A6%A8-%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A6%B2%20(%E0%A6%AA%E0%A6%BF%E0%A6%AA%E0%A7%80%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE%20(%E0%A6%AA%E0%A6%BF%E0%A6%81%E0%A6%AA%E0%A6%A1%E0%A6%BC%E0%A6%BE)%20)%20e8acfa3b56f74d9592c6a289ad8f2684.html"
+                        ><span class="icon">📕</span>২৭. আন-নামাল (পিপীলিকা
+                        (পিঁপড়া) ) .</a
+                    >
+                </figure>
+                <figure
+                    id="6a97e2e4-7df4-41d9-81ba-2958429bdb7d"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%E0%A7%AE%20%E0%A6%86%E0%A6%B2-%E0%A6%95%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%B8%20(%E0%A6%98%E0%A6%9F%E0%A6%A8%E0%A6%BE,%E0%A6%95%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%A8%E0%A7%80%20)%206a97e2e47df441d981ba2958429bdb7d.html"
+                        ><span class="icon">📕</span>২৮. আল-কাসাস (ঘটনা,কাহিনী
+                        ).
+                    </a>
+                </figure>
+                <figure
+                    id="6debc6c5-c057-4b64-a93e-e621e0fcc44e"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A8%E0%A7%AF%20%E0%A6%86%E0%A6%B2-%E0%A6%86%E0%A6%A8%E0%A6%95%E0%A6%BE%E0%A6%AC%E0%A7%82%E0%A6%A4%20(%E0%A6%AE%E0%A6%BE%E0%A6%95%E0%A6%A1%E0%A6%BC%E0%A6%B8%E0%A6%BE%20)%206debc6c5c0574b64a93ee621e0fcc44e.html"
+                        ><span class="icon">📕</span>২৯. আল-আনকাবূত (মাকড়সা ).
+                    </a>
+                </figure>
+                <figure
+                    id="6e024c5b-8c74-4e85-bc95-b7d428fbfee8"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%E0%A7%A6%20%E0%A6%86%E0%A6%B0-%E0%A6%B0%E0%A7%81%E0%A6%AE%20(%E0%A6%B0%E0%A7%87%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A6%A8%20%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%20)%206e024c5b8c744e85bc95b7d428fbfee8.html"
+                        ><span class="icon">📕</span>৩০. আর-রুম (রোমান জাতি ).
+                    </a>
+                </figure>
+                <figure
+                    id="2efa44ae-a454-4ea5-a359-d65d63af5457"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%E0%A7%A7%20%E0%A6%B2%E0%A7%81%E0%A6%95%E0%A6%AE%E0%A6%BE%E0%A6%A8%20(%E0%A6%8F%E0%A6%95%E0%A6%9C%E0%A6%A8%20%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%A8%E0%A7%80%20%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%BF%20)%202efa44aea4544ea5a359d65d63af5457.html"
+                        ><span class="icon">📕</span>৩১. লুকমান (একজন জ্ঞানী
+                        ব্যক্তি ).</a
+                    >
+                </figure>
+                <figure
+                    id="62067dc4-1671-4e77-8ea5-19982f29faa0"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%E0%A7%A8%20%E0%A6%86%E0%A6%B8-%E0%A6%B8%E0%A6%BE%E0%A6%9C%E0%A6%A6%E0%A6%BE%E0%A6%B9%20(%E0%A6%B8%E0%A6%BF%E0%A6%9C%E0%A6%A6%E0%A6%BE%E0%A6%B9%20)%2062067dc416714e778ea519982f29faa0.html"
+                        ><span class="icon">📕</span>৩২. আস-সাজদাহ (সিজদাহ )
+                        .</a
+                    >
+                </figure>
+                <figure
+                    id="d4c121e9-d0ac-4e18-b91f-1d893bf9acdd"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%E0%A7%A9%20%E0%A6%86%E0%A6%B2-%E0%A6%86%E0%A6%B9%E0%A6%AF%E0%A6%BE%E0%A6%AC%20(%E0%A6%9C%E0%A7%87%E0%A6%BE%E0%A6%9F%20)%20d4c121e9d0ac4e18b91f1d893bf9acdd.html"
+                        ><span class="icon">📕</span>৩৩. আল-আহযাব (জোট )</a
+                    >
+                </figure>
+                <figure
+                    id="9b765ab5-f61c-442f-820c-90b1c997369a"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%E0%A7%AA%20%E0%A6%B8%E0%A6%BE%E0%A6%AC%E0%A6%BE%20(%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%80%20%E0%A6%B8%E0%A6%BE%E0%A6%AC%E0%A6%BE%20)%209b765ab5f61c442f820c90b1c997369a.html"
+                        ><span class="icon">📕</span>৩৪. সাবা (রানী সাবা ).</a
+                    >
+                </figure>
+                <figure
+                    id="835ef60d-07a4-429c-9792-f3f6decb2f3d"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%E0%A7%AB%20%E0%A6%AB%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%B0%20(%E0%A6%86%E0%A6%A6%E0%A6%BF%20%E0%A6%B8%E0%A7%8D%E0%A6%B0%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%BE%20)%20835ef60d07a4429c9792f3f6decb2f3d.html"
+                        ><span class="icon">📕</span>৩৫. ফাতির (আদি স্রষ্টা )
+                        .</a
+                    >
+                </figure>
+                <figure
+                    id="db0210bf-38be-4fc3-aab5-63fc013a88f1"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%E0%A7%AC%20%E0%A6%87%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B8%E0%A7%80%E0%A6%A8%20(%E0%A6%87%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B8%E0%A7%80%E0%A6%A8%20)%20db0210bf38be4fc3aab563fc013a88f1.html"
+                        ><span class="icon">📕</span>৩৬. ইয়াসীন (ইয়াসীন )</a
+                    >
+                </figure>
+                <figure
+                    id="a722db90-0764-4115-b80e-411563855d05"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%E0%A7%AD%20%E0%A6%86%E0%A6%B8-%E0%A6%B8%E0%A6%BE%E0%A6%AB%E0%A6%AB%E0%A6%BE%E0%A6%A4%20(%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%AD%E0%A6%BE%E0%A6%AC%E0%A7%87%20%E0%A6%A6%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%BE%20)%20a722db9007644115b80e411563855d05.html"
+                        ><span class="icon">📕</span>৩৭. আস-সাফফাত (সারিবদ্ধভাবে
+                        দাড়ানো )</a
+                    >
+                </figure>
+                <figure
+                    id="e613b8e6-435e-425b-a57c-f3f03cbc7b24"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%E0%A7%AE%20%E0%A6%B8%E0%A7%87%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%A6%20(%E0%A6%86%E0%A6%B0%E0%A6%AC%E0%A6%BF%20%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A3%20)%20e613b8e6435e425ba57cf3f03cbc7b24.html"
+                        ><span class="icon">📕</span>৩৮. সোয়াদ (আরবি বর্ণ )</a
+                    >
+                </figure>
+                <figure
+                    id="62c07347-e404-4ce5-80e4-b4a0d238ef92"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A9%E0%A7%AF%20%E0%A6%86%E0%A6%AF-%E0%A6%AF%E0%A7%81%E0%A6%AE%E0%A6%BE%E0%A6%B0%20(%E0%A6%A6%E0%A6%B2-%E0%A6%AC%E0%A6%A6%E0%A7%8D%E0%A6%A7%20%E0%A6%9C%E0%A6%A8%E0%A6%A4%E0%A6%BE%20)%2062c07347e4044ce580e4b4a0d238ef92.html"
+                        ><span class="icon">📕</span>৩৯. আয-যুমার (দল-বদ্ধ জনতা
+                        ).
+                    </a>
+                </figure>
+                <figure
+                    id="922b6169-096a-4952-abc2-281fee8d838f"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%E0%A7%A6%20%E0%A6%97%E0%A6%BE%E0%A6%AB%E0%A6%BF%E0%A6%B0%20(%E0%A6%AA%E0%A6%B0%E0%A6%AE%20%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%AE%E0%A6%BE%E0%A6%B6%E0%A7%80%E0%A6%B2%20(%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%80)%20)%20922b6169096a4952abc2281fee8d838f.html"
+                        ><span class="icon">📕</span>৪০. গাফির (পরম ক্ষমাশীল
+                        (বিশ্বাসী) ).
+                    </a>
+                </figure>
+                <figure
+                    id="45e782bb-4991-479d-b691-ec11f7976e8e"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%E0%A7%A7%20%E0%A6%B9%E0%A6%BE-%E0%A6%AE%E0%A7%80%E0%A6%AE%20%E0%A6%86%E0%A6%B8-%E0%A6%B8%E0%A6%BE%E0%A6%9C%E0%A6%A6%E0%A6%BE%20(%E0%A6%AB%E0%A7%81%E0%A6%B8%E0%A6%B8%E0%A6%BF%E0%A6%B2%E0%A6%BE%E0%A6%A4)%20(%E0%A6%B8%E0%A7%81%E0%A6%B8%E0%A7%8D%E0%A6%AA%E0%A6%B7%E0%A7%8D%E0%A6%9F%20%E0%A6%AC%E0%A6%BF%E0%A6%AC%E0%A6%B0%E0%A6%A3%20)%2045e782bb4991479db691ec11f7976e8e.html"
+                        ><span class="icon">📕</span>৪১. হা-মীম আস-সাজদা
+                        (ফুসসিলাত) (সুস্পষ্ট বিবরণ ) .</a
+                    >
+                </figure>
+                <figure
+                    id="6dc3bd8a-e5b9-4b42-84fb-5db5e2da1d33"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%E0%A7%A8%20%E0%A6%86%E0%A6%B6-%E0%A6%B6%E0%A7%82%E0%A6%B0%E0%A6%BE%20(%E0%A6%AA%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%B0%E0%A7%8D%E0%A6%B6%20)%206dc3bd8ae5b94b4284fb5db5e2da1d33.html"
+                        ><span class="icon">📕</span>৪২. আশ-শূরা (পরামর্শ ).</a
+                    >
+                </figure>
+                <figure
+                    id="9cc00dd2-4bbb-4a4c-b65a-03ae3d56a1d0"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%E0%A7%A9%20%E0%A6%86%E0%A6%AF-%E0%A6%AF%E0%A7%81%E0%A6%96%E0%A6%B0%E0%A7%81%E0%A6%AB%20(%E0%A6%B8%E0%A7%87%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%BE%20)%209cc00dd24bbb4a4cb65a03ae3d56a1d0.html"
+                        ><span class="icon">📕</span>৪৩. আয-যুখরুফ (সোনাদানা )
+                        .</a
+                    >
+                </figure>
+                <figure
+                    id="3116c762-c016-4738-a1ad-3f8412f31989"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%E0%A7%AA%20%E0%A6%86%E0%A6%A6-%E0%A6%A6%E0%A7%81%E0%A6%96%E0%A6%BE%E0%A6%A8%20(%E0%A6%A7%E0%A7%87%E0%A6%BE%E0%A6%81%E0%A6%AF%E0%A6%BC%E0%A6%BE%20)%203116c762c0164738a1ad3f8412f31989.html"
+                        ><span class="icon">📕</span>৪৪. আদ-দুখান (ধোঁয়া )
+                    </a>
+                </figure>
+                <figure
+                    id="c3243f47-b6ec-4631-9287-0ed753dd5200"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%E0%A7%AB%20%E0%A6%86%E0%A6%B2-%E0%A6%9C%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%20(%E0%A6%A8%E0%A6%A4%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A7%81%20)%20c3243f47b6ec463192870ed753dd5200.html"
+                        ><span class="icon">📕</span>৪৫. আল-জাসিয়া (নতজানু ).
+                    </a>
+                </figure>
+                <figure
+                    id="e7e47ad3-13aa-4f66-9ab8-d20ed480c909"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%E0%A7%AC%20%E0%A6%86%E0%A6%B2-%E0%A6%86%E0%A6%B9%E0%A6%95%E0%A6%BE%E0%A6%AB%20(%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A7%81%E0%A6%B0%20%E0%A6%AA%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%A1%E0%A6%BC%20)%20e7e47ad313aa4f669ab8d20ed480c909.html"
+                        ><span class="icon">📕</span>৪৬. আল-আহকাফ (বালুর পাহাড়
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="49055fdb-96aa-4611-8c06-0673c5b47a7c"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%E0%A7%AD%20%E0%A6%AE%E0%A7%81%E0%A6%B9%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AE%E0%A6%BE%E0%A6%A6%20(%E0%A6%AE%E0%A7%81%E0%A6%B9%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AE%E0%A6%A6%20(%E0%A6%B8%E0%A6%BE%20)%20)%2049055fdb96aa46118c060673c5b47a7c.html"
+                        ><span class="icon">📕</span>৪৭. মুহাম্মাদ (মুহাম্মদ
+                        (সা.) ) .
+                    </a>
+                </figure>
+                <figure
+                    id="5ce2014f-e408-4c3a-8fbb-20edf7ff4c34"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%E0%A7%AE%20%E0%A6%86%E0%A6%B2-%E0%A6%AB%E0%A6%BE%E0%A6%A4%E0%A6%B9%20(%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%AF%E0%A6%BC%20(%E0%A6%AE%E0%A6%95%E0%A7%8D%E0%A6%95%E0%A6%BE%20%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%AF%E0%A6%BC)%20)%205ce2014fe4084c3a8fbb20edf7ff4c34.html"
+                        ><span class="icon">📕</span>৪৮. আল-ফাতহ (বিজয় (মক্কা
+                        বিজয়) )</a
+                    >
+                </figure>
+                <figure
+                    id="fbe86a43-976f-4941-a39a-7f64cbbe6a9b"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AA%E0%A7%AF%20%E0%A6%86%E0%A6%B2-%E0%A6%B9%E0%A7%81%E0%A6%9C%E0%A7%81%E0%A6%B0%E0%A6%BE%E0%A6%A4%20(%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A6%97%E0%A7%83%E0%A6%B9%E0%A6%B8%E0%A6%AE%E0%A7%82%E0%A7%82%E0%A6%B9%20)%20fbe86a43976f4941a39a7f64cbbe6a9b.html"
+                        ><span class="icon">📕</span>৪৯. আল-হুজুরাত (বাসগৃহসমূূহ
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="eb666efe-881d-46d4-8304-02d9244f7216"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%E0%A7%A6%20%E0%A6%95%E0%A6%BE%E0%A6%AB%20(%E0%A6%86%E0%A6%B0%E0%A6%AC%E0%A6%BF%20%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A3%20%E0%A6%95%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AB%20)%20eb666efe881d46d4830402d9244f7216.html"
+                        ><span class="icon">📕</span>৫০. কাফ (আরবি বর্ণ ক্বাফ
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="0957fad6-ccda-4f6e-8cb1-60d4496882f8"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%E0%A7%A7%20%E0%A6%86%E0%A6%AF-%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%A4%20(%20%E0%A6%AC%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%87%E0%A6%AA%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%80%20%E0%A6%AC%E0%A6%BE%E0%A6%A4%E0%A6%BE%E0%A6%B8%20)%200957fad6ccda4f6e8cb160d4496882f8.html"
+                        ><span class="icon">📕</span>৫১. আয-যারিয়াত (
+                        বিক্ষেপকারী বাতাস )</a
+                    >
+                </figure>
+                <figure
+                    id="40cb4407-f1d7-47f7-bae6-48edd7cc5f31"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%E0%A7%A8%20%E0%A6%86%E0%A6%A4-%E0%A6%A4%E0%A7%82%E0%A6%B0%20(%E0%A6%A4%E0%A7%82%E0%A6%B0%20%E0%A6%AA%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%A1%E0%A6%BC%20)%2040cb4407f1d747f7bae648edd7cc5f31.html"
+                        ><span class="icon">📕</span>৫২. আত-তূর (তূর পাহাড় )</a
+                    >
+                </figure>
+                <figure
+                    id="bc8553b1-4fbd-4bb5-b0a8-82494e34c4b2"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%E0%A7%A9%20%E0%A6%86%E0%A6%A8-%E0%A6%A8%E0%A6%BE%E0%A6%9C%E0%A6%AE%20(%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BE%20)%20bc8553b14fbd4bb5b0a882494e34c4b2.html"
+                        ><span class="icon">📕</span>৫৩. আন-নাজম (তারা )</a
+                    >
+                </figure>
+                <figure
+                    id="6c537cc6-78de-4be4-9f36-5781a2b91ff3"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%E0%A7%AA%20%E0%A6%86%E0%A6%B2-%E0%A6%95%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A6%B0%20(%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%20)%206c537cc678de4be49f365781a2b91ff3.html"
+                        ><span class="icon">📕</span>৫৪. আল-কামার (চন্দ্র )</a
+                    >
+                </figure>
+                <figure
+                    id="3d11d4c6-07d4-439b-8f7d-77e73a8c66f4"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%E0%A7%AB%20%E0%A6%86%E0%A6%B0-%E0%A6%B0%E0%A6%BE%E0%A6%B9%E0%A6%AE%E0%A6%BE%E0%A6%A8%20(%E0%A6%85%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A4%20%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A3%E0%A6%BE%E0%A6%AE%E0%A6%AF%E0%A6%BC%20)%203d11d4c607d4439b8f7d77e73a8c66f4.html"
+                        ><span class="icon">📕</span>৫৫. আর-রাহমান (অনন্ত
+                        করুণাময় )</a
+                    >
+                </figure>
+                <figure
+                    id="3a97f736-132a-42f2-a96f-8f5f2052e8d0"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%E0%A7%AC%20%E0%A6%86%E0%A6%B2-%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%95%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%20(%E0%A6%A8%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%9A%E0%A6%BF%E0%A6%A4%20%E0%A6%98%E0%A6%9F%E0%A6%A8%E0%A6%BE%20)%203a97f736132a42f2a96f8f5f2052e8d0.html"
+                        ><span class="icon">📕</span>৫৬. আল-ওয়াকিয়া (নিশ্চিত
+                        ঘটনা )</a
+                    >
+                </figure>
+                <figure
+                    id="ef2b00e0-07a7-42d1-a35e-f51a01d89428"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%E0%A7%AD%20%E0%A6%86%E0%A6%B2-%E0%A6%B9%E0%A6%BE%E0%A6%A6%E0%A7%80%E0%A6%A6%20(%E0%A6%B2%E0%A7%87%E0%A6%BE%E0%A6%B9%E0%A6%BE%20)%20ef2b00e007a742d1a35ef51a01d89428.html"
+                        ><span class="icon">📕</span>৫৭. আল-হাদীদ (লোহা )</a
+                    >
+                </figure>
+                <figure
+                    id="eea588e8-4aa8-4223-9b35-ed88ad09b05d"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%E0%A7%AE%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A7%81%E0%A6%9C%E0%A6%BE%E0%A6%A6%E0%A6%BE%E0%A6%B2%E0%A6%BE%20(%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AF%E0%A7%87%E0%A6%BE%E0%A6%97%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%A3%E0%A7%80%20)%20eea588e84aa842239b35ed88ad09b05d.html"
+                        ><span class="icon">📕</span>৫৮. আল-মুজাদালা
+                        (অনুযোগকারিণী )</a
+                    >
+                </figure>
+                <figure
+                    id="a3706a13-c057-4ad1-8f81-65c4b709c837"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AB%E0%A7%AF%20%E0%A6%86%E0%A6%B2-%E0%A6%B9%E0%A6%BE%E0%A6%B6%E0%A6%B0%20(%E0%A6%B8%E0%A6%AE%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%B6%20)%20a3706a13c0574ad18f8165c4b709c837.html"
+                        ><span class="icon">📕</span>৫৯. আল-হাশর (সমাবেশ )</a
+                    >
+                </figure>
+                <figure
+                    id="50398db2-c2f2-462e-8641-80bcee073ad8"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%E0%A7%A6%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A7%81%E0%A6%AE%E0%A6%A4%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%A8%E0%A6%BE%20(%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A7%80,%20%E0%A6%AF%E0%A6%BE%E0%A6%95%E0%A7%87%20%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%20%E0%A6%95%E0%A6%B0%E0%A6%BE%20%E0%A6%B9%E0%A6%AC%E0%A7%87%20)%2050398db2c2f2462e864180bcee073ad8.html"
+                        ><span class="icon">📕</span>৬০. আল-মুমতাহিনা (নারী,
+                        যাকে পরীক্ষা করা হবে )</a
+                    >
+                </figure>
+                <figure
+                    id="d052d4b1-1de6-4116-961d-bbf053a8fc59"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%E0%A7%A7%20%E0%A6%86%E0%A6%B8-%E0%A6%B8%E0%A6%AB%20(%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%80%20%E0%A6%B8%E0%A7%88%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%A6%E0%A6%B2%20)%20d052d4b11de64116961dbbf053a8fc59.html"
+                        ><span class="icon">📕</span>৬১. আস-সফ (সারবন্দী সৈন্যদল
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="e4c79faa-b80b-4c75-b1a0-4d303d41b23b"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%E0%A7%A8%20%E0%A6%86%E0%A6%B2-%E0%A6%9C%E0%A7%81%E0%A6%AE%E0%A7%81&#x27;%E0%A6%86%20(%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AE%E0%A7%87%E0%A6%B2%E0%A6%A8%20%E0%A6%B6%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%BE%E0%A6%B0%20)%20e4c79faab80b4c75b1a04d303d41b23b.html"
+                        ><span class="icon">📕</span>৬২. আল-জুমু&#x27;আ
+                        (সম্মেলন/শুক্রবার )</a
+                    >
+                </figure>
+                <figure
+                    id="fa609b9b-60fa-444d-a10a-5756e1302076"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%E0%A7%A9%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A7%81%E0%A6%A8%E0%A6%BE%E0%A6%AB%E0%A6%BF%E0%A6%95%E0%A7%82%E0%A6%A8%20(%E0%A6%95%E0%A6%AA%E0%A6%9F%20%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%80%E0%A6%97%E0%A6%A3%20)%20fa609b9b60fa444da10a5756e1302076.html"
+                        ><span class="icon">📕</span>৬৩. আল-মুনাফিকূন (কপট
+                        বিশ্বাসীগণ )</a
+                    >
+                </figure>
+                <figure
+                    id="46c6a0de-425d-4d21-acac-acc7cd336efa"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%E0%A7%AA%20%E0%A6%86%E0%A6%A4-%E0%A6%A4%E0%A6%BE%E0%A6%97%E0%A6%BE%E0%A6%AC%E0%A7%81%E0%A6%A8%20(%E0%A6%AE%E0%A7%87%E0%A6%BE%E0%A6%B9%20%E0%A6%85%E0%A6%AA%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A3%20)%2046c6a0de425d4d21acacacc7cd336efa.html"
+                        ><span class="icon">📕</span>৬৪. আত-তাগাবুন (মোহ অপসারণ
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="e3710227-439f-45f8-abe9-e45eb74f952a"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%E0%A7%AB%20%E0%A6%86%E0%A6%A4-%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A6%B2%E0%A6%BE%E0%A6%95%E0%A7%8D%E0%A6%AC%20(%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%95,%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A6%A8%E0%A6%AE%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%BF%20)%20e3710227439f45f8abe9e45eb74f952a.html"
+                        ><span class="icon">📕</span>৬৫. আত-ত্বলাক্ব
+                        (তালাক,বন্ধনমুক্তি )</a
+                    >
+                </figure>
+                <figure
+                    id="30ec0794-eab3-479b-993a-eca0a600f077"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%E0%A7%AC%20%E0%A6%86%E0%A6%A4-%E0%A6%A4%E0%A6%BE%E0%A6%B9%E0%A6%B0%E0%A7%80%E0%A6%AE%20(%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%95%E0%A6%B0%E0%A6%A3%20)%2030ec0794eab3479b993aeca0a600f077.html"
+                        ><span class="icon">📕</span>৬৬. আত-তাহরীম (নিষিদ্ধকরণ
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="560a1d5c-3e42-4f59-aa9b-4c48d9ab3188"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%E0%A7%AD%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A7%81%E0%A6%B2%E0%A6%95%20(%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%AD%E0%A7%87%E0%A7%97%E0%A6%AE%20%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%AC%20)%20560a1d5c3e424f59aa9b4c48d9ab3188.html"
+                        ><span class="icon">📕</span>৬৭. আল-মুলক (সার্বভৌম
+                        কর্তৃত্ব ) .</a
+                    >
+                </figure>
+                <figure
+                    id="3225b899-283a-4e58-b985-ae346ffe87ae"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%E0%A7%AE%20%E0%A6%86%E0%A6%B2-%E0%A6%95%E0%A6%B2%E0%A6%AE%20(%E0%A6%95%E0%A6%B2%E0%A6%AE%20)%203225b899283a4e58b985ae346ffe87ae.html"
+                        ><span class="icon">📕</span>৬৮. আল-কলম (কলম )</a
+                    >
+                </figure>
+                <figure
+                    id="0e004741-9e94-4a1d-aec1-5a151feddb27"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AC%E0%A7%AF%20%E0%A6%86%E0%A6%B2-%E0%A6%B9%E0%A6%BE%E0%A6%95%E0%A7%8D%E0%A6%95%E0%A6%BE%E0%A6%B9(%E0%A6%A8%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%9A%E0%A6%BF%E0%A6%A4%20%E0%A6%B8%E0%A6%A4%E0%A7%8D%E0%A6%AF%20)%200e0047419e944a1daec15a151feddb27.html"
+                        ><span class="icon">📕</span>৬৯. আল-হাক্কাহ(নিশ্চিত সত্য
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="d4e5b688-2784-4e82-b102-0735fec28c36"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%E0%A7%A6%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A6%BE&#x27;%E0%A6%86%E0%A6%B0%E0%A6%BF%E0%A6%9C%20(%E0%A6%89%E0%A6%A8%E0%A7%8D%E0%A6%A8%E0%A6%AF%E0%A6%BC%E0%A6%A8%E0%A7%87%E0%A6%B0%20%E0%A6%B8%E0%A7%87%E0%A6%BE%E0%A6%AA%E0%A6%BE%E0%A6%A8%20)%20d4e5b68827844e82b1020735fec28c36.html"
+                        ><span class="icon">📕</span>৭০. আল-মা&#x27;আরিজ
+                        (উন্নয়নের সোপান )
+                    </a>
+                </figure>
+                <figure
+                    id="3940808b-c033-4c1d-9258-936c9592713c"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%E0%A7%A7%20%E0%A6%A8%E0%A7%82%E0%A6%B9%20(%E0%A6%A8%E0%A7%82%E0%A6%B9%20(%E0%A6%86%20)%20)%203940808bc0334c1d9258936c9592713c.html"
+                        ><span class="icon">📕</span>৭১. নূহ (নূহ (আ.) )</a
+                    >
+                </figure>
+                <figure
+                    id="d677200e-3bd8-47e8-8704-3db99a0afb22"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%E0%A7%A8%20%E0%A6%86%E0%A6%B2-%E0%A6%9C%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%A8%20(%E0%A6%9C%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%A8%20%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%AF%E0%A6%BC%20)%20d677200e3bd847e887043db99a0afb22.html"
+                        ><span class="icon">📕</span>৭২. আল-জ্বিন (জ্বিন
+                        সম্প্রদায় ) .</a
+                    >
+                </figure>
+                <figure
+                    id="de7a4152-a81c-410f-b62b-ed44273e3c91"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%E0%A7%A9%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A7%81%E0%A6%AF%E0%A6%AF%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AE%E0%A6%BF%E0%A6%B2%20(%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%20%E0%A6%86%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A6%BE%E0%A6%A6%E0%A6%A8%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%80%20)%20de7a4152a81c410fb62bed44273e3c91.html"
+                        ><span class="icon">📕</span>৭৩. আল-মুযযাম্মিল (বস্ত্র
+                        আচ্ছাদনকারী )</a
+                    >
+                </figure>
+                <figure
+                    id="a84dd8a5-8a36-4581-9db2-85366ffd6d8e"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%E0%A7%AA%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%A6%E0%A6%BE%E0%A6%B8%E0%A6%B8%E0%A6%BF%E0%A6%B0%20(%20)%20a84dd8a58a3645819db285366ffd6d8e.html"
+                        ><span class="icon">📕</span>৭৪. আল-মুদ্দাসসির ( )</a
+                    >
+                </figure>
+                <figure
+                    id="45932cda-e023-41d2-af53-5bc7a543f608"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%E0%A7%AB%20%E0%A6%86%E0%A6%B2-%E0%A6%95%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A6%B9%20(%E0%A6%AA%E0%A7%81%E0%A6%A8%E0%A6%B0%E0%A7%81%E0%A6%A4%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%A8%20)%2045932cdae02341d2af535bc7a543f608.html"
+                        ><span class="icon">📕</span>৭৫. আল-ক্বিয়ামাহ
+                        (পুনরুত্থান )</a
+                    >
+                </figure>
+                <figure
+                    id="1ed617c5-e975-4a1d-8d77-12d6f57bf731"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%E0%A7%AC%20%E0%A6%86%E0%A6%B2-%E0%A6%87%E0%A6%A8%E0%A6%B8%E0%A6%BE%E0%A6%A8%20(%E0%A6%86%E0%A6%A6-%E0%A6%A6%E0%A6%BE%E0%A6%B9%E0%A6%B0)%20(%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%81%E0%A6%B7%20)%201ed617c5e9754a1d8d7712d6f57bf731.html"
+                        ><span class="icon">📕</span>৭৬. আল-ইনসান (আদ-দাহর)
+                        (মানুষ )</a
+                    >
+                </figure>
+                <figure
+                    id="3f312d71-a81e-4521-a01d-f01f178ad6de"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%E0%A7%AD%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A7%81%E0%A6%B0%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%A4%20(%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%E0%A6%BF%E0%A6%A4%20%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%81%E0%A6%B7%E0%A6%AC%E0%A7%83%E0%A6%A8%E0%A7%8D%E0%A6%A6%20)%203f312d71a81e4521a01df01f178ad6de.html"
+                        ><span class="icon">📕</span>৭৭. আল-মুরসালাত (প্রেরিত
+                        পুরুষবৃন্দ )</a
+                    >
+                </figure>
+                <figure
+                    id="1aaf6ef3-b839-4f0f-a53d-4d9d134105dc"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%E0%A7%AE%20%E0%A6%86%E0%A6%A8-%E0%A6%A8%E0%A6%BE%E0%A6%AC%E0%A6%BE%20(%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A6%82%E0%A6%AC%E0%A6%BE%E0%A6%A6%20)%201aaf6ef3b8394f0fa53d4d9d134105dc.html"
+                        ><span class="icon">📕</span>৭৮. আন-নাবা (মহাসংবাদ )</a
+                    >
+                </figure>
+                <figure
+                    id="bbd05f6b-f984-4568-82f6-8e6161123c1f"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AD%E0%A7%AF%20%E0%A6%86%E0%A6%A8-%E0%A6%A8%E0%A6%BE%E0%A6%AF%E0%A6%BF&#x27;%E0%A6%86%E0%A6%A4%20(%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%9A%E0%A7%87%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%80%20)%20bbd05f6bf984456882f68e6161123c1f.html"
+                        ><span class="icon">📕</span>৭৯. আন-নাযি&#x27;আত
+                        (প্রচেষ্টাকারী )</a
+                    >
+                </figure>
+                <figure
+                    id="bf269e45-2226-4b5a-8590-a6b5bf395e5a"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%E0%A7%A6%20%E0%A6%86%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A6%BE%20(%E0%A6%A4%E0%A6%BF%E0%A6%A8%E0%A6%BF%20%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A7%81%E0%A6%95%E0%A7%81%E0%A6%9F%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%B2%E0%A7%87%E0%A6%A8%20)%20bf269e4522264b5a8590a6b5bf395e5a.html"
+                        ><span class="icon">📕</span>৮০. আবাসা (তিনি ভ্রুকুটি
+                        করলেন )</a
+                    >
+                </figure>
+                <figure
+                    id="830085bb-00b7-4790-90b5-8ef07b3692a6"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%E0%A7%A7%20%E0%A6%86%E0%A6%A4-%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%AD%E0%A7%80%E0%A6%B0%20(%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A6%A8%E0%A7%8D%E0%A6%A8%20)%20830085bb00b7479090b58ef07b3692a6.html"
+                        ><span class="icon">📕</span>৮১. আত-তাকভীর
+                        (অন্ধকারাচ্ছন্ন )</a
+                    >
+                </figure>
+                <figure
+                    id="44107b9b-b1b3-4b82-b6ac-3e981a3a85d3"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%E0%A7%A8%20%E0%A6%86%E0%A6%B2-%E0%A6%87%E0%A6%A8%E0%A6%AB%E0%A6%BF%E0%A6%A4%E0%A6%BE%E0%A6%B0%20(%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%80%E0%A6%B0%E0%A7%8D%E0%A6%A3%20%E0%A6%95%E0%A6%B0%E0%A6%BE%20)%2044107b9bb1b34b82b6ac3e981a3a85d3.html"
+                        ><span class="icon">📕</span>৮২. আল-ইনফিতার (বিদীর্ণ করা
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="b3fa2ea8-a021-46dc-88bf-6dc9e33cf9d1"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%E0%A7%A9%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A7%81%E0%A6%A4%E0%A6%BE%E0%A6%AB%E0%A6%AB%E0%A6%BF%E0%A6%AB%E0%A7%80%E0%A6%A8%20(%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%95%E0%A6%97%E0%A6%A3%20)%20b3fa2ea8a02146dc88bf6dc9e33cf9d1.html"
+                        ><span class="icon">📕</span>৮৩. আল-মুতাফফিফীন
+                        (প্রতারকগণ )</a
+                    >
+                </figure>
+                <figure
+                    id="9fb1c119-c74f-4df7-9f32-33a83100253c"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%E0%A7%AA%20%E0%A6%86%E0%A6%B2-%E0%A6%87%E0%A6%A8%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%95%20(%E0%A6%96%E0%A6%A8%E0%A7%8D%E0%A6%A1-%E0%A6%AC%E0%A6%BF%E0%A6%96%E0%A6%A8%E0%A7%8D%E0%A6%A1%20%E0%A6%95%E0%A6%B0%E0%A6%A3%20)%209fb1c119c74f4df79f3233a83100253c.html"
+                        ><span class="icon">📕</span>৮৪. আল-ইনশিকাক (খন্ড-বিখন্ড
+                        করণ )</a
+                    >
+                </figure>
+                <figure
+                    id="b770fe16-57b6-4ced-9259-350713987c05"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%E0%A7%AB%20%E0%A6%86%E0%A6%B2-%E0%A6%AC%E0%A7%81%E0%A6%B0%E0%A7%81%E0%A6%9C%20(%E0%A6%A8%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%AA%E0%A7%81%E0%A6%9E%E0%A7%8D%E0%A6%9C%20)%20b770fe1657b64ced9259350713987c05.html"
+                        ><span class="icon">📕</span>৮৫. আল-বুরুজ (নক্ষত্রপুঞ্জ
+                        )
+                    </a>
+                </figure>
+                <figure
+                    id="6e0ce95e-4bfc-4fe1-b4e7-02e13584974c"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%E0%A7%AC%20%E0%A6%86%E0%A6%A4-%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%95%20(%E0%A6%B0%E0%A6%BE%E0%A6%A4%E0%A7%87%E0%A6%B0%20%E0%A6%86%E0%A6%97%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%81%E0%A6%95%20)%206e0ce95e4bfc4fe1b4e702e13584974c.html"
+                        ><span class="icon">📕</span>৮৬. আত-তারিক (রাতের আগন্তুক
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="04d6629b-202a-4ecc-aa99-ce17ba0631ff"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%E0%A7%AD%20%E0%A6%86%E0%A6%B2-%E0%A6%86&#x27;%E0%A6%B2%E0%A6%BE%20(%20%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A7%87%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A7%E0%A7%8D%E0%A6%AC%20)%2004d6629b202a4eccaa99ce17ba0631ff.html"
+                        ><span class="icon">📕</span>৮৭. আল-আ&#x27;লা (
+                        সর্বোর্ধ্ব )</a
+                    >
+                </figure>
+                <figure
+                    id="164c2b68-52c5-477c-83b3-762aecbd9073"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%E0%A7%AE%20%E0%A6%86%E0%A6%B2-%E0%A6%97%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%20(%E0%A6%AC%E0%A6%BF%E0%A6%B9%E0%A7%8D%E0%A6%AC%E0%A6%B2%E0%A6%95%E0%A6%B0%20%E0%A6%98%E0%A6%9F%E0%A6%A8%E0%A6%BE%20)%20164c2b6852c5477c83b3762aecbd9073.html"
+                        ><span class="icon">📕</span>৮৮. আল-গাশিয়া (বিহ্বলকর
+                        ঘটনা )</a
+                    >
+                </figure>
+                <figure
+                    id="1097fd5b-c281-4274-8a07-9f82e46a3b90"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AE%E0%A7%AF%20%E0%A6%86%E0%A6%B2-%E0%A6%AB%E0%A6%BE%E0%A6%9C%E0%A6%B0(%E0%A6%AD%E0%A7%87%E0%A6%BE%E0%A6%B0%E0%A6%AC%E0%A7%87%E0%A6%B2%E0%A6%BE%20)%201097fd5bc28142748a079f82e46a3b90.html"
+                        ><span class="icon">📕</span>৮৯. আল-ফাজর(ভোরবেলা )</a
+                    >
+                </figure>
+                <figure
+                    id="33d98cd0-2f2a-4447-a818-b271d377a5a1"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%E0%A7%A6%20%E0%A6%86%E0%A6%B2-%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%A6%20(%E0%A6%A8%E0%A6%97%E0%A6%B0%20%E0%A6%B6%E0%A6%B9%E0%A6%B0%20)%2033d98cd02f2a4447a818b271d377a5a1.html"
+                        ><span class="icon">📕</span>৯০. আল-বালাদ (নগর/শহর )</a
+                    >
+                </figure>
+                <figure
+                    id="7d2a1ef3-6749-4303-9a11-70add9fd02c6"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%E0%A7%A7%20%E0%A6%86%E0%A6%B6-%E0%A6%B6%E0%A6%BE%E0%A6%AE%E0%A6%B8(%E0%A6%B8%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A7%8D%E0%A6%AF%20)%207d2a1ef3674943039a1170add9fd02c6.html"
+                        ><span class="icon">📕</span>৯১. আশ-শামস(সূর্য্য )
+                    </a>
+                </figure>
+                <figure
+                    id="11d4850d-d185-4009-b779-93450c24a0af"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%E0%A7%A8%20%E0%A6%86%E0%A6%B2-%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%B2%20(%E0%A6%B0%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BF%20)%2011d4850dd1854009b77993450c24a0af.html"
+                        ><span class="icon">📕</span>৯২. আল-লাইল (রাত্রি )</a
+                    >
+                </figure>
+                <figure
+                    id="9f132df3-41c2-487a-a662-25d33bab2f7f"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%E0%A7%A9%20%E0%A6%86%E0%A6%A6-%E0%A6%A6%E0%A7%81%E0%A6%B9%E0%A6%BE%20(%E0%A6%AA%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B9%E0%A7%8D%E0%A6%A8%E0%A7%87%E0%A6%B0%20%E0%A6%B8%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%95%E0%A6%BF%E0%A6%B0%E0%A6%A3%20)%209f132df341c2487aa66225d33bab2f7f.html"
+                        ><span class="icon">📕</span>৯৩. আদ-দুহা (পূর্বাহ্নের
+                        সূর্যকিরণ )</a
+                    >
+                </figure>
+                <figure
+                    id="8aa08b30-f6f9-4717-85d1-d20a66c3a7c6"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%E0%A7%AA%20%E0%A6%86%E0%A6%B2-%E0%A6%87%E0%A6%A8%E0%A6%B6%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%B9%20(%E0%A6%AC%E0%A6%95%E0%A7%8D%E0%A6%B7%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B6%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%95%E0%A6%B0%E0%A6%A3)%208aa08b30f6f9471785d1d20a66c3a7c6.html"
+                        ><span class="icon">📕</span>৯৪. আল-ইনশিরাহ (বক্ষ
+                        প্রশস্তকরণ)</a
+                    >
+                </figure>
+                <figure
+                    id="ba278b6e-6c2b-47d5-9e2b-e9de82a1fd98"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%E0%A7%AB%20%E0%A6%86%E0%A6%A4-%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A7%80%E0%A6%A8%20(%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A7%80%E0%A6%A8%20%E0%A6%AB%E0%A6%B2%20)%20ba278b6e6c2b47d59e2be9de82a1fd98.html"
+                        ><span class="icon">📕</span>৯৫. আত-ত্বীন (ত্বীন ফল )</a
+                    >
+                </figure>
+                <figure
+                    id="9d375622-d470-48d3-aa48-52bbedd4aa5e"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%E0%A7%AC%20%E0%A6%86%E0%A6%B2-%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%95%20(%E0%A6%B0%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%AA%E0%A6%BF%E0%A6%A8%E0%A7%8D%E0%A6%A1%20)%209d375622d47048d3aa4852bbedd4aa5e.html"
+                        ><span class="icon">📕</span>৯৬. আল-আলাক (রক্তপিন্ড )</a
+                    >
+                </figure>
+                <figure
+                    id="8e4baed8-737d-404e-bf6e-27ccd6e66937"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%E0%A7%AD%20%E0%A6%86%E0%A6%B2-%E0%A6%95%E0%A6%BE%E0%A6%A6%E0%A6%B0%20(%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%A3%20)%208e4baed8737d404ebf6e27ccd6e66937.html"
+                        ><span class="icon">📕</span>৯৭. আল-কাদর (পরিমাণ )</a
+                    >
+                </figure>
+                <figure
+                    id="419610d4-91b4-42da-bc78-adcce04ef2f0"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%E0%A7%AE%20%E0%A6%86%E0%A6%B2-%E0%A6%AC%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A7%8D%E0%A6%AF%E0%A6%BF%E0%A6%A8%E0%A6%BE%E0%A6%B9%20(%E0%A6%B8%E0%A7%81%E0%A6%B8%E0%A7%8D%E0%A6%AA%E0%A6%B7%E0%A7%8D%E0%A6%9F%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%AE%E0%A6%BE%E0%A6%A3%20)%20419610d491b442dabc78adcce04ef2f0.html"
+                        ><span class="icon">📕</span>৯৮. আল-বায়্যিনাহ (সুস্পষ্ট
+                        প্রমাণ )</a
+                    >
+                </figure>
+                <figure
+                    id="46469d2c-d1da-4e29-a4f2-c1ff35cb3d59"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%AF%E0%A7%AF%20%E0%A6%86%E0%A6%AF-%E0%A6%AF%E0%A6%BF%E0%A6%B2%E0%A6%AF%E0%A6%BE%E0%A6%B2%20(%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF%E0%A6%95%E0%A6%AE%E0%A7%8D%E0%A6%AA%20)%2046469d2cd1da4e29a4f2c1ff35cb3d59.html"
+                        ><span class="icon">📕</span>৯৯. আয-যিলযাল (ভূমিকম্প )
+                    </a>
+                </figure>
+                <figure
+                    id="e0374cce-5248-4cb4-aa64-be8d93bbe09a"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%E0%A7%A6%20%E0%A6%86%E0%A6%B2-%E0%A6%86%E0%A6%A6%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%A4%20((%E0%A6%85%E0%A6%AD%E0%A6%BF%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%80%20)%20e0374cce52484cb4aa64be8d93bbe09a.html"
+                        ><span class="icon">📕</span>১০০. আল-আদিয়াত
+                        ((অভিযানকারী )</a
+                    >
+                </figure>
+                <figure
+                    id="fa65488e-423f-4af7-94a0-b01a59be06c9"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%E0%A7%A7%20%E0%A6%86%E0%A6%B2-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF&#x27;%E0%A6%86%20(%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A6%82%E0%A6%95%E0%A6%9F%20)%20fa65488e423f4af794a0b01a59be06c9.html"
+                        ><span class="icon">📕</span>১০১. আল-কারি&#x27;আ
+                        (মহাসংকট )</a
+                    >
+                </figure>
+                <figure
+                    id="ea6d310d-ff46-4127-a563-06822ed45e8b"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%E0%A7%A8%20%E0%A6%86%E0%A6%A4-%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%B8%E0%A7%81%E0%A6%B0%20(%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9A%E0%A7%81%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A7%8D%E0%A6%AF%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AF%E0%A7%87%E0%A6%BE%E0%A6%97%E0%A6%BF%E0%A6%A4%E0%A6%BE%20)%20ea6d310dff464127a56306822ed45e8b.html"
+                        ><span class="icon">📕</span>১০২. আত-তাকাসুর
+                        (প্রাচুর্য্যের প্রতিযোগিতা )</a
+                    >
+                </figure>
+                <figure
+                    id="4cb46d41-3662-4688-8c66-5f2c481dc9f0"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%E0%A7%A9%20%E0%A6%86%E0%A6%B2-%E0%A6%86%E0%A6%B8%E0%A6%B0%20(%E0%A6%85%E0%A6%AA%E0%A6%B0%E0%A6%BE%E0%A6%B9%E0%A7%8D%E0%A6%A8%20)%204cb46d41366246888c665f2c481dc9f0.html"
+                        ><span class="icon">📕</span>১০৩. আল-আসর (অপরাহ্ন )</a
+                    >
+                </figure>
+                <figure
+                    id="cb1125ed-01ac-44ee-a351-3f600c9f12ff"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%E0%A7%AA%20%E0%A6%86%E0%A6%B2-%E0%A6%B9%E0%A7%81%E0%A6%AE%E0%A6%BE%E0%A6%AF%E0%A6%BE(%E0%A6%AA%E0%A6%B0%E0%A6%A8%E0%A6%BF%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%80%20)%20cb1125ed01ac44eea3513f600c9f12ff.html"
+                        ><span class="icon">📕</span>১০৪. আল-হুমাযা(পরনিন্দাকারী
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="b5714151-fb31-4606-8073-2713e2b7534b"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%E0%A7%AB%20%E0%A6%86%E0%A6%B2-%E0%A6%AB%E0%A7%80%E0%A6%B2%20(%E0%A6%B9%E0%A6%BE%E0%A6%A4%E0%A6%BF%20)%20b5714151fb31460680732713e2b7534b.html"
+                        ><span class="icon">📕</span>১০৫. আল-ফীল (হাতি )</a
+                    >
+                </figure>
+                <figure
+                    id="b8f029d9-7f5a-4609-bb6f-efdba74ea6a7"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%E0%A7%AC%20%E0%A6%86%E0%A6%B2-%E0%A6%95%E0%A7%81%E0%A6%B0%E0%A6%BE%E0%A6%87%E0%A6%B6%20(%E0%A6%95%E0%A7%81%E0%A6%B0%E0%A6%BE%E0%A6%87%E0%A6%B6%20%E0%A6%97%E0%A7%87%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%20)%20b8f029d97f5a4609bb6fefdba74ea6a7.html"
+                        ><span class="icon">📕</span>১০৬. আল-কুরাইশ (কুরাইশ
+                        গোত্র )</a
+                    >
+                </figure>
+                <figure
+                    id="b5d5e5b3-2b45-4b4e-a2b1-3831591c599b"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%E0%A7%AD%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A6%BE%E0%A6%8A%E0%A6%A8%20(%E0%A6%B8%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%AF%E0%A7%8D%E0%A6%AF-%E0%A6%B8%E0%A6%B9%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A6%A4%E0%A6%BE%20)%20b5d5e5b32b454b4ea2b13831591c599b.html"
+                        ><span class="icon">📕</span>১০৭. আল-মাঊন
+                        (সাহায্য-সহায়তা )</a
+                    >
+                </figure>
+                <figure
+                    id="efbef87b-0af1-4beb-b41e-0a6b8d2ea41e"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%E0%A7%AE%20%E0%A6%86%E0%A6%B2-%E0%A6%95%E0%A6%BE%E0%A6%89%E0%A6%B8%E0%A6%BE%E0%A6%B0%20(%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9A%E0%A7%81%E0%A6%B0%E0%A7%8D%E0%A6%AF%20)%20efbef87b0af14bebb41e0a6b8d2ea41e.html"
+                        ><span class="icon">📕</span>১০৮. আল-কাউসার (প্রাচুর্য
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="d5092927-5a7a-420a-9601-fdf49b88671e"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A6%E0%A7%AF%20%E0%A6%95%E0%A6%BE%E0%A6%AB%E0%A6%BF%E0%A6%B0%E0%A7%81%E0%A6%A8%20(%E0%A6%85%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A7%80%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%80%E0%A6%97%E0%A6%A3%20)%20d50929275a7a420a9601fdf49b88671e.html"
+                        ><span class="icon">📕</span>১০৯. কাফিরুন
+                        (অস্বীকারকারীগণ )</a
+                    >
+                </figure>
+                <figure
+                    id="ebdb2f73-6202-4b4d-92a7-f17773f49ce3"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A7%E0%A7%A6%20%E0%A6%86%E0%A6%A8-%E0%A6%A8%E0%A6%BE%E0%A6%B8%E0%A6%B0%20(%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%AF%E0%A6%BC,%E0%A6%B8%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%AF%E0%A7%8D%E0%A6%AF%20)%20ebdb2f7362024b4d92a7f17773f49ce3.html"
+                        ><span class="icon">📕</span>১১০. আন-নাসর (বিজয়,সাহায্য
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="a79524ec-9e07-4565-acc3-56b19aa963a5"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A7%E0%A7%A7%20%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%A6%20(%E0%A6%9C%E0%A7%8D%E0%A6%AC%E0%A6%B2%E0%A6%A8%E0%A7%8D%E0%A6%A4%20%E0%A6%85%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BE%E0%A6%B0%20)%20a79524ec9e074565acc356b19aa963a5.html"
+                        ><span class="icon">📕</span>১১১. আল-মাসাদ (জ্বলন্ত
+                        অঙ্গার )</a
+                    >
+                </figure>
+                <figure
+                    id="115b5346-415f-4c06-98be-71986e9d5a56"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A7%E0%A7%A8%20%E0%A6%86%E0%A6%B2-%E0%A6%87%E0%A6%96%E0%A6%B2%E0%A6%BE%E0%A6%B8%20(%E0%A6%8F%E0%A6%95%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A7%8D%E0%A6%A0%E0%A6%A4%E0%A6%BE%20)%20115b5346415f4c0698be71986e9d5a56.html"
+                        ><span class="icon">📕</span>১১২. আল-ইখলাস (একনিষ্ঠতা
+                        )</a
+                    >
+                </figure>
+                <figure
+                    id="c79cf668-c8ca-4e04-b683-8ee70c4e01fd"
+                    class="link-to-page"
+                >
+                    <a
+                        href="Quran%20zakariya%207ae4d7a0b4174e07a32f8bd107d635c6/%E0%A7%A7%E0%A7%A7%E0%A7%A9%20%E0%A6%86%E0%A6%B2-%E0%A6%AB%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%95%20(%E0%A6%A8%E0%A6%BF%E0%A6%B6%E0%A6%BF%E0%A6%AD%E0%A7%87%E0%A6%BE%E0%A6%B0%20)%20c79cf668c8ca4e04b6838ee70c4e01fd.html"
+                        ><span class="icon">📕</span>১১৩. আল-ফালাক (নিশিভোর )</a
+                    >
+                </figure>
+            </div>
+        </article>
+        <span class="sans" style="font-size: 14px; padding-top: 2em"></span>
+    </body>
+</html>

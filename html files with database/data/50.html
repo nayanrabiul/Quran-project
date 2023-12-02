@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>৫০. কাফ (আরবি বর্ণ ক্বাফ )</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="eb666efe-881d-46d4-8304-02d9244f7216" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📕</span></div><h1 class="page-title">৫০. কাফ (আরবি বর্ণ ক্বাফ )</h1><p class="page-description"></p></header><div class="page-body"><p id="a413e130-c1a0-483b-9526-75a988c7e9fc" class="">1 ক্বাফ্‌, শপথ সম্মানিত কুরআনের।</p><p id="2304ca17-b090-416e-b6dd-fc86d6f4ca1d" class="">2 বরং তারা বিস্ময় বোধ করে যে, তাদের মধ্য থেকে একজন সতর্ককারী তাদের কাছে এসেছেন। আর কাফিররা বলে, ‘এ তো এক আশ্চর্য জিনিস !</p><p id="124ab76d-8a96-4004-ae56-a3691279ec9b" class="">3 ‘আমাদের মৃত্যু হলে, অতঃপর আমরা মাটিতে মিশে গেলেও কি আমরা পুনরুখিত হব? এ বিষয় টা তো দূরের কথা।’</p><p id="52a1a10a-2279-40d1-b951-a09080cd3b6e" class="">4 অবশ্যই আমারা জানি মাটি ক্ষয় করে তাদের কতটুকু আর আমাদের কাছে আছে এক কিতাব যা (সব কিছুর পূর্ণ বিবরণ) সংরক্ষণ করে।</p><p id="d3f9f1f2-58db-48b3-b9a6-bcb553e4d4ac" class="">5 বস্তুত তাদের কাছে সত্য আসার পর তারা তা মিথ্যা মনে করেছে। তারা সংশয়যুক্ত।</p><p id="bb08a500-7e84-4ef6-9494-7f2f3c47fa6a" class="">6 তারা কি তাদের উপরে অবস্থিত আসমানের দিকে তাকিয়ে দেখে না, আমরা কিভাবে তা নির্মাণ করেছি ও তাকে সুশোভিত করেছি এবং তাতে কোন ফাটলও নেই?</p><p id="e4fa86e1-9ad9-4d85-90d6-54cdf33df0dd" class="">7 আর আমরা বিস্তৃত করেছি যমীনকে এবং তাতে স্থাপন করেছি পর্বতমালা। আর তাতে উদ্‌গত করেছি নয়ন প্রীতিকর সর্বপ্রকার উদ্ভিদ,</p><p id="864df6cf-0472-4cff-93e2-f4c8879409f2" class="">8 আল্লাহর অনুরাগী প্রত্যেক বান্দার জন্য জ্ঞান ও উপদেশস্বরূপ।</p><p id="40012015-913a-4619-a940-624440918ae6" class="">9 আর আসমান থেকে আমারা বর্ষন করি কল্যাণকর বৃষ্টি অতঃপর তা দ্বারা আমরা উৎপন্ন করি উদ্যান, কর্তনযোগ্য শস্য দানা,</p><p id="852f59d9-7c29-4410-9734-fc9f57c28b20" class="">10 ও সমুন্নত খেজুর গাছ যাতে আছে গুচ্ছ গুচ্ছ খেজুর--</p><p id="d73a68c0-42c7-4a6f-9a70-c4b753272339" class="">11 বান্দাদের রিযিকস্বরূপ। আর আমরা বৃষ্টি দিয়ে সঞ্জীবিত করি মৃত শহরকে ; এভাবেই পুনঃরউত্থান ঘটবে ।</p><p id="0bd85a1b-8383-4d0c-ba71-b7b72a75c546" class="">12 তাদের আগেও মিথ্যারোপ করেছিল নূহের সম্প্রদায়, রাস্ এর অধিবাসী ও সামূদ সম্প্রদায়,</p><p id="705737e4-ce02-4760-955d-c95d07ab1a20" class="">13 আর আদ, ফির’আউন ও লুত সম্প্রদায়।</p><p id="11a54948-deb2-4822-af19-ba718e4a28c9" class="">14 আর আইকার অধিবাসী ও তুব্বা’ সম্প্রদায়  ; তারা সকলেই রাসূলগণের প্রতি মিথ্যারোপ করেছিল। , ফলে তাদের উপর আমার শাস্তি যথার্থভাবে আপতিত হয়েছে।</p><p id="ded2cf5d-cde1-4a9c-bcb2-822a10bc0ca1" class="">15 আমরা কি প্রথমবার সৃষ্টি করেই ক্লান্ত হয়ে পড়েছি! বরং নতুন সৃষ্টির বিষয়ে তারা সন্দেহে করে ।</p><p id="6848d853-8f6e-446b-b622-8a6748f9ef76" class="">16 আর অবশ্যই আমরা মানুষকে সৃষ্টি করেছি এবং তার প্রবৃত্তি তাকে যে কুমন্ত্রণা দেয় তাও আমরা জানি। আর আমরা তার গলার ধমনীর চেয়েও নিকটতর ।</p><p id="aaccb94c-0611-44e3-a467-67ff92dfec42" class="">17 যখন ডানে ও বামে বসা দু’জন লিপিবদ্ধকারী পরস্পর গ্রহণ করবে।</p><p id="d8e49977-c418-49ad-9bd6-917d86ca5ecf" class="">18 সে যে কথাই উচ্চারণ করে তার কাছে সদা উপস্থিত সংরক্ষণকারী রয়েছে।</p><p id="40bd1dd7-0ddb-4a8b-92f3-96b816a8bb7d" class="">19 আর মৃত্যুর যন্ত্রণা সত্য নিয়ে আসবে। যা থেকে তুমি পলায়ন করতে চাইতে।</p><p id="fb99777f-45d5-4e6f-8364-2a189f9dee06" class="">20 আর শিংগায় ফুঁক দেয়া হবে, ওটাই প্রতিশ্রুত দিন।</p><p id="fb594862-7035-4725-907a-262835a3dd08" class="">21 আর সেদিন প্রত্যেক ব্যক্তি উপস্থিত হবে, তার সঙ্গে থাকবে চালক ও সাক্ষী ।</p><p id="bfb072ad-cd97-4226-bf5f-75b0b609e466" class="">22 অবশ্যই তুমি এ দিন সন্বদ্ধে উদাসীন ছিলে, অতঃপর আমারা তোমাদের সামনে থেকে পর্দা উন্মোচন করেছি। সুতরাং আজ তোমার দৃষ্টি প্রখর ।</p><p id="f78b5ae8-3e04-425d-9a21-53ff6444a258" class="">23 আর তার সঙ্গী ফেরেশতা বলবে, এই তো আমার কাছে ‘আমলনামা প্রস্তুত।’</p><p id="d8400270-4a03-4a69-99cc-58c7ead2f3a7" class="">24 আদেশ করা হবে, তোমারা উভয়ে জাহান্নামে নিক্ষেপ কর প্রত্যেক উদ্বত কাফিরকে-</p><p id="e8124294-8574-4e4c-ae0a-7539742713cf" class="">25 কল্যাণকর কাজে প্রবল বাধাদানকারী, সীমলঙ্ঘনকারী ও সন্দেহ পোষণকারী ।</p><p id="3ea0fedd-c856-44e1-9194-528949d8e97b" class="">26 যে আল্লাহর সঙ্গে অন্য ইলাহ গ্রহণ করেছিল, তোমারা তাকে কঠিন শাস্তিতে নিক্ষেপ কর।</p><p id="c1b7fd58-d467-451b-ad18-d622409cd788" class="">27 তার সহচর শয়তান বলবে, ‘হে আমাদের রব! আমি তাকে বিদ্রোহী করে তুলিনি। বস্তুত সেই ছিল ঘোর বিভ্রান্ত ।</p><p id="a57156c6-1fb4-4ffc-8d6c-8a92df43127f" class="">28 আল্লাহ্‌ বলবেন, ‘তোমারা আমার সামনে বাক-বিতন্ডাতা করো না; আমি তো তোমাদেরকে আগেই সতর্ক করেছিলাম।</p><p id="a25b20ce-d82b-4144-a9d2-4f0545183f83" class="">29 ‘আমার কাছে কথা রদবদল হয় না এবং আমি বান্দাদের প্রতি যুলুমকারীও নই।’</p><p id="fd306a01-f097-47a9-9dc5-f95474a4b322" class="">30 সেদিন আমরা জাহান্নামকে জিজ্ঞেস করব, ‘তুমি কি পূর্ণ হয়েছ?’ জাহান্নাম বলবে, ‘আরো বেশী আছে কি ?’</p><p id="faf1397d-95c8-49e7-9016-5882def34fa9" class="">31 আর জান্নাতকে নিকটস্থ করা হবে মুত্তাকীদের--কোন দূরত্বে থাকবে না।</p><p id="f357b30a-3d17-478e-8f41-76386ba84a39" class="">32 এরই প্রতিশ্রুতি তোমাদেরকে দেয়া হয়েছিল--প্রত্যেক আল্লাহ্‌ অভিমুখী , হিফাযতকারীর জন্য--</p><p id="ac438062-150d-4d7b-99a2-d57896fa4351" class="">33 যারা গায়েব অবস্থায় দয়াময় আল্লাহকে ভয় করেছে এবং বিনীত চিত্তে উপস্থিত হয়েছে--</p><p id="4fffdc35-124c-4c4b-852c-b7d20cf7d4ad" class="">34 তাদেরকে বলা হবে, ‘শান্তির সাথে তোমরা তাতে প্রবেশ কর; এটা অনন্ত জীবনের দিন।’</p><p id="d9c93c3e-bdb8-43ed-8e80-1a2540aa0225" class="">35 এখানে তারা যা কামনা করবে তা-ই থাকবে এবং আমার কাছে রয়েছে তারও বেশী ।</p><p id="0ef21573-c2a3-4b51-a52a-19b7f6e8555f" class="">36 আর আমরা তাদের আগে বহু প্রজন্মকে ধ্বংস করে দিয়েছি, যারা ছিল তাদের চেয়েও প্রবলতর,তারা দেশে দেশে ঘুরে বেড়াত; তাদের কোন পলায়ণস্থল ছিল কি?</p><p id="ba90f384-e82a-4d59-973c-14b65bedaf34" class="">37 নিশ্চয় এতে উপদেশ রয়েছে তার জন্য, যার আছে অন্তঃকরণ’ অথবা যে শ্রবণ করে মনোযোগের সাথে।</p><p id="12cdf70f-08a6-4dba-89d3-86ae5e84aa08" class="">38 আর অবশ্যই আমারা আসমানসমুহ, যমীন ও তাদের অন্তর্বর্তী সমস্ত কিছু সৃষ্টি করেছি ছয় দিনে ; আর আমাকে কোন ক্লান্তি স্পর্শ করেনি।</p><p id="e733070e-355d-4bc9-9535-5ab0215369bd" class="">39 অতএব তারা যা বলে তাতে আপনি ধৈর্য ধারণ করুন এবং আপনার রবের সপ্রশংস পবিত্রতা ও মহিমা ঘোষণা করুন সূর্যোদয়ের আগে ও সূর্যাস্তের আগে ,</p><p id="c19b7f0d-c56c-4e78-b700-5f244f79129d" class="">40 আর তাঁর পবিত্রতা ও মহিমা ঘোষণা করুন রাতের একাংশে এবং সালাতের পরেও ।</p><p id="9cb658e4-e689-45a3-b352-fcfad4294467" class="">41 আর মনোনিবেশসহকারে শুনুন : যেদিন এক ঘোষণাকারী নিকটবর্তী স্থান হতে ডাকবে,</p><p id="63efc555-a012-40f3-92f1-92b185ef5736" class="">42 সেদিন তারা সত্য সত্যই শুনতে পাবে মহানাদ, সেদিনই বের হবার দিন।</p><p id="fe6f6a2f-b505-4dc5-80d9-304ff29ec75c" class="">43 আমরাই জীবন দান করি এবং আমরাই মৃত্যু ঘটাই, আর সকলের ফিরে আসা আমাদেরই দিকে।</p><p id="342e68af-9db0-408a-a3b2-2fe7167ee85d" class="">44 যেদিন তাদের থেকে যমীন বিদীর্ণ হবে এবং লোকেরা ত্রস্ত-ব্যস্ত হয়ে ছুটোছুটি করবে, এটা এমন এক সমাবেশ যা আমাদের জন্য অতি সহজ।</p><p id="ac8e3b37-ec2b-4275-bb96-29be791308f8" class="">45 তারা যা বলে তা আমরা ভাল জানি, আর আপনি তাদের উপর জবরদস্তি কারী নন, কাজেই যে আমার শাস্তিকে ভয় করে তাকে উপদেশ দান করুন কুরআনের সাহায্যে।</p><p id="b6b3be23-f0ba-4b17-9a7a-c9c3a626655c" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
